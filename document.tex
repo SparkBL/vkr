@@ -3,8 +3,17 @@
 \input{preamble}
 
 \begin{document}	
-\input{title}
-\input{intro}
+\input{chapters/title} % Титульный лист
+
+\begin{center}
+\tableofcontents % Содержание 
+\clearpage
+\end{center}
+
+\input{chapters/intro} %Введение
+\input{chapters/math_model} %Математическая модель
+\input{chapters/kolmogorov_equations}
+\input{chapters/asymptotic_analysis}
 
 \bibliographystyle{splncs04}
 \bibliography{refs.bib}\nocite{*}

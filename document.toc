@@ -1,0 +1,8 @@
+\babel@toc {russian}{}
+\contentsline {section}{Введение}{3}{}%
+\contentsline {section}{\numberline {1}Исследование систем с простейшим входящим потоком}{5}{}%
+\contentsline {subsection}{\numberline {1.1}RQ-система с суммарным выходящим потоком}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{6}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{8}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятности}{11}{}%
+\contentsfinish 

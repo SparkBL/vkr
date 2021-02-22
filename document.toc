@@ -5,4 +5,9 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{6}{}%
 \contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{8}{}%
 \contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятности}{11}{}%
+\contentsline {subsection}{\numberline {1.2}RQ-система с двумерным выходящим потоком}{13}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Уравнения Колмогорова}{13}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{14}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятности}{18}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{18}{}%
 \contentsfinish 

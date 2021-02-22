@@ -15,6 +15,13 @@
 \usepackage{multirow} % улучшенное форматирование таблиц
 \usepackage{ulem} % подчеркивания
 \usepackage{titletoc}
+\usepackage{tikz}
+\usepackage{float}
+\usetikzlibrary{chains,shapes.multipart}
+\usetikzlibrary{shapes,calc}
+\usetikzlibrary{automata,positioning}
+\usepackage[left=3cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \newtheorem{theorem}{Теорема}
 
 
@@ -35,8 +42,6 @@
 \captionsetup[table]{labelformat=gosttable}
 \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 
-\usepackage[left=3cm,right=1cm,
-top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 
 \AtBeginDocument{%
 	\let\mtcontentsname\contentsname
@@ -50,9 +55,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		\endgroup%
 	}%
 }
+\makeatletter
+\renewcommand\@dotsep{140}   % default value 4.5
+\makeatother
 
-\usepackage{tikz}
-\usepackage{float}
-\usetikzlibrary{chains,shapes.multipart}
-\usetikzlibrary{shapes,calc}
-\usetikzlibrary{automata,positioning}

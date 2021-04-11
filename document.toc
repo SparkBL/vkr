@@ -10,4 +10,11 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{14}{}%
 \contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятности}{18}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{18}{}%
+\contentsline {section}{\numberline {2}Исследование систем с MMPP-потоком}{20}{}%
+\contentsline {subsection}{\numberline {2.1}RQ-система с входящим MMPP-потоком и двумерным выходящим}{20}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Уравнения Колмогорова}{20}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{22}{}%
+\contentsline {section}{\numberline {3}Имитационное моделирование}{25}{}%
+\contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{25}{}%
+\contentsline {subsection}{\numberline {3.2}Процесс моделирования}{27}{}%
 \contentsfinish 

@@ -1,0 +1,196 @@
+\subsection{RQ-система с входящим MMPP-потоком и двумерным выходящим}
+В случае RQ-системы с MMPP-потоком, к описанной ранее общей модели добавляется так же процесс $n_(t)$ - состояние входящего потока в момент времени $t$. Тогда, результат функционирования системы будет описываться пяти-мерным Марковским процессом
+\begin{equation*}
+	\{k(t),n(t),i(t),m_{1}(t),m_{2}(t)\}
+\end{equation*}
+
+\subsubsection{Уравнения Колмогорова}
+
+Исходя из этого описанного Марковского процесса, вероятности того, что прибор будет находится в одном из трех состояний $k$, на орбите будет $i$ заявок, $m_{1}$ заявок входящего потока и $m_{2}$ вызванных заявок будет обслужено, а управляющая MMPP-потоком цепь Маркова будет находится в состоянии $n$, будут иметь вид
+\begin{equation*}
+	\begin{split}
+		P\{k(t)=0,n(t)=n,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{0}(n,i,m_{1},m_{2},t)\\
+		P\{k(t)=1,n(t)=n,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{1}(n,i,m_{1},m_{2},t)\\
+		P\{k(t)=2,n(t)=n,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{2}(n,i,m_{1},m_{2},t)
+	\end{split}
+\end{equation*} 
+
+На основе данных вероятностей запишем систему уравнений Колмогорова с учетом текущего состояния входящего потока
+\begin{equation} \label{kolmogorov_equations_twodim_map}
+	\begin{split}
+		\frac{{\partial P_{0}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + i\sigma + \alpha)P_{0}(n,i,m_{1},m_{2},t) + P_{1}(n,i,m_{1}-1,m_{2},t)\mu_{1} +\\  &+ P_{2}(n,i,m_{1},m_{2}-1,t)\mu_{2} + \sum_{v=1}^{N} P_{0}(n,i,m_{1},m_{2},t)q_{vn},
+		\\
+		\frac{{\partial P_{1}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})P_{1}(n,i,m_{1},m_{2},t) + (i+1)\sigma P_{0}(n,i+1,m_{1},m_{2},t) +\\ &+ \lambda_{n}  P_{0}(i,m_{1},m_{2},t) + \sum_{v=1}^{N}P_{1}(n,i,m_{1},m_{2},t)q_{vn},
+		\\
+		\frac{{\partial P_{2}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})P_{2}(n,i,m_{1},m_{2},t) + \lambda_{n} P_{2}(n,i-1,m_{1},m_{2},t)  +\\ &+ \alpha  P_{0}(n,i,m_{1},m_{2},t) + + \sum_{v=1}^{N}P_{2}(n,i,m_{1},m_{2},t)q_{vn}.
+	\end{split}
+\end{equation}	
+
+
+Аналогично процедуре решения вышеописанных систем, введем частные характеристические функции, обозначив $j=\sqrt{-1}$
+\begin{equation*}
+	H_{k}(n,u,u_{1},u_{2},t) = \sum_{i=0}^{\infty}
+	\sum_{m_{1}=0}^{\infty}
+	\sum_{m_{2}=0}^{\infty}  
+	e^{jui}e^{ju_{1}m_{1}}e^{ju_{2}m_{2}} P_{k}(n,i,m_{1},m_{2},t).
+\end{equation*}
+Перепишем систему (\ref{kolmogorov_equations_twodim_map}) с учетом введенных частных характеристических функций
+\begin{equation} \label{characteristic_equations_twodim_map}
+	\begin{split}
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \alpha)H_{0}(n,u,u_{1},u_{2},t) + j\sigma
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \mu_{1} e^{ju_{1}}H_{1}(n,u,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}H_{2}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{0}(n,u,u_{1},u_{2},t)q_{vn} ,
+		\\
+		\frac{{\partial H_{1}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})H_{1}(n,u,u_{1},u_{2},t) - j\sigma e^{-ju}
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \lambda_{n} H_{0}(n,u,u_{1},u_{2},t) + \lambda_{n} e^{ju}H_{1}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{1}(n,u,u_{1},u_{2},t)q_{vn} ,
+		\\
+		\frac{{\partial H_{2}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})H_{2}(n,u,u_{1},u_{2},t)  + \lambda_{n} e^{ju}H_{2}(n,u,u_{1},u_{2},t) +\\  &+ \alpha H_{0}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{2}(n,u,u_{1},u_{2},t)q_{vn}.
+	\end{split}
+\end{equation}  
+Для дальнейшего анализа введем следующие обозначения
+\begin{equation*}	
+\boldsymbol{H}_{k}(n,u,u_{1},u_{2},t) = \{H_{k}(1,u,u_{1},u_{2},t),H_{k}(2,u,u_{1},u_{2},t),\dots,H_{k}(N,u,u_{1},u_{2},t)\},
+\end{equation*}
+а так же единичную матрицу $\boldsymbol{I}$ размера $N$.
+Тогда система \ref{characteristic_equations_twodim_map} примет вид
+\begin{equation} \label{characteristic_equations_twodim_map_matrix}
+	\begin{split}
+		\frac{{\partial \boldsymbol{H}_{0}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{H}_{0}(n,u,u_{1},u_{2},t) + \mu_{1} e^{ju_{1}}\boldsymbol{H}_{1}(n,u,u_{1},u_{2},t)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{H}_{2}(n,u,u_{1},u_{2},t) + j\sigma
+		\frac{{\partial \boldsymbol{H}_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}},
+		\\
+		\frac{{\partial \boldsymbol{H}_{1}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= \boldsymbol{\Lambda} \boldsymbol{H}_{0}(n,u,u_{1},u_{2},t) +  (\boldsymbol{Q}+(e^{ju}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{1})\boldsymbol{H}_{1}(n,u,u_{1},u_{2},t) -\\ &- j\sigma e^{-ju}
+		\frac{{\partial \boldsymbol{H}_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}},
+		\\
+		\frac{{\partial \boldsymbol{H}_{2}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= \alpha \boldsymbol{H}_{0}(n,u,u_{1},u_{2},t) + (\boldsymbol{Q}+(e^{ju}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{2})\boldsymbol{H}_{2}(n,u,u_{1},u_{2},t).
+	\end{split}
+\end{equation} 
+\subsubsection{Метод асимптотического анализа}
+Полученную систему дифференциальных уравнений (\ref{characteristic_equations_twodim_matrix}) будем решать методом асимптотического анализа в предельном условии большой задержки заявок на орбите ($\sigma \xrightarrow{} 0$).
+
+Обозначим $\epsilon = \sigma,   u= \epsilon w,   F_{k}(n,w,u_{1},u_{2},t,\epsilon) = H_{k}(u,u_{1},u_{2},t)$, тогда система запишется в виде
+\begin{equation} \label{asymptotic_equations_twodim_map}
+	\begin{split}
+		\frac{{\partial \boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon) + \mu_{1} e^{ju_{1}}\boldsymbol{F}_{1}(n,w,u_{1},u_{2},t,\epsilon)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{F}_{2}(n,w,u_{1},u_{2},t,\epsilon) + j\sigma
+	\frac{{\partial \boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon)}}{{\partial w}},
+	\\
+	\frac{{\partial \boldsymbol{F}_{1}(n,w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= \boldsymbol{\Lambda} \boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon) +  (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{1})\boldsymbol{F}_{1}(n,w,u_{1},u_{2},t,\epsilon) -\\ &- j\sigma e^{-j\epsilon w}
+	\frac{{\partial \boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon)}}{{\partial w}},
+	\\
+	\frac{{\partial \boldsymbol{F}_{2}(n,w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= \alpha \boldsymbol{F}_{0}(n,w,u_{1},u_{2},t,\epsilon) + (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{2})\boldsymbol{F}_{2}(n,w,u_{1},u_{2},t,\epsilon).
+	\end{split}
+\end{equation}  
+
+Решение системы (\ref{asymptotic_equations_twodim_map}) будет сформулировано в теореме.
+\begin{theorem}
+	Асимптотические приближение двумерной характеристической функции числа обслуженных заявок входящего потока и числа обслуженных вызванных заявок за некоторое время $t$ имеет вид
+	\begin{equation*} \label{theorem_twodim_map}
+		\begin{split}
+		  \lim_{\sigma \xrightarrow{} 0} M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\} &= 
+			 \lim_{\epsilon \xrightarrow{} 0} \{ \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) \}e = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\}ee,
+		\end{split}
+	\end{equation*}
+	где матрица $G(u_{1},u_{2})$ представима в виде
+	\begin{equation*}
+		\boldsymbol{G}(u_{1},u_{2})=\begin{bmatrix}
+			\boldsymbol{Q}-\boldsymbol{\Lambda}-(\alpha + \kappa)\boldsymbol{I} & \mu_{1}e^{ju_{1}}\boldsymbol{I} &  \mu_{2}e^{ju_{2}}\boldsymbol{I}\\
+			\boldsymbol{\Lambda}+\kappa\boldsymbol{I} & \boldsymbol{Q}-\mu_{1}\boldsymbol{I} & 0\\
+			\alpha\boldsymbol{I} & 	0 &	\boldsymbol{Q}-\mu_{2}\boldsymbol{I}
+		\end{bmatrix}^{T},
+	\end{equation*}
+	вектор-строка $\boldsymbol{R}=\{R_{0},R_{1},R_{2}\}$ - стационарное распределение вероятности случайного процесса $\{k(t),n(t)\}$, где, соответственно,  $\boldsymbol{R}_{k}$ имеет размерность $N$
+	\begin{equation*}
+		\boldsymbol{R}=\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\},
+	\end{equation*}
+	$\kappa$ - нормированное среднее число заявок на орбите
+	\begin{equation*}
+		\kappa = \frac{\lambda(\lambda \mu_{2} + \alpha \mu_{1})}{\mu_{2}(\mu_{1} - \lambda)},
+	\end{equation*}
+	 а $e$ и $ee$ - единичные вектор столбцы размерности $N$ и $N \cdot K$ соответственно.
+\end{theorem}
+\begin{proof}
+	Делая предельный переход $ \lim_{\epsilon \xrightarrow{} 0} F_{k}(w,u_{1},u_{2},t,\epsilon) = F_{k}(w,u_{1},u_{2},t)$  в полученной системе (\ref{asymptotic_equations_twodim_map}) , система уравнений будет записана в виде
+	\begin{equation} \label{eps_limit_twodim_map}
+		\begin{split}
+			\frac{{\partial F_{0}(w,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \alpha)F_{0}(w,u_{1},u_{2},t) + j
+			\frac{{\partial F_{0}(w,u_{1},u_{2},t)}}{{\partial w}} +\\  &+ \mu_{1} e^{ju_{1}}F_{1}(w,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}F_{2}(w,u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{1}(w,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{1})F_{1}(w,u_{1},u_{2},t) - j 
+			\frac{{\partial F_{0}(w,u_{1},u_{2},t)}}{{\partial w}} +\\  &+ \lambda F_{0}(w,u_{1},u_{2},t) + \lambda F_{1}(w,u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{2}(w,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{2})F_{2}(w,u_{1},u_{2},t)  + \lambda F_{2}(w,u_{1},u_{2},t) +\\  &+ \alpha F_{0}(w,u_{1},u_{2},t).
+		\end{split}
+	\end{equation}  
+	Решение системы (\ref{eps_limit_twodim_map}) будет получено в следующей форме
+	\begin{equation} \label{solution_twodim_map}
+		F_{k}(w,u_{1},u_{2},t) = \Phi(w)F_{k}(u_{1},u_{2},t).
+	\end{equation}  
+	$\Phi(w)$ - асимптотическое приближение характеристической функции числа заявок на орбите при условии большой задержки на орбите.
+	
+	Подставив (\ref{solution_twodim_map}) в систему (\ref{eps_limit_twodim_map}) и разделив обе части уравнений на $\Phi(w)$, получим
+	\begin{equation} \label{preresult_twodim_map}
+		\begin{split}
+			\frac{{\partial F_{0}(u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \alpha)F_{0}(u_{1},u_{2},t) + j
+			\frac{\Phi'(w) }{\Phi(w)}F_{0}(u_{1},u_{2},t) +\\  &+ \mu_{1} e^{ju_{1}}F_{1}(u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}F_{2}(u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{1}(u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{1})F_{1}(u_{1},u_{2},t) - j 
+			\frac{\Phi'(w) }{\Phi(w)}F_{0}(u_{1},u_{2},t) +\\  &+ \lambda F_{0}(u_{1},u_{2},t) + \lambda F_{1}(u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{2}(u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{2})F_{2}(u_{1},u_{2},t)  + \lambda F_{2}(u_{1},u_{2},t) +\\  &+ \alpha F_{0}(u_{1},u_{2},t).
+		\end{split}
+	\end{equation}  
+	Заметим, что $w$ содержится только в отношении $\frac{\Phi'(w) }{\Phi(w)}$, а остальные слагаемые и левые части уравнений не зависят от $w$. Это означает, что  $\Phi(w)$ имеет вид экспоненты. Учитывая, что  $\Phi(w)$ имеет смысл асимптотического приближения характеристической функции числа заявок на орбите, мы можем конкретизировать вид данной функции
+	\begin{equation*}
+		\frac{\Phi'(w) }{\Phi(w)} = \frac{e^{j\kappa w}j\kappa}{e^{j\kappa w}},
+	\end{equation*} 
+	где $\kappa$ - нормированное среднее число заявок на орбите, которое было получено в \cite{nazarov2017asymptotic} и имеет вид 
+	\begin{equation*}
+		\kappa = \frac{\lambda(\lambda \mu_{2} + \alpha \mu_{1})}{\mu_{2}(\mu_{1} - \lambda)}.
+	\end{equation*}
+	
+	Исходя из этого, система (\ref{preresult_twodim_map}) примет следующий вид
+	\begin{equation} \label{result_twodim_map}
+		\begin{split}
+			\frac{{\partial F_{0}(u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \alpha+ \kappa)F_{0}(u_{1},u_{2},t) + \\  &+ \mu_{1} e^{ju_{1}}F_{1}(u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}F_{2}(u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{1}(u_{1},u_{2},t)}}{{\partial t}} &= (\lambda + \kappa)F_{0}(u_{1},u_{2},t) -  
+			\mu_{1}F_{1}(u_{1},u_{2},t) +\\  &+  0F_{2}(u_{1},u_{2},t) ,
+			\\
+			\frac{{\partial F_{2}(u_{1},u_{2},t)}}{{\partial t}} &= \alpha F_{0}(u_{1},u_{2},t)   +  0F_{1}(u_{1},u_{2},t) -\\  &- \mu_{2}F_{2}(u_{1},u_{2},t).
+		\end{split}
+	\end{equation}  
+	Введем следующие обозначения
+	\begin{equation*}
+		\boldsymbol{F}(u_{1},u_{2},t) = \{F_{0}(u_{1},u_{2},t),F_{1}(u_{1},u_{2},t),F_{1}(u_{1},u_{2},t)\}
+	\end{equation*}  
+	\begin{equation*}
+		\boldsymbol{G}(u_{1},u_{2})=\begin{bmatrix}
+			-(\lambda + \alpha + \kappa) & \mu_{1}e^{ju_{1}} &  \mu_{2}e^{ju_{2}}\\
+			\kappa+\lambda & -\mu_{1} & 0\\
+			\alpha & 	0 &	-\mu_{2}
+		\end{bmatrix}^{T},
+	\end{equation*}
+	$\boldsymbol{G}(u_{1},u_{2})$ - транспонированная матрица коэффициентов системы (\ref{result_twodim_map}).
+	Тогда получим следующее матричное уравнение
+	\begin{equation*}
+		\frac{{\partial \boldsymbol{F}(u_{1},u_{2},t)}}{{\partial t}} =\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{G}(u_{1},u_{2}),
+	\end{equation*}
+	общее решение которого имеет вид
+	\begin{equation} \label{diff_twodim_map}
+		\boldsymbol{F}(u_{1},u_{2},t)=\boldsymbol{C}e^{\boldsymbol{G}(u_{1},u_{2})t}.
+	\end{equation}
+	Для того, чтобы получить единственное решение, которое соответствует поведению рассматриваемой системы, примем в рассмотрение начальное условие
+	\begin{equation} \label{cauchi_condition_twodim_map}
+		\boldsymbol{F}(u_{1},u_{2},0)=\boldsymbol{R},
+	\end{equation}
+	где вектор-строка $\boldsymbol{R}$ - стационарное распределение вероятности состояния прибора, то есть процесса $k(t)$, которое имеет форму \cite{nazarov2017asymptotic}
+	\begin{equation*}
+		\boldsymbol{R}=\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\}.
+	\end{equation*}
+	Описав начальное условие, мы можем перейти к решению задачи Коши (\ref{diff_twodim}, \ref{cauchi_condition_twodim_map}).
+	
+	Поскольку нас интересует распределение вероятностей количества заявок в выходных процессах, необходимо найти маргинальное распределение. Для этого суммируем компоненты вектор-строки $\boldsymbol{F}(u_{1},u_{2},t)$ по $k$ и умножаем результат на единичный вектор-столбец $\boldsymbol{E}$. Получим
+	\begin{equation}\label{approximation_twodim_map}
+		\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{E}.
+	\end{equation}
+	Эта формула позволяет найти асимптотическое приближение характеристической функции количества вызванных и входящих заявок, обслуженных системой к некоторому моменту времени $t$. Другими словами, формула (\ref{approximation_twodim_map}) является решением рассматриваемой системы. 
+\end{proof}
+\clearpage

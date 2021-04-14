@@ -16,5 +16,5 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{22}{}%
 \contentsline {section}{\numberline {3}Имитационное моделирование}{25}{}%
 \contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{25}{}%
-\contentsline {subsection}{\numberline {3.2}Процесс моделирования}{27}{}%
+\contentsline {subsection}{\numberline {3.2}Процесс моделирования}{32}{}%
 \contentsfinish 

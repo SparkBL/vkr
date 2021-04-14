@@ -18,11 +18,11 @@
 На основе данных вероятностей запишем систему уравнений Колмогорова с учетом текущего состояния входящего потока
 \begin{equation} \label{kolmogorov_equations_twodim_map}
 	\begin{split}
-		\frac{{\partial P_{0}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + i\sigma + \alpha)P_{0}(n,i,m_{1},m_{2},t) + P_{1}(n,i,m_{1}-1,m_{2},t)\mu_{1} +\\  &+ P_{2}(n,i,m_{1},m_{2}-1,t)\mu_{2} + \sum_{v=1}^{N} P_{0}(n,i,m_{1},m_{2},t)q_{vn},
+		\frac{{\partial P_{0}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + i\sigma + \alpha)P_{0}(n,i,m_{1},m_{2},t) + P_{1}(n,i,m_{1}-1,m_{2},t)\mu_{1} +\\  &+ P_{2}(n,i,m_{1},m_{2}-1,t)\mu_{2} + \sum_{v=1}^{N} P_{0}(v,i,m_{1},m_{2},t)q_{vn},
 		\\
-		\frac{{\partial P_{1}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})P_{1}(n,i,m_{1},m_{2},t) + (i+1)\sigma P_{0}(n,i+1,m_{1},m_{2},t) +\\ &+ \lambda_{n}  P_{0}(i,m_{1},m_{2},t) + \sum_{v=1}^{N}P_{1}(n,i,m_{1},m_{2},t)q_{vn},
+		\frac{{\partial P_{1}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})P_{1}(n,i,m_{1},m_{2},t) + (i+1)\sigma P_{0}(n,i+1,m_{1},m_{2},t) +\\ &+ \lambda_{n}  P_{0}(i,m_{1},m_{2},t) + \sum_{v=1}^{N}P_{1}(v,i,m_{1},m_{2},t)q_{vn},
 		\\
-		\frac{{\partial P_{2}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})P_{2}(n,i,m_{1},m_{2},t) + \lambda_{n} P_{2}(n,i-1,m_{1},m_{2},t)  +\\ &+ \alpha  P_{0}(n,i,m_{1},m_{2},t) + + \sum_{v=1}^{N}P_{2}(n,i,m_{1},m_{2},t)q_{vn}.
+		\frac{{\partial P_{2}(n,i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})P_{2}(n,i,m_{1},m_{2},t) + \lambda_{n} P_{2}(n,i-1,m_{1},m_{2},t)  +\\ &+ \alpha  P_{0}(n,i,m_{1},m_{2},t) +  \sum_{v=1}^{N}P_{2}(v,i,m_{1},m_{2},t)q_{vn}.
 	\end{split}
 \end{equation}	
 
@@ -38,12 +38,12 @@
 \begin{equation} \label{characteristic_equations_twodim_map}
 	\begin{split}
 		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \alpha)H_{0}(n,u,u_{1},u_{2},t) + j\sigma
-		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \mu_{1} e^{ju_{1}}H_{1}(n,u,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}H_{2}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{0}(n,u,u_{1},u_{2},t)q_{vn} ,
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \mu_{1} e^{ju_{1}}H_{1}(n,u,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}H_{2}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{0}(v,u,u_{1},u_{2},t)q_{vn} ,
 		\\
 		\frac{{\partial H_{1}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})H_{1}(n,u,u_{1},u_{2},t) - j\sigma e^{-ju}
-		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \lambda_{n} H_{0}(n,u,u_{1},u_{2},t) + \lambda_{n} e^{ju}H_{1}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{1}(n,u,u_{1},u_{2},t)q_{vn} ,
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \lambda_{n} H_{0}(n,u,u_{1},u_{2},t) + \lambda_{n} e^{ju}H_{1}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{1}(v,u,u_{1},u_{2},t)q_{vn} ,
 		\\
-		\frac{{\partial H_{2}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})H_{2}(n,u,u_{1},u_{2},t)  + \lambda_{n} e^{ju}H_{2}(n,u,u_{1},u_{2},t) +\\  &+ \alpha H_{0}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{2}(n,u,u_{1},u_{2},t)q_{vn}.
+		\frac{{\partial H_{2}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})H_{2}(n,u,u_{1},u_{2},t)  + \lambda_{n} e^{ju}H_{2}(n,u,u_{1},u_{2},t) +\\  &+ \alpha H_{0}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{2}(v,u,u_{1},u_{2},t)q_{vn}.
 	\end{split}
 \end{equation}  
 Для дальнейшего анализа введем следующие обозначения

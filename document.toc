@@ -17,4 +17,5 @@
 \contentsline {section}{\numberline {3}Имитационное моделирование}{25}{}%
 \contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{25}{}%
 \contentsline {subsection}{\numberline {3.2}Процесс моделирования}{31}{}%
+\contentsline {subsection}{\numberline {3.3}Интерфейс программы}{37}{}%
 \contentsfinish 

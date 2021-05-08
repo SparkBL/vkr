@@ -17,5 +17,9 @@
 \contentsline {section}{\numberline {3}Имитационное моделирование}{25}{}%
 \contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{25}{}%
 \contentsline {subsection}{\numberline {3.2}Процесс моделирования}{31}{}%
-\contentsline {subsection}{\numberline {3.3}Интерфейс программы}{37}{}%
+\contentsline {subsection}{\numberline {3.3}Элементы системы массового обслуживания}{33}{}%
+\contentsline {subsection}{\numberline {3.4}Интерфейс и работа программы}{37}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Моделирование в реальном времени}{38}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{40}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{41}{}%
 \contentsfinish 

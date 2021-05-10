@@ -17,9 +17,14 @@
 \contentsline {section}{\numberline {3}Имитационное моделирование}{25}{}%
 \contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{25}{}%
 \contentsline {subsection}{\numberline {3.2}Процесс моделирования}{31}{}%
-\contentsline {subsection}{\numberline {3.3}Элементы системы массового обслуживания}{33}{}%
+\contentsline {subsection}{\numberline {3.3}Функционирование элементов системы массового обслуживания}{33}{}%
 \contentsline {subsection}{\numberline {3.4}Интерфейс и работа программы}{37}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}Моделирование в реальном времени}{38}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{40}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{41}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Экспорт результатов моделирования}{44}{}%
+\contentsline {subsection}{\numberline {3.5}Особенности реализации}{46}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Генерация псевдослучайных чисел}{46}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Отображение статуса при ускоренном моделировании}{47}{}%
+\contentsline {section}{\numberline {4}Численные эксперименты}{49}{}%
 \contentsfinish 

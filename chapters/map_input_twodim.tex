@@ -296,7 +296,7 @@
 	\end{equation*}
 	общее решение которого имеет вид
 	\begin{equation} \label{diff_twodim_map}
-		\boldsymbol{F}(u_{1},u_{2},t)=\boldsymbol{C}e^{\boldsymbol{G}(u_{1},u_{2})t}.
+		\boldsymbol{FF}(u_{1},u_{2},t)=\boldsymbol{C}e^{\boldsymbol{G}(u_{1},u_{2})t}.
 	\end{equation}
 	Для того, чтобы получить единственное решение, которое соответствует поведению рассматриваемой системы, примем в рассмотрение начальное условие
 	\begin{equation} \label{cauchi_condition_twodim_map}
@@ -308,9 +308,9 @@
 	\begin{equation*} 
 		\boldsymbol{FF}(u_{1},u_{2},t)=\boldsymbol{R}e^{G(u_{1},u_{2})},
 	\end{equation*}
-	Поскольку нас интересует распределение вероятностей количества заявок в выходных процессах, необходимо найти маргинальное распределение. Для этого суммируем компоненты вектор-строки $\boldsymbol{F}(u_{1},u_{2},t)$ по $k$ и умножаем результат на единичный вектор-столбец $\boldsymbol{E}$. Получим
+	Поскольку нас интересует распределение вероятностей количества заявок в выходных процессах, необходимо найти маргинальное распределение. Для этого суммируем компоненты вектор-строки $\boldsymbol{FF}(u_{1},u_{2},t)$ по $k$ и умножаем результат на единичный вектор-столбец $\boldsymbol{e}$. Получим
 	\begin{equation}\label{approximation_twodim_map}
-		\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{E}.
+		\boldsymbol{FF}(u_{1},u_{2},t)\boldsymbol{e}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{ee}.
 	\end{equation}
 	Эта формула позволяет найти асимптотическое приближение характеристической функции количества вызванных и входящих заявок, обслуженных системой к некоторому моменту времени $t$. Другими словами, формула (\ref{approximation_twodim_map}) является решением рассматриваемой системы. 
 \end{proof}

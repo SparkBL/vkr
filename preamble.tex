@@ -60,7 +60,7 @@ title=\lstname
 \captionsetup[figure]{labelformat=gostfigure}
 \captionsetup[table]{labelformat=gosttable}
 \renewcommand{\thesubfigure}{\asbuk{subfigure}}
-
+\setlength{\parindent}{1.25cm}
 
 \AtBeginDocument{%
 	\let\mtcontentsname\contentsname
@@ -75,10 +75,10 @@ title=\lstname
 	}%
 	\renewcommand{\contentsname}{ОГЛАВЛЕНИЕ}
 }
-
+%\dottedcontents{section}[1.5em]{\bfseries}{1.3em}{0.83em}
 
 
 \makeatletter
-%renewcommand\@dotsep{140}   % default value 4.5
+%\renewcommand\@dotsep{1}   % default value 4.5
 \makeatother
 

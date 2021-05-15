@@ -1,20 +1,20 @@
 \babel@toc {russian}{}
 \contentsline {section}{Введение}{3}{}%
 \contentsline {section}{\numberline {1}Исследование систем с простейшим входящим потоком}{5}{}%
-\contentsline {subsection}{\numberline {1.1}RQ-система с суммарным выходящим потоком}{5}{}%
+\contentsline {subsection}{\numberline {1.1}RQ--система с суммарным выходящим потоком}{5}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{6}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{8}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятности}{11}{}%
-\contentsline {subsection}{\numberline {1.2}RQ-система с двумерным выходящим потоком}{13}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{9}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятности}{12}{}%
+\contentsline {subsection}{\numberline {1.2}RQ--система с двумерным выходящим потоком}{13}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Уравнения Колмогорова}{13}{}%
 \contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{14}{}%
 \contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятности}{17}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{18}{}%
-\contentsline {section}{\numberline {2}Исследование систем с MMPP-потоком}{19}{}%
-\contentsline {subsection}{\numberline {2.1}RQ-система с входящим MMPP-потоком и двумерным выходящим}{19}{}%
+\contentsline {section}{\numberline {2}Исследование систем с MMPP--потоком}{19}{}%
+\contentsline {subsection}{\numberline {2.1}RQ--система с входящим MMPP--потоком и двумерным выходящим}{19}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Уравнения Колмогорова}{19}{}%
 \contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{21}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Переход к явному распределению вероятности}{25}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Переход к явному распределению вероятности}{26}{}%
 \contentsline {section}{\numberline {3}Имитационное моделирование}{27}{}%
 \contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{27}{}%
 \contentsline {subsection}{\numberline {3.2}Процесс моделирования}{33}{}%

@@ -1,12 +1,12 @@
-\subsection{RQ-система с входящим MMPP-потоком и двумерным выходящим} 
-В случае RQ-системы с MMPP-потоком, к описанной ранее общей модели добавляется так же процесс $n_(t)$ - состояние входящего потока в момент времени $t$. Тогда, результат функционирования системы будет описываться пяти-мерным Марковским процессом
+\subsection{RQ--система с входящим MMPP--потоком и двумерным выходящим} 
+В случае RQ--системы с MMPP--потоком, к описанной ранее общей модели добавляется так же процесс $n_(t)$ --- состояние входящего потока в момент времени $t$. Тогда, результат функционирования системы будет описываться пяти--мерным Марковским процессом
 \begin{equation*}
 	\{k(t),n(t),i(t),m_{1}(t),m_{2}(t)\}
 \end{equation*}
 
 \subsubsection{Уравнения Колмогорова}
 
-Исходя из этого описанного Марковского процесса, вероятности того, что прибор будет находится в одном из трех состояний $k$, на орбите будет $i$ заявок, $m_{1}$ заявок входящего потока и $m_{2}$ вызванных заявок будет обслужено, а управляющая MMPP-потоком цепь Маркова будет находится в состоянии $n$, будут иметь вид
+Исходя из этого описанного Марковского процесса, вероятности того, что прибор будет находится в одном из трех состояний $k$, на орбите будет $i$ заявок, $m_{1}$ заявок входящего потока и $m_{2}$ вызванных заявок будет обслужено, а управляющая MMPP--потоком цепь Маркова будет находится в состоянии $n$, будут иметь вид
 \begin{equation*}
 	\begin{split}
 		P\{k(t)=0,n(t)=n,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{0}(n,i,m_{1},m_{2},t)\\
@@ -38,10 +38,10 @@
 \begin{equation} \label{characteristic_equations_twodim_map}
 	\begin{split}
 		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \alpha)H_{0}(n,u,u_{1},u_{2},t) + j\sigma
-		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \mu_{1} e^{ju_{1}}H_{1}(n,u,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}H_{2}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{0}(v,u,u_{1},u_{2},t)q_{vn} ,
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \mu_{1} e^{ju_{1}}H_{1}(n,u,u_{1},u_{2},t) + \mu_{2}e^{ju_{2}}H_{2}(n,u,u_{1},u_{2},t) +\\  &+ \sum_{v=1}^{N}H_{0}(v,u,u_{1},u_{2},t)q_{vn} ,
 		\\
 		\frac{{\partial H_{1}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{1})H_{1}(n,u,u_{1},u_{2},t) - j\sigma e^{-ju}
-		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \lambda_{n} H_{0}(n,u,u_{1},u_{2},t) + \lambda_{n} e^{ju}H_{1}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{1}(v,u,u_{1},u_{2},t)q_{vn} ,
+		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial u}} +\\  &+ \lambda_{n} H_{0}(n,u,u_{1},u_{2},t) + \lambda_{n} e^{ju}H_{1}(n,u,u_{1},u_{2},t) +\\  &+ \sum_{v=1}^{N}H_{1}(v,u,u_{1},u_{2},t)q_{vn} ,
 		\\
 		\frac{{\partial H_{2}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \mu_{2})H_{2}(n,u,u_{1},u_{2},t)  + \lambda_{n} e^{ju}H_{2}(n,u,u_{1},u_{2},t) +\\  &+ \alpha H_{0}(n,u,u_{1},u_{2},t) + \sum_{v=1}^{N}H_{2}(v,u,u_{1},u_{2},t)q_{vn}.
 	\end{split}
@@ -50,7 +50,7 @@
 \begin{equation*}	
 \boldsymbol{H}_{k}(u,u_{1},u_{2},t) = \{H_{k}(1,u,u_{1},u_{2},t),H_{k}(2,u,u_{1},u_{2},t),\dots,H_{k}(N,u,u_{1},u_{2},t)\},
 \end{equation*}
-а так же единичную матрицу $\boldsymbol{I}$ размера $N$.
+а так же диагональную единичную матрицу $\boldsymbol{I}$ размера $N$.
 Тогда система \ref{characteristic_equations_twodim_map} примет вид
 \begin{equation} \label{characteristic_equations_twodim_map_matrix}
 	\begin{split}
@@ -82,11 +82,11 @@
 Решение системы (\ref{asymptotic_equations_twodim_map}) будет сформулировано в последующих теоремах.
 
 \begin{theorem} \label{R_theorem}
-	Пусть $i(t)$ - количество заявок на орбите в системе с входящим MMPP-потоком и вызываемыми заявками, тогда в стационарном режиме мы получим
+	Пусть $i(t)$ --- количество заявок на орбите в системе с входящим MMPP--потоком и вызываемыми заявками, тогда в стационарном режиме мы получим
 	\begin{equation*}
 		\lim_{\epsilon \xrightarrow{} 0}\{\sum_{k=0}^{2}F_{k}(w,0,0,t,\epsilon)\} = \lim_{\sigma \xrightarrow{} 0} M e^{jw\sigma i(t)} = e^{jw\kappa},
 	\end{equation*}
-где $\kappa$ - положительный корень уравнения
+где $\kappa$ --- положительный корень уравнения
 \begin{equation*}
 	\kappa \boldsymbol{R}_{0}(\kappa)\boldsymbol{e} = [\boldsymbol{R}_{1}(\kappa) + \boldsymbol{R}_{2}(\kappa)]\boldsymbol{\Lambda}\boldsymbol{e}.
 \end{equation*}
@@ -100,7 +100,7 @@
 	\end{aligned}
 \right.
 \end{equation*}
-Вектор-строка $\boldsymbol{r}$ - стационарное распределение вероятности процесса управляющей цепи MMPP-потока $n(t)$, которое задается как единственное решение системы $\boldsymbol{r}\boldsymbol{Q} =0, \boldsymbol{r}\boldsymbol{e} = 1$.
+Вектор--строка $\boldsymbol{r}$ --- стационарное распределение вероятности процесса управляющей цепи MMPP--потока $n(t)$, которое задается как единственное решение системы $\boldsymbol{r}\boldsymbol{Q} =0, \boldsymbol{r}\boldsymbol{e} = 1$.
 \end{theorem}
 \begin{proof}
 	В системе уравнений (\ref{asymptotic_equations_twodim_map}) мы обозначили $u_{1} = u_{2} = 0$, тем самым убирая процессы $m_{1}(t)$ и $m_{2}(t)$ из рассмотрения. Тогда, мы можем получить систему уравнений уже для трехмерного процесса $\{n(t),k(t),i(t)\}$, рассматривая его в стационарном режиме, что позволяет нам избавиться от производных по времени $t$.
@@ -138,7 +138,7 @@
 \begin{equation} \label{R_solution}
 	\boldsymbol{F}_{k} = \Phi(w)\boldsymbol{R}_{k},
 \end{equation}
-где $\boldsymbol{R}_{n}$ - стационарное распределение вероятности прибора, а $\Phi(w)$ - асимптотическое приближение характеристической функции числа заявок на орбите при условии большой задержки на орбите. Подставляя (\ref{R_solution}) в (\ref{asymptotic_equations_twodim_map_no_limit}) и деля на $\Phi(w)$, получим
+где $\boldsymbol{R}_{n}$ --- стационарное распределение вероятности прибора, а $\Phi(w)$ --- асимптотическое приближение характеристической функции числа заявок на орбите при условии большой задержки на орбите. Подставляя (\ref{R_solution}) в (\ref{asymptotic_equations_twodim_map_no_limit}) и деля на $\Phi(w)$, получим
 \begin{equation}
 	\label{asymptotic_equations_twodim_map_R}
 	\begin{split}
@@ -151,7 +151,7 @@
 		&\alpha \boldsymbol{R}_{0} + (\boldsymbol{Q} - \boldsymbol{I}\mu_{2})\boldsymbol{R}_{2}  = 0.
 	\end{split}
 \end{equation}
-Вид функции $\Phi(w)$ уже ранее был нами конкретизирован в (\ref{Phi_concrete}) так, что $j\\frac{\Phi(w)'}{\Phi(w)} = -\kappa$. Подставим данное выражение в систему \ref{asymptotic_equations_twodim_map_R}, получим
+Вид функции $\Phi(w)$ уже ранее был нами конкретизирован в (\ref{Phi_concrete}) так, что $j\frac{\Phi(w)'}{\Phi(w)} = -\kappa$. Подставим данное выражение в систему \ref{asymptotic_equations_twodim_map_R}, получим
 \begin{equation}
 	\label{asymptotic_equations_twodim_map_R_final}
 	\begin{split}
@@ -207,14 +207,14 @@
 	\right.
 \end{equation*}
 \end{proof}
-Теорема \ref{R_theorem} является вспомогательной, так как основное решение рассматриваемой системы изложено в теореме \ref{mmpp_theorem} и нуждается в полученных на данном этапе результатах, а именно - среднее число заявок на орбите при условии их большой задержки $\kappa$ и стационарное распределение вероятностей состояния прибора $\boldsymbol{R}_{k}$.
+Теорема \ref{R_theorem} является вспомогательной, так как основное решение рассматриваемой системы изложено в теореме \ref{mmpp_theorem} и нуждается в полученных на данном этапе результатах, а именно --- среднее число заявок на орбите при условии их большой задержки $\kappa$ и стационарное распределение вероятностей состояния прибора $\boldsymbol{R}_{k}$.
 
 \begin{theorem} \label{mmpp_theorem}
 	Асимптотические приближение двумерной характеристической функции числа обслуженных заявок входящего MMPP-потока и числа обслуженных вызванных заявок за некоторое время $t$ имеет вид
 	\begin{equation*} \label{theorem_twodim_map}
 		\begin{split}
 		  \lim_{\sigma \xrightarrow{} 0} M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\} &= 
-			 \lim_{\epsilon \xrightarrow{} 0} \{ \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) \}\boldsymbol{e} = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\}\boldsymbol{ee},
+			 \lim_{\epsilon \xrightarrow{} 0} \{ \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) \}\boldsymbol{e} =\\  &= \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\}\boldsymbol{ee},
 		\end{split}
 	\end{equation*}
 	где матрица $\boldsymbol{G}(u_{1},u_{2})$ представима в виде
@@ -225,7 +225,7 @@
 			\alpha\boldsymbol{I} & 	0 &	\boldsymbol{Q}-\mu_{2}\boldsymbol{I}
 		\end{bmatrix}^{T},
 	\end{equation*}
-	вектор-строка $\boldsymbol{R}=\{\boldsymbol{R}_{0},\boldsymbol{R}_{1},\boldsymbol{R}_{2}\}$ - стационарное распределение вероятности случайного процесса $\{k(t),n(t)\}$, где, соответственно,  $\boldsymbol{R}_{k}$ имеет размерность $N$, $\kappa$ - нормированное среднее число заявок на орбите, а $e$ и $ee$ - единичные вектор столбцы размерности $N$ и $N \cdot K$ соответственно.
+	вектор--строка $\boldsymbol{R}=\{\boldsymbol{R}_{0},\boldsymbol{R}_{1},\boldsymbol{R}_{2}\}$ -- двумерное стационарное распределение вероятности случайного процесса $\{k(t),n(t)\}$, где, соответственно,  $\boldsymbol{R}_{k}$ имеет размерность $N$, $\kappa$ --- нормированное среднее число заявок на орбите, а $e$ и $ee$ --- единичные вектор--столбцы размерности $N$ и $N \cdot K$ соответственно.
 \end{theorem}
 \begin{proof}
 	Делая предельный переход $ \lim_{\epsilon \xrightarrow{} 0}\boldsymbol{F}_{k}(w,u_{1},u_{2},t,\epsilon) = \boldsymbol{F}_{k}(w,u_{1},u_{2},t)$  в полученной системе (\ref{asymptotic_equations_twodim_map}) , система уравнений будет записана в виде
@@ -277,7 +277,7 @@
 			\alpha\boldsymbol{I} & 	0 &	\boldsymbol{Q}-\mu_{2}\boldsymbol{I}
 		\end{bmatrix}^{T},
 	\end{equation*}
-	$\boldsymbol{G}(u_{1},u_{2})$ - транспонированная матрица коэффициентов системы (\ref{result_twodim_map}).
+	$\boldsymbol{G}(u_{1},u_{2})$ --- транспонированная матрица коэффициентов системы (\ref{result_twodim_map}).
 	Тогда получим следующее матричное уравнение
 	\begin{equation*}
 		\frac{{\partial \boldsymbol{FF}(u_{1},u_{2},t)}}{{\partial t}} =\boldsymbol{FF}(u_{1},u_{2},t)\boldsymbol{G}(u_{1},u_{2}),
@@ -290,12 +290,12 @@
 	\begin{equation} \label{cauchi_condition_twodim_map}
 		\boldsymbol{FF}(u_{1},u_{2},0)=\boldsymbol{R},
 	\end{equation}
-	где вектор-строка $\boldsymbol{R}$ - стационарное распределение вероятности состояния прибора, то есть процесса $k(t)$, полученное в теореме \ref{R_theorem}.
+	где вектор--строка $\boldsymbol{R}$ --- стационарное распределение вероятности состояния прибора, то есть процесса $k(t)$, полученное в теореме \ref{R_theorem}.
 	Описав начальное условие, мы можем перейти к решению задачи Коши (\ref{diff_twodim_map}, \ref{cauchi_condition_twodim_map})
 	\begin{equation*} 
 		\boldsymbol{FF}(u_{1},u_{2},t)=\boldsymbol{R}e^{G(u_{1},u_{2})},
 	\end{equation*}
-	Поскольку нас интересует распределение вероятностей количества заявок в выходных процессах, необходимо найти маргинальное распределение. Для этого умножаем компоненты вектор-строки $\boldsymbol{FF}(u_{1},u_{2},t)$ на единичный вектор-столбец $\boldsymbol{e}$ размера $N$ и правую часть уравнения на единичный вектор столбец $\boldsymbol{ee}$ размерности $K \cdot N$. Получим
+	Поскольку нас интересует распределение вероятностей количества заявок в выходных процессах, необходимо найти маргинальное распределение. Для этого умножаем компоненты вектор--строки $\boldsymbol{FF}(u_{1},u_{2},t)$ на единичный вектор--столбец $\boldsymbol{e}$ размера $N$ и правую часть уравнения на единичный вектор столбец $\boldsymbol{ee}$ размерности $K \cdot N$. Получим
 	\begin{equation}\label{approximation_twodim_map}
 		\boldsymbol{FF}(u_{1},u_{2},t)\boldsymbol{e}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{ee}.
 	\end{equation}

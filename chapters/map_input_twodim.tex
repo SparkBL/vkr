@@ -6,7 +6,7 @@
 
 \subsubsection{Уравнения Колмогорова}
 
-Исходя из этого описанного Марковского процесса, вероятности того, что прибор будет находится в одном из трех состояний $k$, на орбите будет $i$ заявок, $m_{1}$ заявок входящего потока и $m_{2}$ вызванных заявок будет обслужено, а управляющая MMPP--потоком цепь Маркова будет находится в состоянии $n$, будут иметь вид
+Исходя из описанного Марковского процесса, вероятности того, что прибор будет находится в одном из трех состояний $k$, на орбите будет $i$ заявок, $m_{1}$ заявок входящего потока и $m_{2}$ вызванных заявок будет обслужено, а управляющая MMPP--потоком цепь Маркова будет находится в состоянии $n$, будут иметь вид
 \begin{equation*}
 	\begin{split}
 		P\{k(t)=0,n(t)=n,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{0}(n,i,m_{1},m_{2},t)\\
@@ -26,15 +26,14 @@
 	\end{split}
 \end{equation}	
 
-
-Аналогично процедуре решения вышеописанных систем, введем частные характеристические функции, обозначив $j=\sqrt{-1}$
+Введем частные характеристические функции, обозначив $j=\sqrt{-1}$
 \begin{equation*}
 	H_{k}(n,u,u_{1},u_{2},t) = \sum_{i=0}^{\infty}
 	\sum_{m_{1}=0}^{\infty}
 	\sum_{m_{2}=0}^{\infty}  
 	e^{jui}e^{ju_{1}m_{1}}e^{ju_{2}m_{2}} P_{k}(n,i,m_{1},m_{2},t).
 \end{equation*}
-Перепишем систему (\ref{kolmogorov_equations_twodim_map}) с учетом введенных частных характеристических функций
+Перепишем систему \eqref{kolmogorov_equations_twodim_map} с учетом введенных частных характеристических функций
 \begin{equation} \label{characteristic_equations_twodim_map}
 	\begin{split}
 		\frac{{\partial H_{0}(n,u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda_{n} + \alpha)H_{0}(n,u,u_{1},u_{2},t) + j\sigma
@@ -51,7 +50,7 @@
 \boldsymbol{H}_{k}(u,u_{1},u_{2},t) = \{H_{k}(1,u,u_{1},u_{2},t),H_{k}(2,u,u_{1},u_{2},t),\dots,H_{k}(N,u,u_{1},u_{2},t)\},
 \end{equation*}
 а так же диагональную единичную матрицу $\boldsymbol{I}$ размера $N$.
-Тогда система \ref{characteristic_equations_twodim_map} примет вид
+Тогда система \eqref{characteristic_equations_twodim_map} примет вид
 \begin{equation} \label{characteristic_equations_twodim_map_matrix}
 	\begin{split}
 		\frac{{\partial \boldsymbol{H}_{0}(u,u_{1},u_{2},t)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{H}_{0}(u,u_{1},u_{2},t) + \mu_{1} e^{ju_{1}}\boldsymbol{H}_{1}(n,u,u_{1},u_{2},t)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{H}_{2}(u,u_{1},u_{2},t) + j\sigma
@@ -64,7 +63,7 @@
 	\end{split}
 \end{equation} 
 \subsubsection{Метод асимптотического анализа}
-Полученную систему дифференциальных уравнений (\ref{characteristic_equations_twodim_map_matrix}) будем решать методом асимптотического анализа в предельном условии большой задержки заявок на орбите ($\sigma \xrightarrow{} 0$).
+Полученную систему дифференциальных уравнений \eqref{characteristic_equations_twodim_map_matrix} будем решать методом асимптотического анализа в предельном условии большой задержки заявок на орбите ($\sigma \xrightarrow{} 0$).
 
 Обозначим $\epsilon = \sigma,   u= \epsilon w,   \boldsymbol{F}_{k}(w,u_{1},u_{2},t,\epsilon) = \boldsymbol{H}_{k}(u,u_{1},u_{2},t)$, тогда система запишется в виде
 \begin{equation} \label{asymptotic_equations_twodim_map}
@@ -72,14 +71,14 @@
 		\frac{{\partial \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon) + \mu_{1} e^{ju_{1}}\boldsymbol{F}_{1}(w,u_{1},u_{2},t,\epsilon)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{F}_{2}(w,u_{1},u_{2},t,\epsilon) + j
 	\frac{{\partial \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon)}}{{\partial w}},
 	\\
-	\frac{{\partial \boldsymbol{F}_{1}(w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= \boldsymbol{\Lambda} \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon) +  (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{1})\boldsymbol{F}_{1}(w,u_{1},u_{2},t,\epsilon) -\\ &- j e^{-j\epsilon w}
+	\frac{{\partial \boldsymbol{F}_{1}(w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= \boldsymbol{\Lambda} \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon) +  (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{1})\cdot \\ &\cdot \boldsymbol{F}_{1}(w,u_{1},u_{2},t,\epsilon) - j e^{-j\epsilon w}
 	\frac{{\partial \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon)}}{{\partial w}},
 	\\
 	\frac{{\partial \boldsymbol{F}_{2}(w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= \alpha \boldsymbol{F}_{0}(w,u_{1},u_{2},t,\epsilon) + (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{2})\boldsymbol{F}_{2}(w,u_{1},u_{2},t,\epsilon).
 	\end{split}
 \end{equation}  
 
-Решение системы (\ref{asymptotic_equations_twodim_map}) будет сформулировано в последующих теоремах.
+Решение системы \eqref{asymptotic_equations_twodim_map} будет сформулировано в последующих теоремах.
 
 \begin{theorem} \label{R_theorem}
 	Пусть $i(t)$ --- количество заявок на орбите в системе с входящим MMPP--потоком и вызываемыми заявками, тогда в стационарном режиме мы получим
@@ -103,7 +102,7 @@
 Вектор--строка $\boldsymbol{r}$ --- стационарное распределение вероятности процесса управляющей цепи MMPP--потока $n(t)$, которое задается как единственное решение системы $\boldsymbol{r}\boldsymbol{Q} =0, \boldsymbol{r}\boldsymbol{e} = 1$.
 \end{theorem}
 \begin{proof}
-	В системе уравнений (\ref{asymptotic_equations_twodim_map}) мы обозначили $u_{1} = u_{2} = 0$, тем самым убирая процессы $m_{1}(t)$ и $m_{2}(t)$ из рассмотрения. Тогда, мы можем получить систему уравнений уже для трехмерного процесса $\{n(t),k(t),i(t)\}$, рассматривая его в стационарном режиме, что позволяет нам избавиться от производных по времени $t$.
+	В системе уравнений \eqref{asymptotic_equations_twodim_map} мы обозначили $u_{1} = u_{2} = 0$, тем самым убирая процессы $m_{1}(t)$ и $m_{2}(t)$ из рассмотрения. Тогда, мы можем получить систему уравнений уже для трехмерного процесса $\{n(t),k(t),i(t)\}$, рассматривая его в стационарном режиме, что позволяет нам избавиться от производных по времени $t$.
 	Обозначим 
 	\begin{equation*}
 		\boldsymbol{F}_{k}(w,\epsilon) = \lim_{t \xrightarrow{} \infty} \boldsymbol{F}_{k}(w,0,0,t,\epsilon),
@@ -121,7 +120,7 @@
 		&\alpha \boldsymbol{F}_{0}(w,\epsilon) + (\boldsymbol{Q}+(e^{j\epsilon w}-1)\boldsymbol{\Lambda} - \boldsymbol{I}\mu_{2})\boldsymbol{F}_{2}(w,\epsilon)  = 0.
 	\end{split}
 \end{equation}  
-Делая в системе (\ref{asymptotic_equations_twodim_map_no_time})предельный переход $\epsilon \xrightarrow{} 0$, получим
+Делая в системе \eqref{asymptotic_equations_twodim_map_no_time} предельный переход $\epsilon \xrightarrow{} 0$, получим
 \begin{equation}
 	\label{asymptotic_equations_twodim_map_no_limit}
 	\begin{split}
@@ -138,7 +137,7 @@
 \begin{equation} \label{R_solution}
 	\boldsymbol{F}_{k} = \Phi(w)\boldsymbol{R}_{k},
 \end{equation}
-где $\boldsymbol{R}_{n}$ --- стационарное распределение вероятности прибора, а $\Phi(w)$ --- асимптотическое приближение характеристической функции числа заявок на орбите при условии большой задержки на орбите. Подставляя (\ref{R_solution}) в (\ref{asymptotic_equations_twodim_map_no_limit}) и деля на $\Phi(w)$, получим
+где $\boldsymbol{R}_{n}$ --- стационарное распределение вероятности прибора, а $\Phi(w)$ --- асимптотическое приближение характеристической функции числа заявок на орбите при условии большой задержки на орбите. Подставляя \eqref{R_solution} в \eqref{asymptotic_equations_twodim_map_no_limit} и деля на $\Phi(w)$, получим
 \begin{equation}
 	\label{asymptotic_equations_twodim_map_R}
 	\begin{split}
@@ -151,7 +150,7 @@
 		&\alpha \boldsymbol{R}_{0} + (\boldsymbol{Q} - \boldsymbol{I}\mu_{2})\boldsymbol{R}_{2}  = 0.
 	\end{split}
 \end{equation}
-Вид функции $\Phi(w)$ уже ранее был нами конкретизирован в (\ref{Phi_concrete}) так, что $j\frac{\Phi(w)'}{\Phi(w)} = -\kappa$. Подставим данное выражение в систему \ref{asymptotic_equations_twodim_map_R}, получим
+Вид функции $\Phi(w)$ уже ранее был нами конкретизирован в \eqref{Phi_concrete} так, что $j\frac{\Phi(w)'}{\Phi(w)} = -\kappa$. Подставим данное выражение в систему \eqref{asymptotic_equations_twodim_map_R}, получим
 \begin{equation}
 	\label{asymptotic_equations_twodim_map_R_final}
 	\begin{split}
@@ -167,7 +166,7 @@
 \begin{equation*}
 	\boldsymbol{R}_{0} + \boldsymbol{R}_{1} + \boldsymbol{R}_{2} = \boldsymbol{r}.
 \end{equation*}
-Основываясь на этом уравнении, а также на двух последних уравнения системы (\ref{asymptotic_equations_twodim_map_R_final}) запишем систему
+Основываясь на этом уравнении, а также на двух последних уравнения системы \eqref{asymptotic_equations_twodim_map_R_final} запишем систему
 \begin{equation} \label{R_system}
 	\left\{
 	\begin{aligned}
@@ -177,7 +176,7 @@
 	\end{aligned}
 	\right.
 \end{equation}
-Просуммируем уравнения системы (\ref{asymptotic_equations_twodim_map_no_time})
+Просуммируем уравнения системы \eqref{asymptotic_equations_twodim_map_no_time}
 \begin{equation*}
 	\begin{split}
 		[\boldsymbol{F}_{0}(w,\epsilon) + \boldsymbol{F}_{1}(w,\epsilon) +  \boldsymbol{F}_{2}(w,\epsilon)]\boldsymbol{Q} &+\\  + 
@@ -188,7 +187,7 @@
 \begin{equation*}
 	\{\boldsymbol{F}_{1}(w,\epsilon) + \boldsymbol{F}_{2}(w,\epsilon)\}\boldsymbol{\Lambda}\boldsymbol{e} + je^{-jw\epsilon}\boldsymbol{F}_{0}'(w,\epsilon)\boldsymbol{e} = 0
 \end{equation*}
-Затем, подставим произведение (\ref{R_solution}) в получившееся уравнение
+Затем, подставим произведение \eqref{R_solution} в получившееся уравнение
 \begin{equation*}
 	[\boldsymbol{R}_{1} + \boldsymbol{R}_{2}]\boldsymbol{\Lambda}\boldsymbol{e} + j\frac{\Phi'(w)}{\Phi(w)}\boldsymbol{R}_{0}\boldsymbol{e} = 0
 \end{equation*}
@@ -196,7 +195,7 @@
  \begin{equation} \label{R_kappa_exression}
  	[\boldsymbol{R}_{1} + \boldsymbol{R}_{2}]\boldsymbol{\Lambda}\boldsymbol{e} -\kappa\boldsymbol{R}_{0}\boldsymbol{e} = 0
 \end{equation}
-Из (\ref{R_kappa_exression}) мы можем выразить $\kappa$ с помощью $\boldsymbol{R}_{0}$,$\boldsymbol{R}_{1}$ и $\boldsymbol{R}_{2}$. Помимо этого, мы можем переписать систему (\ref{R_system}) в следующим виде
+Из \eqref{R_kappa_exression} мы можем выразить $\kappa$ с помощью $\boldsymbol{R}_{0}$,$\boldsymbol{R}_{1}$ и $\boldsymbol{R}_{2}$. Помимо этого, мы можем переписать систему \eqref{R_system} в следующим виде
 \begin{equation*}
 	\left\{
 	\begin{aligned}
@@ -228,7 +227,7 @@
 	вектор--строка $\boldsymbol{R}=\{\boldsymbol{R}_{0},\boldsymbol{R}_{1},\boldsymbol{R}_{2}\}$ -- двумерное стационарное распределение вероятности случайного процесса $\{k(t),n(t)\}$, где, соответственно,  $\boldsymbol{R}_{k}$ имеет размерность $N$, $\kappa$ --- нормированное среднее число заявок на орбите, а $e$ и $ee$ --- единичные вектор--столбцы размерности $N$ и $N \cdot K$ соответственно.
 \end{theorem}
 \begin{proof}
-	Делая предельный переход $ \lim_{\epsilon \xrightarrow{} 0}\boldsymbol{F}_{k}(w,u_{1},u_{2},t,\epsilon) = \boldsymbol{F}_{k}(w,u_{1},u_{2},t)$  в полученной системе (\ref{asymptotic_equations_twodim_map}) , система уравнений будет записана в виде
+	Делая предельный переход $ \lim_{\epsilon \xrightarrow{} 0}\boldsymbol{F}_{k}(w,u_{1},u_{2},t,\epsilon) = \boldsymbol{F}_{k}(w,u_{1},u_{2},t)$  в полученной системе \eqref{asymptotic_equations_twodim_map}, система уравнений будет записана в виде
 	\begin{equation} \label{eps_limit_twodim_map}
 		\begin{split}
 			\frac{{\partial \boldsymbol{F}_{0}(w,u_{1},u_{2},t)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{F}_{0}(w,u_{1},u_{2},t) + \mu_{1} e^{ju_{1}}\boldsymbol{F}_{1}(w,u_{1},u_{2},t)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{F}_{2}(w,u_{1},u_{2},t) + j
@@ -240,11 +239,11 @@
 			\frac{{\partial \boldsymbol{F}_{2}(w,u_{1},u_{2},t)}}{{\partial t}} &= \alpha \boldsymbol{F}_{0}(w,u_{1},u_{2},t) + (\boldsymbol{Q} - \boldsymbol{I}\mu_{2})\boldsymbol{F}_{2}(w,u_{1},u_{2},t).
 		\end{split}
 	\end{equation}   
-	Решение системы (\ref{eps_limit_twodim_map}) будет получено в форме
+	Решение системы \eqref{eps_limit_twodim_map} будет получено в форме
 	\begin{equation} \label{solution_twodim_map}
 		\boldsymbol{F}_{k}(w,u_{1},u_{2},t) = \Phi(w)\boldsymbol{F}_{k}(u_{1},u_{2},t).
 	\end{equation}  
-	Подставив (\ref{solution_twodim_map}) в систему (\ref{eps_limit_twodim_map}) и разделив обе части уравнений на $\Phi(w)$, получим
+	Подставив \eqref{solution_twodim_map} в систему \eqref{eps_limit_twodim_map} и разделив обе части уравнений на $\Phi(w)$, получим
 	\begin{equation} \label{preresult_twodim_map}
 	\begin{split}
 		\frac{{\partial \boldsymbol{F}_{0}(u_{1},u_{2},t)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-\alpha\boldsymbol{I})\boldsymbol{F}_{0}(u_{1},u_{2},t) + \mu_{1} e^{ju_{1}}\boldsymbol{F}_{1}(u_{1},u_{2},t)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{F}_{2}(u_{1},u_{2},t) + j\frac{\Phi'(w) }{\Phi(w)}
@@ -256,7 +255,7 @@
 		\frac{{\partial \boldsymbol{F}_{2}(u_{1},u_{2},t)}}{{\partial t}} &= \alpha \boldsymbol{F}_{0}(u_{1},u_{2},t) + (\boldsymbol{Q} - \boldsymbol{I}\mu_{2})\boldsymbol{F}_{2}(u_{1},u_{2},t).
 	\end{split}
 	\end{equation}  
-	Исходя из того, что  $\Phi(w)$ имеет смысл асимптотического приближения характеристической функции числа заявок на орбите и имеет вид экспоненты (\ref{Phi_concrete}), система (\ref{preresult_twodim_map}) примет следующий вид
+	Исходя из того, что  $\Phi(w)$ имеет смысл асимптотического приближения характеристической функции числа заявок на орбите и имеет вид экспоненты \eqref{Phi_concrete}, система \eqref{preresult_twodim_map} примет следующий вид
 	\begin{equation} \label{result_twodim_map}
 		\begin{split}
 			\frac{{\partial \boldsymbol{F}_{0}(u_{1},u_{2},t)}}{{\partial t}} &= (\boldsymbol{Q}-\boldsymbol{\Lambda}-(\alpha + \kappa)\boldsymbol{I})\boldsymbol{F}_{0}(u_{1},u_{2},t) + \mu_{1} e^{ju_{1}}\boldsymbol{F}_{1}(u_{1},u_{2},t)  + \\  &+ \mu_{2}e^{ju_{2}}\boldsymbol{F}_{2}(u_{1},u_{2},t),
@@ -277,7 +276,7 @@
 			\alpha\boldsymbol{I} & 	0 &	\boldsymbol{Q}-\mu_{2}\boldsymbol{I}
 		\end{bmatrix}^{T},
 	\end{equation*}
-	$\boldsymbol{G}(u_{1},u_{2})$ --- транспонированная матрица коэффициентов системы (\ref{result_twodim_map}).
+	$\boldsymbol{G}(u_{1},u_{2})$ --- транспонированная матрица коэффициентов системы \eqref{result_twodim_map}.
 	Тогда получим следующее матричное уравнение
 	\begin{equation*}
 		\frac{{\partial \boldsymbol{FF}(u_{1},u_{2},t)}}{{\partial t}} =\boldsymbol{FF}(u_{1},u_{2},t)\boldsymbol{G}(u_{1},u_{2}),
@@ -299,16 +298,15 @@
 	\begin{equation}\label{approximation_twodim_map}
 		\boldsymbol{FF}(u_{1},u_{2},t)\boldsymbol{e}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{ee}.
 	\end{equation}
-	Формула (\ref{approximation_twodim_map}) является решением рассматриваемой системы. 
+	Формула \eqref{approximation_twodim_map} является решением рассматриваемой системы. 
 \end{proof}
 
-\subsubsection{Переход к явному распределению вероятности}
-Характеристическая функция (\ref{approximation_twodim_map}) позволяет нам получит явное распределение вероятностей числа обслуженных заявок процессов $m_{1}(t)$ и $m_{2}(t)$.
-Аналогично ранее рассмотренным (\ref{approximation_summary},\ref{approximation_twodim}), формула (\ref{approximation_twodim_map}) содержит матричную экспоненту, к которой мы применяем преобразование подобия \cite{bronson1991matrix}. Процесс разложения матричной экспоненты полностью идентичен процессу в разделе \ref{distr_find_twodim}, поэтому будет опущен.
+\subsubsection{Переход к явному распределению вероятностей}
+Характеристическая функция \eqref{approximation_twodim_map} позволяет нам получит явное распределение вероятностей числа обслуженных заявок процессов $m_{1}(t)$ и $m_{2}(t)$.
+Аналогично ранее рассмотренным (\ref{approximation_summary}, \ref{approximation_twodim}), формула \eqref{approximation_twodim_map} содержит матричную экспоненту, к которой мы применяем преобразование подобия \cite{bronson1991matrix}. Процесс разложения матричной экспоненты будет опущен, так как представлен в разделе \ref{distr_find_twodim}.
 Вид восстановленного с помощью обратного преобразования Фурье для дискретных величин распределения имеет следующую форму
 \begin{equation}\label{distr_map_twodim}
 	P(m_{1},m_{2},t) = \dfrac{1}{2\pi}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{FF}(u_{1},u_{2},t)du_{2}du_{2}.
 \end{equation}
 Полученная формула характеризует вероятность обслуживания $m_{1}$ входящих заявок и $m_{2}$ вызванных заявок к моменту времени $t$ в рассматриваемой системе.
-
 \clearpage

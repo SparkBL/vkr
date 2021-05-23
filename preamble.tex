@@ -14,7 +14,8 @@
 \usepackage{csquotes}
 \usepackage{multirow} % улучшенное форматирование таблиц
 \usepackage{ulem} % подчеркивания
-\usepackage{titletoc}
+%\usepackage{titletoc}
+\usepackage{tocloft}
 \usepackage{tikz}
 \usepackage{float}
 \usetikzlibrary{chains,shapes.multipart}
@@ -62,25 +63,44 @@ title=\lstname
 \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 \setlength{\parindent}{1.25cm}
 
+
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+{\normalsize\bfseries\centering}
+{\thesection}
+{1em}{}
+
+\titleformat{\subsection}
+{\normalsize\bfseries\centering}
+{\thesubsection}
+{1em}{}
+
+\titleformat{\subsubsection}
+{\normalsize\bfseries\centering}
+{\thesubsubsection}
+{1em}{}
+
+
+
+\renewcommand{\cfttoctitlefont}{\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftdotsep}{1}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecpagefont}{ \normalfont}
+\setcounter{tocdepth}{3} % задать глубину оглавления — до subsection включительно
+
 \AtBeginDocument{%
-	\let\mtcontentsname\contentsname
-	\renewcommand\contentsname{\normalsize{\MakeUppercase\mtcontentsname}} %Заголовок содержания капсом
-	
-	\let\LaTeXStandardTableOfContents\tableofcontents %Убрать жирный шрифт в содержании
-	\renewcommand{\tableofcontents}{%
-		\begingroup%
-		\renewcommand{\bfseries}{\relax}%
-		\LaTeXStandardTableOfContents%
-		\endgroup%
+\renewcommand{\contentsname}{ОГЛАВЛЕНИЕ}
+\renewcommand\refname{\centering СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
 	}%
-	\renewcommand\refname{\centering СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
-	\renewcommand{\contentsname}{ОГЛАВЛЕНИЕ}
-}
-\dottedcontents{section}[1.5em]{\bfseries}{1.3em}{0.83em}
-\dottedcontents{subsection}[3.65em]{\bfseries}{2em}{0.83em}
-\dottedcontents{subsubsection}[6.45em]{\bfseries}{2.7em}{0.83em}
+	
+%	
+%}
+
+
 
 \makeatletter
-\renewcommand\@dotsep{10000}   % default value 4.5
 \makeatother
 

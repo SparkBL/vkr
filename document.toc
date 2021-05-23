@@ -1,35 +1,34 @@
 \babel@toc {russian}{}
 \contentsline {section}{Введение}{3}{}%
-\contentsline {section}{\numberline {1}\centering Исследование систем с простейшим входящим потоком}{6}{}%
-\contentsline {subsection}{\numberline {1.1}\centering RQ--система с суммарным выходящим потоком}{6}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}\centering Уравнения Колмогорова}{7}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}\centering Метод асимптотического анализа}{10}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}\centering Переход к явному распределению вероятностей}{13}{}%
-\contentsline {subsection}{\numberline {1.2}\centering RQ--система с двумерным выходящим потоком}{14}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}\centering Уравнения Колмогорова}{14}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}\centering Метод асимптотического анализа}{15}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}\centering Переход к явному распределению вероятностей}{18}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}\centering Коэффициент корреляции}{19}{}%
-\contentsline {section}{\numberline {2}\centering Исследование систем с MMPP--потоком}{20}{}%
-\contentsline {subsection}{\numberline {2.1}\centering RQ--система с входящим MMPP и двумерным выходящим потоком}{20}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}\centering Уравнения Колмогорова}{20}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}\centering Метод асимптотического анализа}{22}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}\centering Переход к явному распределению вероятностей}{27}{}%
-\contentsline {section}{\numberline {3}\centering Имитационное моделирование}{28}{}%
-\contentsline {subsection}{\numberline {3.1}\centering Объектная модель предметной области}{28}{}%
-\contentsline {subsection}{\numberline {3.2}\centering Процесс моделирования}{34}{}%
-\contentsline {subsection}{\numberline {3.3}\centering Функционирование элементов системы массового обслуживания}{36}{}%
-\contentsline {subsection}{\numberline {3.4}\centering Интерфейс и работа программы}{40}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}\centering Моделирование в реальном времени}{41}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}\centering Ускоренное моделирование }{44}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}\centering Работа с главным графиком}{44}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}\centering Экспорт результатов моделирования}{48}{}%
-\contentsline {subsection}{\numberline {3.5}\centering Особенности реализации}{50}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}\centering Генерация псевдослучайных чисел}{50}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}\centering Отображение статуса при ускоренном моделировании}{51}{}%
-\contentsline {section}{\numberline {4}\centering Численные эксперименты}{53}{}%
-\contentsline {subsection}{\numberline {4.1}\centering Проверка стабильности имитационной модели}{53}{}%
-\contentsline {subsection}{\numberline {4.2}\centering Сравнение распределений вероятностей с эмпирическим распределением}{54}{}%
-\contentsline {subsection}{\numberline {4.3}\centering Анализ корреляции выходящих процессов}{57}{}%
+\contentsline {section}{\numberline {1}Исследование систем с простейшим входящим потоком}{6}{}%
+\contentsline {subsection}{\numberline {1.1}RQ--система с суммарным выходящим потоком}{6}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{7}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{10}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятностей}{13}{}%
+\contentsline {subsection}{\numberline {1.2}RQ--система с двумерным выходящим потоком}{14}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Уравнения Колмогорова}{14}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{15}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятностей}{18}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{19}{}%
+\contentsline {section}{\numberline {2}Исследование систем с MMPP--потоком}{20}{}%
+\contentsline {subsection}{\numberline {2.1}RQ--система с входящим MMPP и двумерным выходящим потоком}{20}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Уравнения Колмогорова}{20}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{22}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Переход к явному распределению вероятностей}{27}{}%
+\contentsline {section}{\numberline {3}Имитационное моделирование}{28}{}%
+\contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{28}{}%
+\contentsline {subsection}{\numberline {3.2}Процесс моделирования}{34}{}%
+\contentsline {subsection}{\numberline {3.3}Функционирование элементов системы массового обслуживания}{36}{}%
+\contentsline {subsection}{\numberline {3.4}Интерфейс и работа программы}{40}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Моделирование в реальном времени}{41}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{44}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{44}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Экспорт результатов моделирования}{48}{}%
+\contentsline {subsection}{\numberline {3.5}Особенности реализации}{50}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Генерация псевдослучайных чисел}{50}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Отображение статуса при ускоренном моделировании}{51}{}%
+\contentsline {section}{\numberline {4}Численные эксперименты}{53}{}%
+\contentsline {subsection}{\numberline {4.1}Проверка стабильности имитационной модели}{53}{}%
+\contentsline {subsection}{\numberline {4.2}Сравнение распределений вероятностей с эмпирическим распределением}{54}{}%
+\contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{57}{}%
 \contentsline {section}{Заключение}{57}{}%
-\contentsfinish 

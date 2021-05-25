@@ -31,4 +31,4 @@
 \contentsline {subsection}{\numberline {4.1}Проверка стабильности имитационной модели}{53}{}%
 \contentsline {subsection}{\numberline {4.2}Сравнение распределений вероятностей с эмпирическим распределением}{55}{}%
 \contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{58}{}%
-\contentsline {section}{Заключение}{58}{}%
+\contentsline {section}{Заключение}{61}{}%

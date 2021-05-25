@@ -306,7 +306,7 @@
 Аналогично ранее рассмотренным (\ref{approximation_summary}, \ref{approximation_twodim}), формула \eqref{approximation_twodim_map} содержит матричную экспоненту, к которой мы применяем преобразование подобия \cite{bronson1991matrix}. Процесс разложения матричной экспоненты будет опущен, так как представлен в разделе \ref{distr_find_twodim}.
 Вид восстановленного с помощью обратного преобразования Фурье для дискретных величин распределения имеет следующую форму
 \begin{equation}\label{distr_map_twodim}
-	P(m_{1},m_{2},t) = \dfrac{1}{2\pi}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{FF}(u_{1},u_{2},t)du_{2}du_{2}.
+	P(m_{1},m_{2},t) = \dfrac{1}{(2\pi)^2}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{FF}(u_{1},u_{2},t)du_{2}du_{2}.
 \end{equation}
 Полученная формула характеризует вероятность обслуживания $m_{1}$ входящих заявок и $m_{2}$ вызванных заявок к моменту времени $t$ в рассматриваемой системе.
 \clearpage

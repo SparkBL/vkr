@@ -10,16 +10,18 @@
 \subsubsection{Уравнения Колмогорова}
 В данном случае, мы имеем четыре характеристики, определяющие результат функционирования системы за некоторое время $t$: состояние прибора --- $\textit{k(t)}$, количество заявок на орбите --- $\textit{i(t)}$, количество обслуженных заявок входящего потока --- $m_{1}(t)$, количество обслуженных вызванных заявок --- $m_{2}(t)$,  что можно представить в виде четырех--мерного Марковского процесса
 \begin{equation*}
-	\{k(t),i(t),m_{1}(t),m_{2}(t)\}
+	\{k(t),i(t),m_{1}(t),m_{2}(t)\}.
 \end{equation*}
+
 Вероятность принятия прибором одного из трех состояний задается следующим образом
 \begin{equation*}
 	\begin{split}
-		P\{k(t)=0,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{0}(i,m_{1},m_{2},t)\\
-		P\{k(t)=1,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{1}(i,m_{1},m_{2},t)\\
-		P\{k(t)=2,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{2}(i,m_{1},m_{2},t)
+		P\{k(t)=0,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{0}(i,m_{1},m_{2},t),\\
+		P\{k(t)=1,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{1}(i,m_{1},m_{2},t),\\
+		P\{k(t)=2,i(t)=i,m_{1}(t)=m_{1},m_{2}(t)=m_{2}\} &=P_{2}(i,m_{1},m_{2},t).
 	\end{split}
 \end{equation*}
+
 Запишем систему уравнений Колмогорова, составленную на основе введенных вероятностей перехода
 \begin{equation} \label{kolmogorov_equations_twodim}
 	\begin{split}
@@ -30,6 +32,7 @@
 		\frac{{\partial P_{2}(i,m_{1},m_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{2})P_{2}(i,m_{1},m_{2},t) + \lambda P_{2}(i-1,m_{1},m_{2},t)  +\\ &+ \alpha  P_{0}(i,m_{1},m_{2},t).
 	\end{split}
 \end{equation}	
+
 Введем частные характеристические функции, обозначив $j=\sqrt{-1}$,
 \begin{equation*}
 	H_{k}(u,u_{1},u_{2},t) = \sum_{i=0}^{\infty}
@@ -49,6 +52,7 @@
 		\frac{{\partial H_{2}(u,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{2})H_{2}(u,u_{1},u_{2},t)  + \lambda e^{ju}H_{2}(u,u_{1},u_{2},t) +\\  &+ \alpha H_{0}(u,u_{1},u_{2},t).
 	\end{split}
 \end{equation}  
+
 Бесконечное количество уравнений сведено к трем.
 
 \subsubsection{Метод асимптотического анализа}
@@ -65,8 +69,8 @@
 		\\
 		\frac{{\partial F_{2}(w,u_{1},u_{2},t,\epsilon)}}{{\partial t}} &= -(\lambda + \mu_{2})F_{2}(w,u_{1},u_{2},t,\epsilon)  + \lambda e^{j\epsilon w}F_{2}(w,u_{1},u_{2},t,\epsilon) +\\  &+ \alpha F_{0}(w,u_{1},u_{2},t,\epsilon).
 	\end{split}
-\end{equation}  
-Затем, что используя условие согласованности многомерных распределений, характеристическая функция процессов $m_{1}(t$) и $m_{1}(t)$ будет записана в следующем виде с введенными функциями 
+\end{equation} 
+Затем, используя условие согласованности многомерных распределений, характеристическая функция процессов $m_{1}(t$) и $m_{1}(t)$ будет записана в следующем виде с введенными функциями 
 \begin{equation*}
 	M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\}=\sum_{k=0}^{2}H_{k}(0,u_{1},u_{2},t) = \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon).
 \end{equation*}
@@ -77,7 +81,7 @@
 		\begin{split}
 			\boldsymbol{F}(u_{1},u_{2},t) =  \lim_{\sigma \xrightarrow{} 0} M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\} &= 
 			\\
-			= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\} \cdot \boldsymbol{E}
+			= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\} \cdot \boldsymbol{E},
 		\end{split}
 	\end{equation*}
 	где 
@@ -90,7 +94,7 @@
 	\end{equation*}
 	вектор--строка $\boldsymbol{R}=\{R_{0},R_{1},R_{2}\}$ --- стационарное распределение вероятности состояния прибора
 	\begin{equation*}
-		\boldsymbol{R}=\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\},
+		\boldsymbol{R}=\left\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\right\},
 	\end{equation*}
 	$\kappa$ --- нормированное среднее число заявок на орбите
 	\begin{equation*}
@@ -99,7 +103,7 @@
 	а $\boldsymbol{E}$ --- единичный вектор--столбец соответствующей размерности.
 \end{theorem}
 \begin{proof}
-	Делая предельный переход $ \lim_{\epsilon \xrightarrow{} 0} F_{k}(w,u_{1},u_{2},t,\epsilon) = F_{k}(w,u_{1},u_{2},t)$  в полученной системе \eqref{asymptotic_equations_twodim} , система уравнений будет записана в виде
+	Делая предельный переход $\epsilon \xrightarrow{} 0$ в системе \eqref{asymptotic_equations_twodim}, система уравнений будет записана в виде
 	\begin{equation} \label{eps_limit_twodim}
 		\begin{split}
 			\frac{{\partial F_{0}(w,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \alpha)F_{0}(w,u_{1},u_{2},t) + j
@@ -111,6 +115,7 @@
 			\frac{{\partial F_{2}(w,u_{1},u_{2},t)}}{{\partial t}} &= -(\lambda + \mu_{2})F_{2}(w,u_{1},u_{2},t)  + \lambda F_{2}(w,u_{1},u_{2},t) +\\  &+ \alpha F_{0}(w,u_{1},u_{2},t).
 		\end{split}
 	\end{equation}  
+
 	Решение системы \eqref{eps_limit_twodim} будет получено в следующей форме
 	\begin{equation} \label{solution_twodim}
 		F_{k}(w,u_{1},u_{2},t) = \Phi(w)F_{k}(u_{1},u_{2},t).
@@ -137,6 +142,7 @@
 	%\begin{equation*}
 %		\kappa = \frac{\lambda(\lambda \mu_{2} + \alpha \mu_{1})}{\mu_{2}(\mu_{1} - \lambda)}.
 %	\end{equation*}
+
 	Ранее, мы конкретизировали вид $\Phi(w)$ в \eqref{Phi_concrete}, что позволяет нам привести систему \eqref{preresult_twodim} к следующему виду	
 	\begin{equation} \label{result_twodim}
 		\begin{split}
@@ -148,6 +154,7 @@
 			\frac{{\partial F_{2}(u_{1},u_{2},t)}}{{\partial t}} &= \alpha F_{0}(u_{1},u_{2},t)   +  0F_{1}(u_{1},u_{2},t) -\\  &- \mu_{2}F_{2}(u_{1},u_{2},t).
 		\end{split}
 	\end{equation}  
+
 	Введем следующие обозначения
 	\begin{equation*}
 		\boldsymbol{F}(u_{1},u_{2},t) = \{F_{0}(u_{1},u_{2},t),F_{1}(u_{1},u_{2},t),F_{1}(u_{2},u_{2},t)\},
@@ -174,14 +181,15 @@
 	\end{equation}
 	где вектор--строка $\boldsymbol{R}$ --- стационарное распределение вероятности состояния прибора, то есть процесса $k(t)$, которое имеет форму \cite{nazarov2017asymptotic}
 	\begin{equation*}
-		\boldsymbol{R}=\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\}.
+		\boldsymbol{R}=\left\{\frac{\mu_{2}(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} - \alpha)},\frac{\lambda}{\mu_{1}},\frac{\alpha(\mu_{1} - \lambda)}{\mu_{1}(\mu_{2} + \alpha)}\right\}.
 	\end{equation*}
+
 	Описав начальное условие, переходим к решению задачи Коши (\ref{diff_twodim}, \ref{cauchi_condition_twodim}).
-	
 	Чтобы получить маргинальное распределение вероятностей числа обслуженных заявок, суммируем компоненты вектор--строки $\boldsymbol{F}(u_{1},u_{2},t)$ по $k$ и умножаем результат на единичный вектор--столбец $\boldsymbol{E}$. Получим
 	\begin{equation}\label{approximation_twodim}
 		\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E}=\boldsymbol{R}e^{\boldsymbol{G}(u_{1},u_{2})t}\boldsymbol{E}.
 	\end{equation}
+
 	Формула \eqref{approximation_twodim} является решением рассматриваемой системы. 
 \end{proof}
 
@@ -207,10 +215,12 @@
 		0 & 0 &	e^{t \Lambda_{3}(u_{1},u_{2})}
 	\end{bmatrix} \cdot \boldsymbol{T}(u_{1},u_{2})^{-1} \cdot \boldsymbol{E}.
 \end{equation*}
+
 Для восстановления распределения используем обратное преобразование Фурье для дискретных величин
 \begin{equation} \label{distr_simple_twodim}
 	P(m_{1},m_{2},t) = \dfrac{1}{(2\pi)^2}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{F}(u_{1},u_{2},t)du_{2}du_{2}.
 \end{equation}
+
 Полученная формула характеризует вероятность обслуживания $m_{1}$ входящих заявок и $m_{2}$ вызванных заявок к моменту времени $t$ в рассматриваемой системе.
 
 \subsubsection{Коэффициент корреляции} \label{corr_section}
@@ -229,5 +239,6 @@
 		D\{m_{2}(t)\} &= M^{2}\{m_{2}(t)\} - (M\{m_{2}(t)\})^{2} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{2}}^{2}}\boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  - \\ &- (\frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{2}}} \boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}})^{2}.
 	\end{split}
 \end{equation*}
+
 Полученные формулы позволяют использовать нам численно исследовать поведение системы при разных параметрах.
 \clearpage

@@ -12,10 +12,18 @@
 \end{center}
 
 \input{chapters/intro} %Введение
+\titleformat{\section}[block]
+{\normalsize\bfseries\hspace{\parindent}}
+{\thesection}
+{1em}{}
 \input{chapters/simple_input} %Простейший поток
 \input{chapters/map_input}  %MAP-поток
 \input{chapters/simulation} %Имитационное моделирование
 \input{chapters/experiments} %Численные эксперименты
+\titleformat{\section}[block]
+{\normalsize\bfseries\centering}
+{\thesection}
+{1em}{}
 \input{chapters/conclusion} %Заключение
 \bibliographystyle{ugost2008mod}
 \addcontentsline{toc}{section}{Список использованной литературы}

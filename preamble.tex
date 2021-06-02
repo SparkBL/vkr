@@ -65,21 +65,21 @@ title=\lstname
 \setlength{\parindent}{1.25cm}
 
 
-\usepackage{titlesec}
+\usepackage[raggedright]{titlesec}
 
 
-\titleformat{\section}
+\titleformat{\section}[block]
 {\normalsize\bfseries\centering}
 {\thesection}
 {1em}{}
 
-\titleformat{\subsection}
-{\normalsize\bfseries\centering}
+\titleformat{\subsection}[block]
+{\normalsize\bfseries\hspace{\parindent}}
 {\thesubsection}
 {1em}{}
 
-\titleformat{\subsubsection}
-{\normalsize\bfseries\centering}
+\titleformat{\subsubsection}[block]
+{\normalsize\bfseries\hspace{\parindent}}
 {\thesubsubsection}
 {1em}{}
 

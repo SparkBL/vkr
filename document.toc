@@ -24,12 +24,12 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{46}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{46}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Экспорт результатов моделирования}{50}{}%
-\contentsline {subsection}{\numberline {3.5}Особенности реализации}{52}{}%
+\contentsline {subsection}{\numberline {3.5}Особенности реализации}{51}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Генерация псевдослучайных чисел}{52}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Отображение статуса при ускоренном моделировании}{53}{}%
-\contentsline {section}{\numberline {4}Численные эксперименты}{55}{}%
-\contentsline {subsection}{\numberline {4.1}Проверка стабильности имитационной модели}{55}{}%
-\contentsline {subsection}{\numberline {4.2}Сравнение распределений вероятностей с эмпирическим распределением}{57}{}%
-\contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{60}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Отображение статуса при ускоренном моделировании}{52}{}%
+\contentsline {section}{\numberline {4}Численные эксперименты}{54}{}%
+\contentsline {subsection}{\numberline {4.1}Проверка стабильности имитационной модели}{54}{}%
+\contentsline {subsection}{\numberline {4.2}Оценка точности асимптотических результатов}{56}{}%
+\contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{59}{}%
 \contentsline {section}{Заключение}{65}{}%
-\contentsline {section}{Список использованной литературы}{69}{}%
+\contentsline {section}{Список использованной литературы}{68}{}%

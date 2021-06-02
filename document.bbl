@@ -1,0 +1,289 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand*{\BibDOI}[1]{DOI: \href{http://dx.doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\providecommand*{\BibEmphi}[1]{#1}
+\providecommand*{\BibEmphii}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\hbox to.8em{--\hss--}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em\fi
+\cyrdash\hskip.2em\ignorespaces}
+
+\bibitem{nazarov2010theory}
+\selectlanguageifdefined{russian}
+\BibEmph{Назаров~А.~А.} Теория
+  массового обслуживания: учебное пособие
+  по специальностям 010200 (010501), 061800 (080116) / \BibEmph{Назаров~А.~А., Терпугов~А.~Ф.}  \BibDash
+ Томск: Изд-во НТЛ, 2010.
+
+\bibitem{erlang1909theory}
+\selectlanguageifdefined{english}
+\BibEmph{Erlang~A.~K.} The theory of probabilities and telephone
+  conversations~// \BibEmphi{Nyt. Tidsskr. Mat. Ser. B}. \BibDash
+\newblock 1909. \BibDash
+\newblock Vol.~20. \BibDash
+\newblock P.~33--39.
+
+\bibitem{artalejo2010accessible}
+\selectlanguageifdefined{english}
+\BibEmph{Artalejo~Jesus~R}. Accessible bibliography on retrial queues: progress
+  in 2000--2009~// \BibEmphi{Mathematical and computer modelling}. \BibDash
+\newblock 2010. \BibDash
+\newblock Vol.~51, no. 9-10. \BibDash
+\newblock P.~1071--1081.
+
+\bibitem{jesus2008retrial}
+\selectlanguageifdefined{english}
+\BibEmph{Artalejo~Jesus~R., Gomez-Corral~A.} Retrial Queueing Systems: A
+  Computational Approach. \BibDash
+\newblock Springer-Verlag Berlin Heidelberg, 2008.
+
+\bibitem{falin1997retrial}
+\selectlanguageifdefined{english}
+\BibEmph{Falin~G.} Retrial queues. / \BibEmph{Falin~G., Templeton~J.} \BibDash
+\newblock CRC Press, 1997. \BibDash
+\newblock Vol.~75.
+
+\bibitem{bjornstad2006traffic}
+\selectlanguageifdefined{english}
+\BibEmph{Bjornstad~J.~H.} Traffic characteristics and queueing theory:
+  implications and applications to web server systems~: Master's thesis
+  \BibDash
+\newblock 2006.
+
+\bibitem{kritzinger1986performance}
+\selectlanguageifdefined{english}
+\BibEmph{Kritzinger~P.} A performance model of the OSI communication
+  architecture~// \BibEmphi{IEEE transactions on communications}. \BibDash
+\newblock 1986. \BibDash
+\newblock Vol.~34, no.~6. \BibDash
+\newblock P.~554--563.
+
+\bibitem{olypher2010computer}
+\selectlanguageifdefined{russian}
+\BibEmph{Олифер~В.~Г.} Компьютерные
+  сети. Принципы, технологии, протоколы / \BibEmph{Олифер~В.~Г., Олифер~Н.~А.}
+  \BibDash
+\newblock Питер, 2010.
+
+\bibitem{falin1979model}
+\selectlanguageifdefined{english}
+\BibEmph{Falin~G.} Model of coupled switching in presence of recurrent calls~//
+  \BibEmphi{Engineering Cybernetics}. \BibDash
+\newblock 1979. \BibDash
+\newblock Vol.~17, no.~1. \BibDash
+\newblock P.~53--59.
+
+\bibitem{artalejo2010mean}
+\selectlanguageifdefined{english}
+\BibEmph{Artalejo~Jesus~R.} Mean value analysis of single server
+  retrial queues~/ \BibEmph{Artalejo~Jesus~R., Resing~JAC.} // \BibEmphi{Asia-Pacific Journal of Operational Research}.
+  \BibDash
+\newblock 2010. \BibDash
+\newblock Vol.~27, no.~03. \BibDash
+\newblock P.~335--345.
+
+\bibitem{baiocchi1993steady}
+\selectlanguageifdefined{english}
+\BibEmph{Baiocchi~A.} Steady-state analysis of the
+  MMPP/G/1/K queue~/ \BibEmph{Baiocchi~A., Blefari-Melazzi~N.} // \BibEmphi{IEEE transactions on communications}. \BibDash
+\newblock 1993. \BibDash
+\newblock Vol.~41, no.~4. \BibDash
+\newblock P.~531--534.
+
+\bibitem{meier1987fitting}
+\selectlanguageifdefined{english}
+\BibEmph{Meier-Hellstern~K.} A fitting algorithm for Markov-modulated Poisson
+  processes having two arrival rates~// \BibEmphi{European Journal of
+  Operational Research}. \BibDash
+\newblock 1987. \BibDash
+\newblock Vol.~29, no.~3. \BibDash
+\newblock P.~370--377.
+
+\bibitem{muscariello2004mmpp}
+\selectlanguageifdefined{english}
+An MMPP-based hierarchical model of Internet traffic~/ L.~Muscariello
+  [et~al.]~// 2004 IEEE International Conference on Communications (IEEE Cat.
+  No. 04CH37577)~/ IEEE. \BibDash
+\newblock Vol.~4. \BibDash
+\newblock 2004. \BibDash
+\newblock P.~2143--2147.
+
+\bibitem{christensen2010ieee}
+\selectlanguageifdefined{english}
+IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
+  [et~al.]~// \BibEmphi{IEEE Communications Magazine}. \BibDash
+\newblock 2010. \BibDash
+\newblock Vol.~48, no.~11. \BibDash
+\newblock P.~50--56.
+
+\bibitem{nutt1982performance}
+\selectlanguageifdefined{english}
+\BibEmph{Nutt~G.} Performance of CSMA/CD networks under combined
+  voice and data loads~/ \BibEmph{Nutt~G., Bayer~D.} // \BibEmphi{IEEE Transactions on Communications}.
+  \BibDash
+\newblock 1982. \BibDash
+\newblock Vol.~30, no.~1. \BibDash
+\newblock P.~6--11.
+
+\bibitem{bellovin2003icmp}
+\selectlanguageifdefined{english}
+\BibEmph{Bellovin~S.~M.} ICMP traceback messages. / \BibEmph{Bellovin~S.~M., Leech~M., Taylor~T.} \BibDash
+\newblock 2003.
+
+\bibitem{nazarov2017asymptotic}
+\selectlanguageifdefined{english}
+\BibEmph{Nazarov~A.~A.} Asymptotic analysis of Markovian
+  retrial queue with two-way communication under low rate of retrials
+  condition. / \BibEmph{Nazarov~A.~A., Paul~S., Gudkova~I.} \BibDash
+\newblock 2017.
+
+\bibitem{phung2019retrial}
+\selectlanguageifdefined{english}
+\BibEmph{Phung-Duc~T.} Retrial queueing models: A survey on theory and
+  applications~// \BibEmphi{arXiv preprint arXiv:1906.09560}. \BibDash
+\newblock 2019.
+
+\bibitem{kulkarni1983queueing}
+\selectlanguageifdefined{english}
+\BibEmph{Kulkarni~V.~G.} On queueing systems with retrials~// \BibEmphi{Journal
+  of Applied Probability}. \BibDash
+\newblock 1983. \BibDash
+\newblock P.~380--389.
+
+\bibitem{paul2018retrial}
+\selectlanguageifdefined{english}
+\BibEmph{Paul~S.} Retrial Queueing Model with Two-Way
+  Communication, Unreliable Server and Resume of Interrupted Call for Cognitive
+  Radio Networks~ / \BibEmph{Paul~S., Phung-Duc~T.} // Information Technologies and Mathematical Modelling.
+  Queueing Theory and Applications. \BibDash
+\newblock Springer, 2018. \BibDash
+\newblock P.~213--224.
+
+\bibitem{daley1976queueing}
+\selectlanguageifdefined{english}
+\BibEmph{Daley~D.~J.} Queueing output processes~// \BibEmphi{Advances in
+  Applied Probability}. \BibDash
+\newblock 1976. \BibDash
+\newblock Vol.~8, no.~2. \BibDash
+\newblock P.~395--415.
+
+\bibitem{bronson1991matrix}
+\selectlanguageifdefined{english}
+\BibEmph{Bronson~R.} Matrix methods: An introduction. \BibDash
+\newblock Gulf Professional Publishing, 1991.
+
+\bibitem{egorov2006prog}
+\selectlanguageifdefined{russian}
+\BibEmph{Егоров~И.~М.} Программирование: Учебное
+  методическое пособие. \BibDash
+\newblock Томск: Томский межвузовский центр
+  дистанционного образования, 2006. \BibDash
+\newblock P.~79.
+
+\bibitem{fischer1993markov}
+\selectlanguageifdefined{english}
+\BibEmph{Fischer~W.} The Markov-modulated Poisson process
+  (MMPP) cookbook~ / \BibEmph{Fischer~W., Meier-Hellstern~K.} // \BibEmphi{Performance evaluation}. \BibDash
+\newblock 1993. \BibDash
+\newblock Vol.~18, no.~2. \BibDash
+\newblock P.~149--171.
+
+\bibitem{wieland2003queueing}
+\selectlanguageifdefined{english}
+\BibEmph{Wieland~J.~R.} Queueing network
+  simulation analysis: queueing-network stability: simulation-based checking~ / \BibEmph{Wieland~J.~R., Pasupathy~R., Schmeiser~B.~W.} //
+  Proceedings of the 35th conference on Winter simulation: driving innovation.
+  \BibDash
+\newblock 2003. \BibDash
+\newblock P.~520--527.
+
+\bibitem{QtDoc}
+\selectlanguageifdefined{english}
+QT Documentation. \BibDash
+\newblock \url{https://doc.qt.io/}. \BibDash
+\newblock Accessed: 2021-05-29.
+
+\bibitem{deering1991icmp}
+\selectlanguageifdefined{english}
+ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
+  S.~Deering~: 1991.
+
+\bibitem{blaginin2020two}
+\selectlanguageifdefined{english}
+\BibEmph{Blaginin~A.~L., Lapatin~I.~L.} The Two-Dimensional Output Process of
+  Retrial Queue with Two-Way Communication~// Information Technologies and
+  Mathematical Modelling. Queueing Theory and Applications: 19th International
+  Conference, ITMM 2020, Named after AF Terpugov, Tomsk, Russia, December 2--5,
+  2020, Revised Selected Papers~/ Springer Nature. \BibDash
+\newblock P.~279--290.
+
+\bibitem{meier1986statistical}
+\selectlanguageifdefined{english}
+\BibEmph{Meiert~K.~S.} A Statistical procedure for fitting Markov-modulated
+  Poisson process (applied probability). \BibDash
+\newblock 1986.
+
+\bibitem{lapatin2020asymptotic}
+\selectlanguageifdefined{english}
+\BibEmph{Lapatin~I.~L.} Asymptotic analysis of
+  the output process in retrial queue with two-way communication and MAP input. / \BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.}
+  \BibDash
+\newblock 2020.
+
+\bibitem{kendall1953stochastic}
+\selectlanguageifdefined{english}
+\BibEmph{Kendall~D.~G.} Stochastic processes occurring in the theory of queues
+  and their analysis by the method of the imbedded Markov chain~//
+  \BibEmphi{The Annals of Mathematical Statistics}. \BibDash
+\newblock 1953. \BibDash
+\newblock P.~338--354.
+
+\bibitem{gharbi2011algorithmic}
+\selectlanguageifdefined{english}
+\BibEmph{Gharbi~N.} An algorithmic approach for analysis of
+  finite-source retrial systems with unreliable servers~ / \BibEmph{Gharbi~N., Dutheillet~C.} // \BibEmphi{Computers
+  \& Mathematics with Applications}. \BibDash
+\newblock 2011. \BibDash
+\newblock Vol.~62, no.~6. \BibDash
+\newblock P.~2535--2546.
+
+\bibitem{burke1968output}
+\selectlanguageifdefined{english}
+\BibEmph{Burke~P.~J.} The output process of a stationary M/M/s queueing
+  system~// \BibEmphi{The Annals of Mathematical Statistics}. \BibDash
+\newblock 1968. \BibDash
+\newblock Vol.~39, no.~4. \BibDash
+\newblock P.~1144--1152.
+
+\bibitem{2019asymptotic}
+\selectlanguageifdefined{english}
+\BibEmph{Lapatin~I.~L.} Asymptotic Analysis of the Output
+  Process in Retrial Queue with Markov-Modulated Poisson Input Under Low Rate
+  of Retrials Condition~ / \BibEmph{Lapatin~I.~L., Nazarov~A.~A.} // International Conference on Distributed Computer and
+  Communication Networks~ \BibDash~ Springer. \BibDash
+\newblock 2019. \BibDash
+\newblock P.~315--324.
+
+\bibitem{mirasol1963letter}
+\selectlanguageifdefined{english}
+\BibEmph{Mirasol~N.~M.} The output of an M/G/$\infty$ queuing system is
+  poisson~// \BibEmphi{Operations Research}. \BibDash
+\newblock 1963. \BibDash
+\newblock Vol.~11, no.~2. \BibDash
+\newblock P.~282--284.
+
+\bibitem{lee2003icmp}
+\selectlanguageifdefined{english}
+ICMP traceback with cumulative path, an efficient solution for IP traceback~/
+  H.~Lee [et~al.]~// International Conference on Information and Communications
+  Security~/ Springer. \BibDash
+\newblock 2003. \BibDash
+\newblock P.~124--135.
+
+\end{thebibliography}

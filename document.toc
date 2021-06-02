@@ -33,3 +33,9 @@
 \contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{59}{}%
 \contentsline {section}{Заключение}{65}{}%
 \contentsline {section}{Список использованной литературы}{68}{}%
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}

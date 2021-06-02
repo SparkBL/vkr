@@ -216,8 +216,8 @@ ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
 
 \bibitem{blaginin2020two}
 \selectlanguageifdefined{english}
-\BibEmph{Blaginin~A.~L., Lapatin~I.~L.} The Two-Dimensional Output Process of
-  Retrial Queue with Two-Way Communication~// Information Technologies and
+\BibEmph{Blaginin~A.~L.} The Two-Dimensional Output Process of
+  Retrial Queue with Two-Way Communication~ / \BibEmph{Blaginin~A.~L., Lapatin~I.~L.} // Information Technologies and
   Mathematical Modelling. Queueing Theory and Applications: 19th International
   Conference, ITMM 2020, Named after AF Terpugov, Tomsk, Russia, December 2--5,
   2020, Revised Selected Papers~/ Springer Nature. \BibDash

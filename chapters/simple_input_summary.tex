@@ -1,4 +1,4 @@
-\subsection{RQ--система с суммарным выходящим потоком} \label{section_simple_summary}
+\subsection{Суммарный выходящий поток RQ--системы} \label{section_simple_summary}
 Суммарный выходящий поток RQ--системы подразумевает, что приходящие заявки и заявки, вызываемые прибором самостоятельно, являются однородными, посему результат работы системы рассматривается как совокупность обслуженных заявок входящего потока и вызванных. 
 \begin{figure}[H]
 	\centering
@@ -133,7 +133,7 @@
 	Асимптотические приближение характеристической функции числа обслуженных заявок за некоторое время $t$ имеет вид
 	\begin{equation*} \label{theorem_summary}
 		\begin{split}
-			\boldsymbol{F}(u_,t) =  \lim_{\sigma \xrightarrow{} 0} M\{\exp(jum(t))\} &= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u,t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u)t\} \cdot \boldsymbol{E},
+			\lim_{\sigma \xrightarrow{} 0} M\{\exp(jum(t))\} &= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u,t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u)t\} \cdot \boldsymbol{E},
 		\end{split}
 	\end{equation*}
 	где 
@@ -261,7 +261,7 @@
 \end{equation*}
 где $\Lambda_{n}$ --- собственное число матрицы $\boldsymbol{G}(u)$. Тогда распределение примет следующий вид
 \begin{equation*}
-	\boldsymbol{F}(u,t)=\boldsymbol{R} \cdot \boldsymbol{T}(u)\cdot \begin{bmatrix}
+	\boldsymbol{F}(u,t)\boldsymbol{E}=\boldsymbol{R} \cdot \boldsymbol{T}(u)\cdot \begin{bmatrix}
 		e^{t \Lambda_{1}(u)} & 0 &  0\\
 		0 & e^{t \Lambda_{2}(u)} & 0\\
 		0 & 0 &	e^{t \Lambda_{3}(u)}
@@ -270,7 +270,7 @@
 
 Для того, чтобы получить явное распределение вероятностей числа обслуженных заявок, воспользуемся свойством характеристической функции, из которого следует, что распределение всегда восстанавливается по характеристической функции. Для обращения функции применим обратное преобразование Фурье для дискретных случайных величин
 \begin{equation} \label{distr_simple_summary}
-	P(m,t) = \dfrac{1}{2\pi}\int_{-\pi}^{\pi} e^{-i \cdot u \cdot m} \boldsymbol{F}(u,t)du.
+	P(m,t) = \dfrac{1}{2\pi}\int_{-\pi}^{\pi} e^{-i \cdot u \cdot m} \boldsymbol{F}(u,t)\boldsymbol{E}du.
 \end{equation}
 
 Полученное распределение характеризует вероятность обслуживания $m$ заявок к моменту времени $t$ в рассматриваемой системе.

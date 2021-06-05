@@ -1,4 +1,4 @@
-\subsection{RQ--система с двумерным выходящим потоком} \label{section_simple_twodim}
+\subsection{Двумерный выходящий поток RQ--системы} \label{section_simple_twodim}
 В этом разделе будет рассмотрена модель RQ--системы, выходящий поток заявок которой, является двумерным. Другими словами, в системе обслуживаются два типа заявок --- пришедшее извне и вызванные. Исходя из этого добавим к имеющимся обозначениям следующие: \textit{$m_{1}(t)$} --- число обслуженных заявок входящего потока к моменту времени $\textit{t}$, \textit{$m_{2}(t)$} — обслуженных вызванных заявок к моменту времени $\textit{t}$.
 \begin{figure}[H]
 	\centering
@@ -79,9 +79,7 @@
 	Асимптотические приближение двумерной характеристической функции числа обслуженных заявок входящего потока и числа обслуженных вызванных заявок за некоторое время $t$ имеет вид
 	\begin{equation*} \label{theorem_twodim}
 		\begin{split}
-			\boldsymbol{F}(u_{1},u_{2},t) =  \lim_{\sigma \xrightarrow{} 0} M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\} &= 
-			\\
-			= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\} \cdot \boldsymbol{E},
+			  \lim_{\sigma \xrightarrow{} 0} M\{\exp(ju_{1}m_{1}(t))\exp(ju_{2}m_{2}(t))\} &= \lim_{\epsilon \xrightarrow{} 0} \sum_{k=0}^{2}F_{k}(0,u_{1},u_{2},t,\epsilon) = \boldsymbol{R} \cdot \exp\{G(u_{1},u_{2})t\} \cdot \boldsymbol{E},
 		\end{split}
 	\end{equation*}
 	где 
@@ -209,7 +207,7 @@
 \end{equation*}
 где $\Lambda_{n}$ --- собственное число матрицы $\boldsymbol{G}(u_{1},u_{2})$. Тогда распределение примет следующий вид
 \begin{equation*}
-	\boldsymbol{F}(u_{1},u_{2},t)=\boldsymbol{R} \cdot \boldsymbol{T}(u_{1},u_{2})\cdot \begin{bmatrix}
+	\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E}=\boldsymbol{R} \cdot \boldsymbol{T}(u_{1},u_{2})\cdot \begin{bmatrix}
 		e^{t \Lambda_{1}(u_{1},u_{2})} & 0 &  0\\
 		0 & e^{t \Lambda_{2}(u_{1},u_{2})} & 0\\
 		0 & 0 &	e^{t \Lambda_{3}(u_{1},u_{2})}
@@ -218,7 +216,7 @@
 
 Для восстановления распределения используем обратное преобразование Фурье для дискретных величин
 \begin{equation} \label{distr_simple_twodim}
-	P(m_{1},m_{2},t) = \dfrac{1}{(2\pi)^2}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{F}(u_{1},u_{2},t)du_{2}du_{2}.
+	P(m_{1},m_{2},t) = \dfrac{1}{(2\pi)^2}\int_{-\pi}^{\pi}\int_{-\pi}^{\pi} e^{-i \cdot u_{1} \cdot m_{1}} e^{-i \cdot u_{2} \cdot m_{2}}\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E}du_{1}du_{2}.
 \end{equation}
 
 Полученная формула характеризует вероятность обслуживания $m_{1}$ входящих заявок и $m_{2}$ вызванных заявок к моменту времени $t$ в рассматриваемой системе.
@@ -230,13 +228,13 @@
 	r(t) = \frac{\textnormal{cov}(m_{1}(t),m_{2}(t))}{\sqrt{D(m_{1}(t))}\sqrt{D(m_{2}(t))}}.
 \end{equation*}
 Воспользуемся свойством характеристической функции о существовании ее $n$--ой производной, соответствующей $n$--му начальному моменту случайной величины. Тогда ковариация и дисперсия будут вычисляться следующим образом
-\begin{equation*}
+\begin{equation*} %убран минус при переносе!!
 	\begin{split}
-		\textnormal{cov}(m_{1}(t),m_{2}(t)) &= M\{m_{1}(t)m_{2}(t)\} - M\{m_{1}(t)\}M\{m_{2}(t)\} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{1}}{\partial u_{2}}}\boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}} - \\ &- \frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{1}}} \boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}} \frac{{\partial}}{{\partial u_{2}}} \boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}},
+		\textnormal{cov}(m_{1}(t),m_{2}(t)) &= M\{m_{1}(t)m_{2}(t)\} - M\{m_{1}(t)\}M\{m_{2}(t)\} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{1}}{\partial u_{2}}}\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  \\ &- \frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{1}}} \boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}} \frac{{\partial}}{{\partial u_{2}}} \boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}},
 		\\
-		D\{m_{1}(t)\} &= M^{2}\{m_{1}(t)\} - (M\{m_{1}(t)\})^{2} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{1}}^{2}}\boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  - \\ &- (\frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{1}}} \boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}})^{2},
+		D\{m_{1}(t)\} &= M^{2}\{m_{1}(t)\} - (M\{m_{1}(t)\})^{2} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{1}}^{2}}\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  - \\ &- (\frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{1}}} \boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}})^{2},
 		\\
-		D\{m_{2}(t)\} &= M^{2}\{m_{2}(t)\} - (M\{m_{2}(t)\})^{2} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{2}}^{2}}\boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  - \\ &- (\frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{2}}} \boldsymbol{F}(u_{1},u_{2},t) \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}})^{2}.
+		D\{m_{2}(t)\} &= M^{2}\{m_{2}(t)\} - (M\{m_{2}(t)\})^{2} = \frac{1}{j^{2}}\frac{{\partial}^{2}}{{\partial u_{2}}^{2}}\boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}}  - \\ &- (\frac{1}{j^{2}} \frac{{\partial}}{{\partial u_{2}}} \boldsymbol{F}(u_{1},u_{2},t)\boldsymbol{E} \bigg\rvert_{\substack{u_{1} = 0 \\ u_{2} = 0}})^{2}.
 	\end{split}
 \end{equation*}
 

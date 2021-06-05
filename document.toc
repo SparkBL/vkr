@@ -1,17 +1,17 @@
 \babel@toc {russian}{}
 \contentsline {section}{Введение}{4}{}%
-\contentsline {section}{\numberline {1}Исследование систем с простейшим входящим потоком}{8}{}%
-\contentsline {subsection}{\numberline {1.1}RQ--система с суммарным выходящим потоком}{8}{}%
+\contentsline {section}{\numberline {1}Исследование моделей с простейшим входящим потоком}{8}{}%
+\contentsline {subsection}{\numberline {1.1}Суммарный выходящий поток RQ--системы}{8}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{9}{}%
 \contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{12}{}%
 \contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятностей}{15}{}%
-\contentsline {subsection}{\numberline {1.2}RQ--система с двумерным выходящим потоком}{16}{}%
+\contentsline {subsection}{\numberline {1.2}Двумерный выходящий поток RQ--системы}{16}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Уравнения Колмогорова}{16}{}%
 \contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{17}{}%
 \contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятностей}{20}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{21}{}%
-\contentsline {section}{\numberline {2}Исследование систем с MMPP--потоком}{22}{}%
-\contentsline {subsection}{\numberline {2.1}RQ--система с входящим MMPP и двумерным выходящим потоком}{22}{}%
+\contentsline {section}{\numberline {2}Исследование модели с входящим MMPP--потоком}{22}{}%
+\contentsline {subsection}{\numberline {2.1}Двумерный выходящий поток RQ--системы с MMPP}{22}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Уравнения Колмогорова}{22}{}%
 \contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{24}{}%
 \contentsline {subsubsection}{\numberline {2.1.3}Переход к явному распределению вероятностей}{29}{}%

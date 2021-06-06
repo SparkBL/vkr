@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.3}Функционирование элементов системы массового обслуживания}{38}{}%
 \contentsline {subsection}{\numberline {3.4}Интерфейс и работа программы}{42}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}Моделирование в реальном времени}{43}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{46}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{45}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{46}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Экспорт результатов моделирования}{50}{}%
 \contentsline {subsection}{\numberline {3.5}Особенности реализации}{51}{}%

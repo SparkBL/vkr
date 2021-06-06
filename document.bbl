@@ -15,11 +15,13 @@
 \cyrdash\hskip.2em\ignorespaces}
 
 \bibitem{nazarov2010theory}
-\selectlanguageifdefined{russian}
-\BibEmph{Назаров~А.~А.} Теория
-  массового обслуживания: учебное пособие
-  по специальностям 010200 (010501), 061800 (080116) / \BibEmph{Назаров~А.~А., Терпугов~А.~Ф.}  \BibDash
- Томск: Изд-во НТЛ, 2010.
+\selectlanguageifdefined{english}
+\BibEmph{Назаров~А.~А., Терпугов~А.~Ф.} Теория
+  массового обслуживания:[учебное пособие
+  по специальностям 010200 (010501)" Прикладная
+  математика и информатика", 061800 (080116)"
+  Математические методы в экономике". \BibDash
+\newblock Томск: Изд-во НТЛ, 2010.
 
 \bibitem{erlang1909theory}
 \selectlanguageifdefined{english}
@@ -45,15 +47,15 @@
 
 \bibitem{falin1997retrial}
 \selectlanguageifdefined{english}
-\BibEmph{Falin~G.} Retrial queues. / \BibEmph{Falin~G., Templeton~J.} \BibDash
+\BibEmph{Falin~G., Templeton~J.} Retrial queues. \BibDash
 \newblock CRC Press, 1997. \BibDash
 \newblock Vol.~75.
 
 \bibitem{bjornstad2006traffic}
 \selectlanguageifdefined{english}
 \BibEmph{Bjornstad~J.~H.} Traffic characteristics and queueing theory:
-  implications and applications to web server systems~: Master's thesis
-  \BibDash
+  implications and applications to web server systems~: Master's thesis~/
+  J.~H.~Bjornstad. \BibDash
 \newblock 2006.
 
 \bibitem{kritzinger1986performance}
@@ -65,9 +67,9 @@
 \newblock P.~554--563.
 
 \bibitem{olypher2010computer}
-\selectlanguageifdefined{russian}
-\BibEmph{Олифер~В.~Г.} Компьютерные
-  сети. Принципы, технологии, протоколы / \BibEmph{Олифер~В.~Г., Олифер~Н.~А.}
+\selectlanguageifdefined{english}
+\BibEmph{Олифер~В.~Г., Олифер~Н.~А.} Компьютерные
+  сети. Принципы, технологии, протоколы.
   \BibDash
 \newblock Питер, 2010.
 
@@ -81,8 +83,8 @@
 
 \bibitem{artalejo2010mean}
 \selectlanguageifdefined{english}
-\BibEmph{Artalejo~Jesus~R.} Mean value analysis of single server
-  retrial queues~/ \BibEmph{Artalejo~Jesus~R., Resing~JAC.} // \BibEmphi{Asia-Pacific Journal of Operational Research}.
+\BibEmph{Artalejo~Jesus~R., Resing~JAC.} Mean value analysis of single server
+  retrial queues~// \BibEmphi{Asia-Pacific Journal of Operational Research}.
   \BibDash
 \newblock 2010. \BibDash
 \newblock Vol.~27, no.~03. \BibDash
@@ -90,11 +92,20 @@
 
 \bibitem{baiocchi1993steady}
 \selectlanguageifdefined{english}
-\BibEmph{Baiocchi~A.} Steady-state analysis of the
-  MMPP/G/1/K queue~/ \BibEmph{Baiocchi~A., Blefari-Melazzi~N.} // \BibEmphi{IEEE transactions on communications}. \BibDash
+\BibEmph{Baiocchi~A., Blefari-Melazzi~N.} Steady-state analysis of the
+  MMPP/G/1/K queue~// \BibEmphi{IEEE transactions on communications}. \BibDash
 \newblock 1993. \BibDash
 \newblock Vol.~41, no.~4. \BibDash
 \newblock P.~531--534.
+
+\bibitem{2019asymptotic}
+\selectlanguageifdefined{english}
+\BibEmph{Lapatin~I.~L., Nazarov~A.~A.} Asymptotic Analysis of the Output
+  Process in Retrial Queue with Markov-Modulated Poisson Input Under Low Rate
+  of Retrials Condition~// International Conference on Distributed Computer and
+  Communication Networks~/ Springer. \BibDash
+\newblock 2019. \BibDash
+\newblock P.~315--324.
 
 \bibitem{meier1987fitting}
 \selectlanguageifdefined{english}
@@ -124,8 +135,8 @@ IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
 
 \bibitem{nutt1982performance}
 \selectlanguageifdefined{english}
-\BibEmph{Nutt~G.} Performance of CSMA/CD networks under combined
-  voice and data loads~/ \BibEmph{Nutt~G., Bayer~D.} // \BibEmphi{IEEE Transactions on Communications}.
+\BibEmph{Nutt~G., Bayer~D.} Performance of CSMA/CD networks under combined
+  voice and data loads~// \BibEmphi{IEEE Transactions on Communications}.
   \BibDash
 \newblock 1982. \BibDash
 \newblock Vol.~30, no.~1. \BibDash
@@ -133,14 +144,14 @@ IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
 
 \bibitem{bellovin2003icmp}
 \selectlanguageifdefined{english}
-\BibEmph{Bellovin~S.~M.} ICMP traceback messages. / \BibEmph{Bellovin~S.~M., Leech~M., Taylor~T.} \BibDash
+\BibEmph{Bellovin~S.~M., Leech~M., Taylor~T.} ICMP traceback messages. \BibDash
 \newblock 2003.
 
 \bibitem{nazarov2017asymptotic}
 \selectlanguageifdefined{english}
-\BibEmph{Nazarov~A.~A.} Asymptotic analysis of Markovian
+\BibEmph{Nazarov~A.~A., Paul~S., Gudkova~I.} Asymptotic analysis of Markovian
   retrial queue with two-way communication under low rate of retrials
-  condition. / \BibEmph{Nazarov~A.~A., Paul~S., Gudkova~I.} \BibDash
+  condition. \BibDash
 \newblock 2017.
 
 \bibitem{phung2019retrial}
@@ -158,9 +169,9 @@ IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
 
 \bibitem{paul2018retrial}
 \selectlanguageifdefined{english}
-\BibEmph{Paul~S.} Retrial Queueing Model with Two-Way
+\BibEmph{Paul~S., Phung-Duc~T.} Retrial Queueing Model with Two-Way
   Communication, Unreliable Server and Resume of Interrupted Call for Cognitive
-  Radio Networks~ / \BibEmph{Paul~S., Phung-Duc~T.} // Information Technologies and Mathematical Modelling.
+  Radio Networks~// Information Technologies and Mathematical Modelling.
   Queueing Theory and Applications. \BibDash
 \newblock Springer, 2018. \BibDash
 \newblock P.~213--224.
@@ -179,7 +190,7 @@ IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
 \newblock Gulf Professional Publishing, 1991.
 
 \bibitem{egorov2006prog}
-\selectlanguageifdefined{russian}
+\selectlanguageifdefined{english}
 \BibEmph{Егоров~И.~М.} Программирование: Учебное
   методическое пособие. \BibDash
 \newblock Томск: Томский межвузовский центр
@@ -188,16 +199,16 @@ IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
 
 \bibitem{fischer1993markov}
 \selectlanguageifdefined{english}
-\BibEmph{Fischer~W.} The Markov-modulated Poisson process
-  (MMPP) cookbook~ / \BibEmph{Fischer~W., Meier-Hellstern~K.} // \BibEmphi{Performance evaluation}. \BibDash
+\BibEmph{Fischer~W., Meier-Hellstern~K.} The Markov-modulated Poisson process
+  (MMPP) cookbook~// \BibEmphi{Performance evaluation}. \BibDash
 \newblock 1993. \BibDash
 \newblock Vol.~18, no.~2. \BibDash
 \newblock P.~149--171.
 
 \bibitem{wieland2003queueing}
 \selectlanguageifdefined{english}
-\BibEmph{Wieland~J.~R.} Queueing network
-  simulation analysis: queueing-network stability: simulation-based checking~ / \BibEmph{Wieland~J.~R., Pasupathy~R., Schmeiser~B.~W.} //
+\BibEmph{Wieland~J.~R., Pasupathy~R., Schmeiser~B.~W.} Queueing network
+  simulation analysis: queueing-network stability: simulation-based checking~//
   Proceedings of the 35th conference on Winter simulation: driving innovation.
   \BibDash
 \newblock 2003. \BibDash
@@ -214,14 +225,56 @@ QT Documentation. \BibDash
 ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
   S.~Deering~: 1991.
 
+\bibitem{itmm_2021}
+\selectlanguageifdefined{english}
+\BibEmph{Благинин~А., Лапатин~И., Назаров~А.}
+  Исследование двумерного выходящего
+  потока марковской модели узла обработки
+  запросов с повторными обращениями и
+  вызываемыми заявками~// Информационные
+  технологии и математическое
+  моделирование (ИТММ-2020) : материалы XIX
+  Международной конференции имени А. Ф.
+  Терпугова. \BibDash
+\newblock Томск: Изд-во НТЛ, 2021.
+
+\bibitem{icsm}
+\selectlanguageifdefined{english}
+\BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.} Asymptotic Analysis of
+  the Output Process in Retrial Queue with Two-Way Communication and MAP
+  Input~// Пятая Международная конференция по
+  стохастическим методам (МКСМ-5) : материалы
+  Международной научной конференции. \BibDash
+\newblock Изд-во РУДН, 2020.
+
+\bibitem{mpmo}
+\selectlanguageifdefined{english}
+\BibEmph{Лапатин~И.~Л., Назаров~А.~А.,
+  Благинин~А.~Л.} Исследование выходящего
+  потока марковской модели узла обработки
+  запросов с повторными обращениями и
+  вызываемыми заявками~// Математика, ее
+  приложения и математическое образование
+  (МПМО’20) : материалы VII Международной
+  конференции. \BibDash
+\newblock Улан-Удэ: Изд-во ВСГУТУ, 2020.
+
 \bibitem{blaginin2020two}
 \selectlanguageifdefined{english}
-\BibEmph{Blaginin~A.~L.} The Two-Dimensional Output Process of
-  Retrial Queue with Two-Way Communication~ / \BibEmph{Blaginin~A.~L., Lapatin~I.~L.} // Information Technologies and
+\BibEmph{Blaginin~A.~L., Lapatin~I.~L.} The Two-Dimensional Output Process of
+  Retrial Queue with Two-Way Communication~// Information Technologies and
   Mathematical Modelling. Queueing Theory and Applications: 19th International
   Conference, ITMM 2020, Named after AF Terpugov, Tomsk, Russia, December 2--5,
   2020, Revised Selected Papers~/ Springer Nature. \BibDash
 \newblock P.~279--290.
+
+\bibitem{evm}
+\selectlanguageifdefined{english}
+ПрЭВМ №2020664030. \BibDash
+\newblock
+  \url{https://new.fips.ru/registers-doc-view/fips_servlet?DB=EVM&DocNumber=2020664929&TypeFile=html}.
+  \BibDash
+\newblock Accessed: 2021-06-02.
 
 \bibitem{meier1986statistical}
 \selectlanguageifdefined{english}
@@ -231,8 +284,8 @@ ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
 
 \bibitem{lapatin2020asymptotic}
 \selectlanguageifdefined{english}
-\BibEmph{Lapatin~I.~L.} Asymptotic analysis of
-  the output process in retrial queue with two-way communication and MAP input. / \BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.}
+\BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.} Asymptotic analysis of
+  the output process in retrial queue with two-way communication and MAP input.
   \BibDash
 \newblock 2020.
 
@@ -246,8 +299,8 @@ ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
 
 \bibitem{gharbi2011algorithmic}
 \selectlanguageifdefined{english}
-\BibEmph{Gharbi~N.} An algorithmic approach for analysis of
-  finite-source retrial systems with unreliable servers~ / \BibEmph{Gharbi~N., Dutheillet~C.} // \BibEmphi{Computers
+\BibEmph{Gharbi~N., Dutheillet~C.} An algorithmic approach for analysis of
+  finite-source retrial systems with unreliable servers~// \BibEmphi{Computers
   \& Mathematics with Applications}. \BibDash
 \newblock 2011. \BibDash
 \newblock Vol.~62, no.~6. \BibDash
@@ -260,15 +313,6 @@ ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
 \newblock 1968. \BibDash
 \newblock Vol.~39, no.~4. \BibDash
 \newblock P.~1144--1152.
-
-\bibitem{2019asymptotic}
-\selectlanguageifdefined{english}
-\BibEmph{Lapatin~I.~L.} Asymptotic Analysis of the Output
-  Process in Retrial Queue with Markov-Modulated Poisson Input Under Low Rate
-  of Retrials Condition~ / \BibEmph{Lapatin~I.~L., Nazarov~A.~A.} // International Conference on Distributed Computer and
-  Communication Networks~ \BibDash~ Springer. \BibDash
-\newblock 2019. \BibDash
-\newblock P.~315--324.
 
 \bibitem{mirasol1963letter}
 \selectlanguageifdefined{english}

@@ -32,22 +32,43 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \usepackage{listings}
 \usepackage{xcolor}
 \lstset { %
- backgroundcolor=\color{black!6},  
-basicstyle=\linespread{0.9}\ttfamily,
 breakatwhitespace=false,      
-breaklines=false,                
+keywordstyle=\color{blue}\ttfamily,
+stringstyle=\color{orange}\ttfamily,
+showstringspaces=false,
+breaklines=true,                
 captionpos=b,                    
 commentstyle=\color{green}, 
 extendedchars=true,              
-%frame=single,                   
-keepspaces=false,             
-keywordstyle=\color{blue},      
-language=c++,                 
-rulecolor=\color{gray},                        
-stringstyle=\color{green},                   
-title=\lstname 
+frame=single,                   
+keepspaces=false,                                   
+rulecolor=\color{gray},                                          
+columns=flexible,
+tabsize=2,
+literate={0}{{\textcolor{darkpastelgreen}{0}}}{1}%
+{1}{{\textcolor{darkpastelgreen}{1}}}{1}%
+{2}{{\textcolor{darkpastelgreen}{2}}}{1}%
+{3}{{\textcolor{darkpastelgreen}{3}}}{1}%
+{4}{{\textcolor{darkpastelgreen}{4}}}{1}%
+{5}{{\textcolor{darkpastelgreen}{5}}}{1}%
+{6}{{\textcolor{darkpastelgreen}{6}}}{1}%
+{7}{{\textcolor{darkpastelgreen}{7}}}{1}%
+{8}{{\textcolor{darkpastelgreen}{8}}}{1}%
+{9}{{\textcolor{darkpastelgreen}{9}}}{1}%
+{.0}{{\textcolor{darkpastelgreen}{.0}}}{2}% 
+{.1}{{\textcolor{darkpastelgreen}{.1}}}{2}% 
+{.2}{{\textcolor{darkpastelgreen}{.2}}}{2}%
+{.3}{{\textcolor{darkpastelgreen}{.3}}}{2}%
+{.4}{{\textcolor{darkpastelgreen}{.4}}}{2}%
+{.5}{{\textcolor{darkpastelgreen}{.5}}}{2}%
+{.6}{{\textcolor{darkpastelgreen}{.6}}}{2}%
+{.7}{{\textcolor{darkpastelgreen}{.7}}}{2}%
+{.8}{{\textcolor{darkpastelgreen}{.8}}}{2}%
+{.9}{{\textcolor{darkpastelgreen}{.9}}}{2}%
 }
 
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 \linespread{1.3} % полуторный интервал
 %\renewcommand{\rmdefault}{ftm} % Times New Roman
@@ -71,22 +92,139 @@ title=\lstname
 \usepackage[raggedright]{titlesec}
 
 
+%%Python notebook
+\usepackage[most]{tcolorbox}
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{mygreen}{rgb}{0,0.4,0}
+\definecolor{light_gray}{rgb}{0.97,0.97,0.97}
+\definecolor{mykey}{rgb}{0.117,0.403,0.713}
+
+\tcbuselibrary{listings}
+\newlength\inwd
+\setlength\inwd{1.3cm}
+
+\newcounter{ipythcntr}
+\renewcommand{\theipythcntr}{\texttt{[\arabic{ipythcntr}]}}
+
+\newtcblisting{pyin}[1][]{%
+	sharp corners,
+	enlarge left by=\inwd,
+	width=\linewidth-\inwd,
+	enhanced,
+	boxrule=0pt,
+	colback=light_gray,
+	listing only,
+	top=0pt,
+	bottom=0pt,
+	overlay={
+		\node[
+		anchor=north east,
+		text width=\inwd,
+		font=\footnotesize\ttfamily\color{mykey},
+		inner ysep=2mm,
+		inner xsep=0pt,
+		outer sep=0pt
+		] 
+		at (frame.north west)
+		{\refstepcounter{ipythcntr}\label{#1}In \theipythcntr:};
+	}
+	listing engine=listing,
+	listing options={
+		aboveskip=1pt,
+		belowskip=1pt,
+		basicstyle=\footnotesize\ttfamily,
+		language=Python,
+		keywordstyle=\color{mykey},
+		showstringspaces=false,
+		stringstyle=\color{mygreen}
+	},
+}
+\newtcblisting{pyprint}{
+	sharp corners,
+	enlarge left by=\inwd,
+	width=\linewidth-\inwd,
+	enhanced,
+	boxrule=0pt,
+	colback=white,
+	listing only,
+	top=0pt,
+	bottom=0pt,
+	overlay={
+		\node[
+		anchor=north east,
+		text width=\inwd,
+		font=\footnotesize\ttfamily\color{mykey},
+		inner ysep=2mm,
+		inner xsep=0pt,
+		outer sep=0pt
+		] 
+		at (frame.north west)
+		{};
+	}
+	listing engine=listing,
+	listing options={
+		aboveskip=1pt,
+		belowskip=1pt,
+		basicstyle=\footnotesize\ttfamily,
+		language=Python,
+		keywordstyle=\color{mykey},
+		showstringspaces=false,
+		stringstyle=\color{mygreen}
+	},
+}
+\newtcblisting{pyout}[1][\theipythcntr]{
+	sharp corners,
+	enlarge left by=\inwd,
+	width=\linewidth-\inwd,
+	enhanced,
+	boxrule=0pt,
+	colback=white,
+	listing only,
+	top=0pt,
+	bottom=0pt,
+	overlay={
+		\node[
+		anchor=north east,
+		text width=\inwd,
+		font=\footnotesize\ttfamily\color{mykey},
+		inner ysep=2mm,
+		inner xsep=0pt,
+		outer sep=0pt
+		] 
+		at (frame.north west)
+		{\setcounter{ipythcntr}{\value{ipythcntr}}Out#1:};
+	}
+	listing engine=listing,
+	listing options={
+		aboveskip=1pt,
+		belowskip=1pt,
+		basicstyle=\footnotesize\ttfamily,
+		language=Python,
+		keywordstyle=\color{mykey},
+		showstringspaces=false,
+		stringstyle=\color{mygreen}
+	},
+}
+%% Python notebook
+
+
 \titleformat{\section}[block]
-{\normalsize\bfseries\centering}
+{\bfseries\centering}
 {\thesection}
 {1em}{}
 
 \titleformat{\subsection}[block]
-{\normalsize\bfseries\hspace{\parindent}}
+{\bfseries\hspace{\parindent}}
 {\thesubsection}
 {1em}{}
 
 \titleformat{\subsubsection}[block]
-{\normalsize\bfseries\hspace{\parindent}}
+{\bfseries\hspace{\parindent}}
 {\thesubsubsection}
 {1em}{}
 
 
+\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
 
 \renewcommand{\cfttoctitlefont}{\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftdotsep}{1}

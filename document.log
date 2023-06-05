@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.6.6)  5 JUN 2023 22:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.6.6)  5 JUN 2023 22:34
 entering extended mode
 **./document.tex
 (document.tex
@@ -1243,15 +1243,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
 [1
 
-]) (chapters/abstract.tex
+])
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 1>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 1>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 1>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 1>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 1>
+ [2
+
+]
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 2>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 2>
+File: Задание Благинин 932128.pdf Graphic file (type pdf)
+<use Задание Благинин 932128.pdf, page 2>
+ [3] (chapters/abstract.tex
 Overfull \hbox (16.84288pt too wide) in paragraph at lines 4--5
 \TU/TimesNewRoman(0)/m/n/12 ВАНИЯ С ПОВТОРНЫМИ ВЫЗОВАМИ И ВЫЗЫВАЕМЫМИ ЗАЯВКАМИ,
  МЕТОД АСИМП-
  []
 
-[1
-
-]) (document.toc
+[3]) (document.toc
 LaTeX Font Info:    Trying to load font information for OT1+TimesNewRoman(0) on
  input line 1.
 LaTeX Font Info:    No file OT1TimesNewRoman(0).fd. on input line 1.
@@ -1270,9 +1292,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--9
 \tf@toc=\write6
 \openout6 = `document.toc'.
 
- [2
+ [4
 
-] (chapters/intro.tex [3
+] (chapters/intro.tex [5
 
 ]
 Overfull \hbox (8.79344pt too wide) in paragraph at lines 9--10
@@ -1280,9 +1302,9 @@ Overfull \hbox (8.79344pt too wide) in paragraph at lines 9--10
 кспериментального под-
  []
 
-[4] [5] [6]) (chapters/1.tex [7
+[6] [7] [8]) (chapters/1.tex [9
 
-] [8]
+] [10]
 Overfull \hbox (28.58769pt too wide) in paragraph at lines 22--23
 []\TU/TimesNewRoman(0)/m/n/14 При моделировании систем массового обслуживания и
 спользуется дискретно-
@@ -1291,10 +1313,10 @@ Overfull \hbox (28.58769pt too wide) in paragraph at lines 22--23
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 26.
 File: ./figures//1_sim_example.png Graphic file (type bmp)
 <./figures//1_sim_example.png>
-[9]
+[11]
 File: ./figures//sim_algo.png Graphic file (type bmp)
 <./figures//sim_algo.png>
- [10] [11] [12]) (chapters/2.tex
+ [12] [13] [14]) (chapters/2.tex
 Overfull \hbox (2.73076pt too wide) in paragraph at lines 2--3
 []\TU/TimesNewRoman(0)/m/n/14 В данном разделе описывается процесс проектирован
 ия и разработки ком-
@@ -1312,15 +1334,15 @@ Overfull \hbox (1.02682pt too wide) in paragraph at lines 4--5
 е, делается упор на уни-
  []
 
-[13
+[15
 
-] [14]
+] [16]
 Overfull \hbox (0.76314pt too wide) in paragraph at lines 24--25
 []\TU/TimesNewRoman(0)/m/n/14 Для разработки инструмента выбран объектно–ориент
 ированный подход.
  []
 
-[15] [16]
+[17] [18]
 File: ./figures//d_producer.png Graphic file (type bmp)
 <./figures//d_producer.png>
 
@@ -1328,16 +1350,16 @@ Overfull \hbox (11.97192pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-[17]
+[19]
 File: ./figures//d_slot.png Graphic file (type bmp)
 <./figures//d_slot.png>
- [18]
+ [20]
 File: ./figures//d_router.png Graphic file (type bmp)
 <./figures//d_router.png>
- [19] [20]
+ [21] [22]
 File: ./figures//d_d.png Graphic file (type bmp)
 <./figures//d_d.png>
- [21]
+ [23]
 Overfull \hbox (12.18407pt too wide) in paragraph at lines 98--99
 \TU/TimesNewRoman(0)/m/n/14 бавляет маршрутизатор на выходящий слот элемента, A
 ddHangingOutputNoQueue
@@ -1350,19 +1372,19 @@ Overfull \hbox (10.3816pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-[22] [23]
+[24] [25]
 Overfull \hbox (15.5926pt too wide) in paragraph at lines 127--128
 []\TU/TimesNewRoman(0)/m/n/14 Для орбиты имеется лишь одна реализация через нас
 ледованный от Producer
  []
 
-[24] [25]
+[26] [27]
 Overfull \hbox (2.10614pt too wide) in paragraph at lines 158--159
 \TU/TimesNewRoman(0)/m/n/14 ности интерпретируемые, поскольку проверка типов, п
 редупреждение воз-
  []
 
-[26] [27] (D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
+[28] [29] (D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
@@ -1370,17 +1392,17 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (D:\Programms\MikTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [28]
+) [30]
 File: ./figures//doc_example.png Graphic file (type bmp)
 <./figures//doc_example.png>
- [29] [30]
+ [31] [32]
 (D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 \openout4 = `document.listing'.
 
  (document.listing)
-[31]
+[33]
 Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -1449,7 +1471,7 @@ Overfull \hbox (18.49536pt too wide) in paragraph at lines 312--313
 man(0)/m/n/14 и меткой «  orbit»; 
  []
 
-[32]
+[34]
 Overfull \hbox (2.37042pt too wide) in paragraph at lines 321--322
 []\TU/TimesNewRoman(0)/m/n/14 заявки из источника вызываемых заявок «  call» по
 падают на прибор «  node»; 
@@ -1457,12 +1479,12 @@ Overfull \hbox (2.37042pt too wide) in paragraph at lines 321--322
 
 File: ./figures//2_sim_example.png Graphic file (type bmp)
 <./figures//2_sim_example.png>
-[33] [34]) (chapters/3.tex [35
+[35] [36]) (chapters/3.tex [37
 
-] [36] [37]
+] [38] [39]
 File: ./figures//dft_figure1.png Graphic file (type bmp)
 <./figures//dft_figure1.png>
- [38] [39]
+ [40] [41]
 Overfull \hbox (5.783pt too wide) in paragraph at lines 77--78
 []\TU/TimesNewRoman(0)/m/n/14 Для вычисления характеристической функции необход
 имо вычислять мат-
@@ -1470,12 +1492,12 @@ Overfull \hbox (5.783pt too wide) in paragraph at lines 77--78
 
 File: ./figures//dft_figure2.png Graphic file (type bmp)
 <./figures//dft_figure2.png>
-[40] [41]) (chapters/4.tex
+[42] [43]) (chapters/4.tex
 File: ./figures//RQ.png Graphic file (type bmp)
 <./figures//RQ.png>
 \openout4 = `document.listing'.
 
- (document.listing) [42
+ (document.listing) [44
 
 ]
 Missing character: There is no l in font nullfont!
@@ -1550,7 +1572,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [43]
+ [45]
 \openout4 = `document.listing'.
 
  (document.listing)
@@ -1631,7 +1653,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [44]
+ [46]
 Overfull \hbox (11.97714pt too wide) in paragraph at lines 107--108
 []\TU/TimesNewRoman(0)/m/n/14 для аккумулирующего выходного маршрузитора (model
 .add_hanging_output)
@@ -1673,7 +1695,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
-[45]
+[47]
 \openout4 = `document.listing'.
 
  (document.listing)
@@ -1726,12 +1748,12 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [46]
+ [48]
 File: ./figures//model_2d_distr.png Graphic file (type bmp)
 <./figures//model_2d_distr.png>
 \openout4 = `document.listing'.
 
- (document.listing) [47]
+ (document.listing) [49]
 Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -1813,10 +1835,10 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [48]
+ [50]
 File: ./figures//asymp_calc_example.png Graphic file (type bmp)
 <./figures//asymp_calc_example.png>
- [49]
+ [51]
 Overfull \hbox (2.05058pt too wide) in paragraph at lines 240--241
 []\TU/TimesNewRoman(0)/m/n/14 Для точечного сравнения распределений воспользуем
 ся расстоянием Кол-
@@ -1858,89 +1880,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
-[50]
-\openout4 = `document.listing'.
-
- (document.listing)
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
- [51]
-\openout4 = `document.listing'.
-
- (document.listing)
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-\openout4 = `document.listing'.
-
- (document.listing)
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-\openout4 = `document.listing'.
-
-
-(document.listing) [52]
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-\openout4 = `document.listing'.
-
- (document.listing)
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
+[52]
 \openout4 = `document.listing'.
 
  (document.listing)
@@ -1960,6 +1900,88 @@ Missing character: There is no e in font nullfont!
  [53]
 \openout4 = `document.listing'.
 
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+
+(document.listing) [54]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [55]
+\openout4 = `document.listing'.
+
 
 (document.listing)
 Missing character: There is no l in font nullfont!
@@ -1975,16 +1997,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [54]
+ [56]
 File: ./figures//orbit_size_plot_all.png Graphic file (type bmp)
 <./figures//orbit_size_plot_all.png>
- [55]
+ [57]
 File: ./figures//wait_time_plot_all.png Graphic file (type bmp)
 <./figures//wait_time_plot_all.png>
- [56]
+ [58]
 File: ./figures//pairplot_all.png Graphic file (type bmp)
 <./figures//pairplot_all.png>
- [57] [58]
+ [59] [60]
 Overfull \hbox (11.72572pt too wide) in paragraph at lines 440--441
 []\TU/TimesNewRoman(0)/m/n/14 Также в рамках проводимых экспериментов воспользу
 емся несколько иным
@@ -2018,7 +2040,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [59] [60]
+ [61] [62]
 \openout4 = `document.listing'.
 
  (document.listing)
@@ -2037,10 +2059,10 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 File: ./figures//pairplot_sigma.png Graphic file (type bmp)
 <./figures//pairplot_sigma.png>
- [61]
+ [63]
 File: ./figures//pairplot_l.png Graphic file (type bmp)
 <./figures//pairplot_l.png>
- [62]
+ [64]
 Overfull \hbox (2.80864pt too wide) in paragraph at lines 518--519
 \TU/TimesNewRoman(0)/m/n/14 но коррелируют; это можно заключить основываясь на 
 паре os_mean — wt_mean
@@ -2048,25 +2070,25 @@ Overfull \hbox (2.80864pt too wide) in paragraph at lines 518--519
 
 File: ./figures//corr_plot_sigma.png Graphic file (type bmp)
 <./figures//corr_plot_sigma.png>
-[63] [64]
+[65] [66]
 Overfull \hbox (3.79924pt too wide) in paragraph at lines 541--542
 \TU/TimesNewRoman(0)/m/n/14 оптимизации работы модели при нестандартных парамет
 рах. Действитель-
  []
 
-[65]
+[67]
 Overfull \hbox (0.92053pt too wide) in paragraph at lines 547--548
 []\TU/TimesNewRoman(0)/m/n/14 mu2 — интенсивность обслуживания вызванных заявок
  ($\OML/cmm/m/it/14.4 ^^V[]$\TU/TimesNewRoman(0)/m/n/14 ). Действитель-
  []
 
-[66]
+[68]
 File: ./figures//pairplot.png Graphic file (type bmp)
 <./figures//pairplot.png>
- [67] [68]
+ [69] [70]
 File: ./figures//pearson_heatmap.png Graphic file (type bmp)
 <./figures//pearson_heatmap.png>
- [69
+ [71
 
 ]
 Overfull \hbox (2.89905pt too wide) in paragraph at lines 621--622
@@ -2082,7 +2104,7 @@ Overfull \hbox (9.57664pt too wide) in paragraph at lines 621--622
 
 \openout4 = `document.listing'.
 
-(document.listing) [70]
+(document.listing) [72]
 Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -2184,15 +2206,15 @@ Overfull \hbox (1.62608pt too wide) in paragraph at lines 664--665
 
 File: ./figures//feat_lr.png Graphic file (type bmp)
 <./figures//feat_lr.png>
-[71]
+[73]
 File: ./figures//feat_rf.png Graphic file (type bmp)
 <./figures//feat_rf.png>
- [72]
+ [74]
 File: ./figures//feat_gb.png Graphic file (type bmp)
 <./figures//feat_gb.png>
 File: ./figures//feat_cb.png Graphic file (type bmp)
 <./figures//feat_cb.png>
- [73] [74]
+ [75] [76]
 \openout4 = `document.listing'.
 
  (document.listing)
@@ -2262,7 +2284,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
- [75]
+ [77]
 Overfull \hbox (2.10725pt too wide) in paragraph at lines 734--735
 []\TU/TimesNewRoman(0)/m/n/14 min_samples_split — минимальное количество сэмпло
 в, требуемое для рас-
@@ -2284,7 +2306,7 @@ File: ./figures//model_accuracy.png Graphic file (type bmp)
 <./figures//model_accuracy.png>
 File: ./figures//pred_example.png Graphic file (type bmp)
 <./figures//pred_example.png>
-[76] [77] [78] [79]) (chapters/conclusion.tex [80
+[78] [79] [80] [81]) (chapters/conclusion.tex [82
 
 ]
 Overfull \hbox (1.15054pt too wide) in paragraph at lines 16--17
@@ -2292,7 +2314,7 @@ Overfull \hbox (1.15054pt too wide) in paragraph at lines 16--17
 лили провести апро-
  []
 
-[81] [82]) (document.bbl [83
+[83] [84]) (document.bbl [85
 
 ]
 Underfull \hbox (badness 1590) in paragraph at lines 153--158
@@ -2300,13 +2322,13 @@ Underfull \hbox (badness 1590) in paragraph at lines 153--158
 ods for queues: An
  []
 
-[84]
+[86]
 Underfull \hbox (badness 1189) in paragraph at lines 256--258
 []\TU/TimesNewRoman(0)/m/n/14 Pilone Dan, Pitman Neil. UML 2.0 in a Nutshell. —
   ”O’Reilly Media,
  []
 
-[85]
+[87]
 Underfull \hbox (badness 3557) in paragraph at lines 305--310
 []\TU/TimesNewRoman(0)/m/n/14 Mersenne Twister Engine. —  $[][][][][] [] [] [] 
 [][] [] [][][][][][][][][][][][] [] [][][] [] [] [] [][][] []
@@ -2318,7 +2340,7 @@ Underfull \hbox (badness 1990) in paragraph at lines 346--351
 computing in Python /
  []
 
-[86]
+[88]
 Underfull \hbox (badness 4595) in paragraph at lines 366--369
 []\TU/TimesNewRoman(0)/m/n/14 A built-package format for Python. —  $[][][][][]
  [] [] [] [][][][] [] [][][] [] [][][][][][][] []
@@ -2330,7 +2352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--444
 [][][] [] [][][][][][] [] [][][] [] [][][][] []
  []
 
-[87]
+[89]
 Underfull \hbox (badness 2635) in paragraph at lines 470--476
 []\TU/TimesNewRoman(0)/m/n/14 Soofi Aized Amin, Awan Arshad. Classification tec
 hniques in machine
@@ -2348,7 +2370,7 @@ Underfull \hbox (badness 5681) in paragraph at lines 527--532
 r big data: an
  []
 
-[88]) [89]
+[90]) [91]
 File: antiplagiat.pdf Graphic file (type pdf)
 <use antiplagiat.pdf>
 File: antiplagiat.pdf Graphic file (type pdf)
@@ -2363,7 +2385,7 @@ File: antiplagiat.pdf Graphic file (type pdf)
 <use antiplagiat.pdf, page 1>
 File: antiplagiat.pdf Graphic file (type pdf)
 <use antiplagiat.pdf, page 1>
- [90
+ [92
 
 ] 
 AED: lastpage setting LastPage
@@ -2376,12 +2398,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30043 strings out of 412014
- 647889 string characters out of 2850032
- 1544586 words of memory out of 3000000
- 49046 multiletter control sequences out of 15000+200000
+ 30053 strings out of 412014
+ 648257 string characters out of 2850032
+ 1544692 words of memory out of 3000000
+ 49055 multiletter control sequences out of 15000+200000
  413989 words of font info for 95 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,18n,104p,1962b,1579s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on document.pdf (91 pages).
+Output written on document.pdf (93 pages).

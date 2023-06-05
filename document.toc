@@ -1,26 +1,26 @@
 \babel@toc {russian}{}
-\contentsline {section}{Введение}{3}{}%
-\contentsline {section}{\numberline {1}Применение имитационного моделирования в теории массового обслуживания}{7}{}%
-\contentsline {section}{\numberline {2}Разработка программного комплекса}{13}{}%
-\contentsline {subsection}{\numberline {2.1}Предметная область}{14}{}%
-\contentsline {subsection}{\numberline {2.2}Объектная модель предметной области}{17}{}%
-\contentsline {subsection}{\numberline {2.3}Реализации интерфейсов}{23}{}%
-\contentsline {subsection}{\numberline {2.4}Особенности реализации}{25}{}%
-\contentsline {subsection}{\numberline {2.5}Реализация программы в качестве программного пакета для\\ Python}{27}{}%
-\contentsline {subsection}{\numberline {2.6}Интеграция в процесс исследования}{31}{}%
-\contentsline {section}{\numberline {3}Вычисление асимптотических результатов}{35}{}%
-\contentsline {subsection}{\numberline {3.1}Связь характеристических функций с сигналами и их спектрами}{37}{}%
-\contentsline {subsection}{\numberline {3.2}Дискретизация характеристической функции}{37}{}%
-\contentsline {subsection}{\numberline {3.3}Иллюстрация работы подхода на биномиальном распределении}{38}{}%
-\contentsline {subsection}{\numberline {3.4}Иллюстрация работы подхода на задаче теории массового обслуживания}{39}{}%
-\contentsline {section}{\numberline {4}Работа с имитационной моделью}{42}{}%
-\contentsline {subsection}{\numberline {4.1}Вычисление характеристик выходящих процессов модели RQ--системы с повторными вызовами и обратной связью}{42}{}%
-\contentsline {subsection}{\numberline {4.2}Сбор и анализ данных о зависимости распределения заявок на орбите и времени ожидания}{51}{}%
-\contentsline {subsection}{\numberline {4.3}Апробация машинного обучения}{65}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Разведочный анализ}{65}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Построение предсказательных моделей}{70}{}%
-\contentsline {section}{Заключение}{80}{}%
-\contentsline {section}{Список использованной литературы}{83}{}%
+\contentsline {section}{Введение}{5}{}%
+\contentsline {section}{\numberline {1}Применение имитационного моделирования в теории массового обслуживания}{9}{}%
+\contentsline {section}{\numberline {2}Разработка программного комплекса}{15}{}%
+\contentsline {subsection}{\numberline {2.1}Предметная область}{16}{}%
+\contentsline {subsection}{\numberline {2.2}Объектная модель предметной области}{19}{}%
+\contentsline {subsection}{\numberline {2.3}Реализации интерфейсов}{25}{}%
+\contentsline {subsection}{\numberline {2.4}Особенности реализации}{27}{}%
+\contentsline {subsection}{\numberline {2.5}Реализация программы в качестве программного пакета для\\ Python}{29}{}%
+\contentsline {subsection}{\numberline {2.6}Интеграция в процесс исследования}{33}{}%
+\contentsline {section}{\numberline {3}Вычисление асимптотических результатов}{37}{}%
+\contentsline {subsection}{\numberline {3.1}Связь характеристических функций с сигналами и их спектрами}{39}{}%
+\contentsline {subsection}{\numberline {3.2}Дискретизация характеристической функции}{39}{}%
+\contentsline {subsection}{\numberline {3.3}Иллюстрация работы подхода на биномиальном распределении}{40}{}%
+\contentsline {subsection}{\numberline {3.4}Иллюстрация работы подхода на задаче теории массового обслуживания}{41}{}%
+\contentsline {section}{\numberline {4}Работа с имитационной моделью}{44}{}%
+\contentsline {subsection}{\numberline {4.1}Вычисление характеристик выходящих процессов модели RQ--системы с повторными вызовами и обратной связью}{44}{}%
+\contentsline {subsection}{\numberline {4.2}Сбор и анализ данных о зависимости распределения заявок на орбите и времени ожидания}{53}{}%
+\contentsline {subsection}{\numberline {4.3}Апробация машинного обучения}{67}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Разведочный анализ}{67}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Построение предсказательных моделей}{72}{}%
+\contentsline {section}{Заключение}{82}{}%
+\contentsline {section}{Список использованной литературы}{85}{}%
 \babel@toc {russian}{}
 \babel@toc {russian}{}
 \babel@toc {russian}{}

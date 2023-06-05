@@ -1,35 +1,35 @@
 \babel@toc {russian}{}
 \contentsline {section}{Введение}{3}{}%
-\contentsline {section}{\numberline {1}Исследование моделей с простейшим входящим потоком}{7}{}%
-\contentsline {subsection}{\numberline {1.1}Суммарный выходящий поток RQ--системы}{7}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}Уравнения Колмогорова}{8}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}Метод асимптотического анализа}{11}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Переход к явному распределению вероятностей}{14}{}%
-\contentsline {subsection}{\numberline {1.2}Двумерный выходящий поток RQ--системы}{15}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Уравнения Колмогорова}{15}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Метод асимптотического анализа}{16}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Переход к явному распределению вероятностей}{19}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}Коэффициент корреляции}{20}{}%
-\contentsline {section}{\numberline {2}Исследование модели с входящим MMPP--потоком}{21}{}%
-\contentsline {subsection}{\numberline {2.1}Двумерный выходящий поток RQ--системы с MMPP}{21}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Уравнения Колмогорова}{21}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Метод асимптотического анализа}{23}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Переход к явному распределению вероятностей}{28}{}%
-\contentsline {section}{\numberline {3}Имитационное моделирование}{29}{}%
-\contentsline {subsection}{\numberline {3.1}Объектная модель предметной области}{29}{}%
-\contentsline {subsection}{\numberline {3.2}Процесс моделирования}{35}{}%
-\contentsline {subsection}{\numberline {3.3}Функционирование элементов системы массового обслуживания}{37}{}%
-\contentsline {subsection}{\numberline {3.4}Интерфейс и работа программы}{41}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Моделирование в реальном времени}{42}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Ускоренное моделирование }{44}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Работа с главным графиком}{45}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Экспорт результатов моделирования}{49}{}%
-\contentsline {subsection}{\numberline {3.5}Особенности реализации}{50}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Генерация псевдослучайных чисел}{51}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Отображение статуса при ускоренном моделировании}{51}{}%
-\contentsline {section}{\numberline {4}Численные эксперименты}{53}{}%
-\contentsline {subsection}{\numberline {4.1}Проверка стабильности имитационной модели}{53}{}%
-\contentsline {subsection}{\numberline {4.2}Оценка точности асимптотических результатов}{55}{}%
-\contentsline {subsection}{\numberline {4.3}Анализ корреляции выходящих процессов}{58}{}%
-\contentsline {section}{Заключение}{64}{}%
-\contentsline {section}{Список использованной литературы}{67}{}%
+\contentsline {section}{\numberline {1}Применение имитационного моделирования в теории массового обслуживания}{7}{}%
+\contentsline {section}{\numberline {2}Разработка программного комплекса}{13}{}%
+\contentsline {subsection}{\numberline {2.1}Предметная область}{14}{}%
+\contentsline {subsection}{\numberline {2.2}Объектная модель предметной области}{17}{}%
+\contentsline {subsection}{\numberline {2.3}Реализации интерфейсов}{23}{}%
+\contentsline {subsection}{\numberline {2.4}Особенности реализации}{25}{}%
+\contentsline {subsection}{\numberline {2.5}Реализация программы в качестве программного пакета для\\ Python}{27}{}%
+\contentsline {subsection}{\numberline {2.6}Интеграция в процесс исследования}{31}{}%
+\contentsline {section}{\numberline {3}Вычисление асимптотических результатов}{35}{}%
+\contentsline {subsection}{\numberline {3.1}Связь характеристических функций с сигналами и их спектрами}{37}{}%
+\contentsline {subsection}{\numberline {3.2}Дискретизация характеристической функции}{37}{}%
+\contentsline {subsection}{\numberline {3.3}Иллюстрация работы подхода на биномиальном распределении}{38}{}%
+\contentsline {subsection}{\numberline {3.4}Иллюстрация работы подхода на задаче теории массового обслуживания}{39}{}%
+\contentsline {section}{\numberline {4}Работа с имитационной моделью}{42}{}%
+\contentsline {subsection}{\numberline {4.1}Вычисление характеристик выходящих процессов модели RQ--системы с повторными вызовами и обратной связью}{42}{}%
+\contentsline {subsection}{\numberline {4.2}Сбор и анализ данных о зависимости распределения заявок на орбите и времени ожидания}{51}{}%
+\contentsline {subsection}{\numberline {4.3}Апробация машинного обучения}{65}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Разведочный анализ}{65}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Построение предсказательных моделей}{70}{}%
+\contentsline {section}{Заключение}{80}{}%
+\contentsline {section}{Список использованной литературы}{83}{}%
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}
+\babel@toc {russian}{}

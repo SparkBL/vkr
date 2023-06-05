@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: document.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+The style file: ugost2008mod.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: refs.bib
+Repeated entry---line 131 of file refs.bib
+ : @book{hackeling2017mastering
+ :                             ,
+I'm skipping whatever remains of this entry
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty journal in bellovin2003icmp
+Warning--empty school in bjornstad2006traffic
+Warning--empty journal in назаров1991асимптотический
+Warning--empty journal in моисеев2016исследование
+Warning--empty journal in claes2009controlling
+Warning--empty journal in schmid2012c++
+Warning--empty year in gcc
+Warning--empty year in mersenn
+Warning--empty year in numpy
+Warning--empty year in pybind
+Warning--empty year in pytorch
+Warning--empty year in pip
+Warning--empty year in wheel
+Warning--empty year in setuptools
+Warning--empty journal in долгополов2011ряды
+Warning--empty year in multiproc
+Warning--empty year in gil
+Warning--empty year in psutil
+Warning--can't use both volume and number fields in ojeda2021learning
+Warning--empty journal in cox2007pairplot
+You've used 67 entries,
+            4056 wiz_defined-function locations,
+            1468 strings with 22895 characters,
+and the built_in function-call counts, 22643 in all, are:
+= -- 2723
+> -- 443
+< -- 94
++ -- 162
+- -- 95
+* -- 1238
+:= -- 2228
+add.period$ -- 253
+call.type$ -- 67
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 87
+duplicate$ -- 1360
+empty$ -- 2715
+format.name$ -- 95
+if$ -- 6090
+int.to.chr$ -- 0
+int.to.str$ -- 67
+missing$ -- 0
+newline$ -- 424
+num.names$ -- 166
+pop$ -- 405
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 942
+stack$ -- 0
+substring$ -- 925
+swap$ -- 878
+text.length$ -- 40
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 20
+while$ -- 158
+width$ -- 69
+write$ -- 898
+(There was 1 error message)

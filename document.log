@@ -1,0 +1,2387 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.6.6)  5 JUN 2023 22:24
+entering extended mode
+**./document.tex
+(document.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-06> xparse <2020-03-03>
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/extsizes\extartic
+le.cls"
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(D:\Programms\MikTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+(D:\Programms\MikTeX\tex/latex/base\exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen138
+)
+\c@part=\count173
+\c@section=\count174
+\c@subsection=\count175
+\c@subsubsection=\count176
+\c@paragraph=\count177
+\c@subparagraph=\count178
+\c@figure=\count179
+\c@table=\count180
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen139
+) (preamble.tex
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/extsizes\extsizes
+.sty"
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(D:\Programms\MikTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+LaTeX Info: The control sequence `\normalsize' is already robust on input line 
+56.
+LaTeX Info: Redefining \small on input line 58.
+LaTeX Info: Redefining \footnotesize on input line 69.
+LaTeX Info: Redefining \scriptsize on input line 80.
+LaTeX Info: Redefining \tiny on input line 81.
+LaTeX Info: Redefining \large on input line 82.
+LaTeX Info: Redefining \Large on input line 83.
+LaTeX Info: Redefining \LARGE on input line 84.
+LaTeX Info: Redefining \huge on input line 85.
+))
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cmap\cmap.sty"
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
+
+
+Package cmap Warning: pdftex not detected - exiting.
+
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/placeins\placeins
+.sty"
+Package: placeins 2005/04/18  v 2.2
+) (D:\Programms\MikTeX\tex/latex/fontspec\fontspec-xetex.sty
+(D:\Programms\MikTeX\tex/latex/l3packages/xparse\xparse.sty
+(D:\Programms\MikTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-06 L3 programming layer (loader) 
+
+(D:\Programms\MikTeX\tex/latex/l3backend\l3backend-xetex.def
+File: l3backend-xetex.def 2021-02-06 L3 backend support: XeTeX
+ ()
+\c__kernel_sys_dvipdfmx_version_int=\count181
+\l__color_backend_stack_int=\count182
+\g__color_backend_stack_int=\count183
+\g__graphics_track_int=\count184
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count185
+\g__pdf_backend_annotation_int=\count186
+\g__pdf_backend_link_int=\count187
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(D:\Programms\MikTeX\tex/latex/l3packages/xparse\xparse-generic.tex))
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count188
+\l__fontspec_language_int=\count189
+\l__fontspec_strnum_int=\count190
+\l__fontspec_tmp_int=\count191
+\l__fontspec_tmpa_int=\count192
+\l__fontspec_tmpb_int=\count193
+\l__fontspec_tmpc_int=\count194
+\l__fontspec_em_int=\count195
+\l__fontspec_emdef_int=\count196
+\l__fontspec_strong_int=\count197
+\l__fontspec_strongdef_int=\count198
+\l__fontspec_tmpa_dim=\dimen140
+\l__fontspec_tmpb_dim=\dimen141
+\l__fontspec_tmpc_dim=\dimen142
+
+(D:\Programms\MikTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(D:\Programms\MikTeX\tex/latex/fontspec\fontspec.cfg))
+(D:\Programms\MikTeX\tex/generic/babel\babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+
+(D:\Programms\MikTeX\tex/generic/babel\babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count199
+\U@D=\dimen143
+\l@babelnohyphens=\language79
+
+(D:\Programms\MikTeX\tex/generic/babel\xebabel.def
+(D:\Programms\MikTeX\tex/generic/babel\txtbabel.def))
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count266
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Programms\MikTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-russian\rus
+sianb.ldf"
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+))
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/slashbox\slashbox
+.sty"
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box48
+\@slashboxb=\box49
+\@slashboxc=\box50
+\@slashboxwd=\count267
+\@slashboxht=\count268
+\@slashsepl=\dimen144
+\@slashsepr=\dimen145
+) (D:\Programms\MikTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Programms\MikTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(D:\Programms\MikTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Programms\MikTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(D:\Programms\MikTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+
+(D:\Programms\MikTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
+)
+(D:\Programms\MikTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(D:\Programms\MikTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(D:\Programms\MikTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(D:\Programms\MikTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(D:\Programms\MikTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen148
+))
+(D:\Programms\MikTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+)
+(D:\Programms\MikTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip16
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks18
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks19
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty
+"
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks27
+) (D:\Programms\MikTeX\tex/latex/latex-tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(D:\Programms\MikTeX\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(D:\Programms\MikTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 147.
+
+(D:\Programms\MikTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/makecell\makecell
+.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (D:\Programms\MikTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen157
+\ar@mcellbox=\box53
+\extrarowheight=\dimen158
+\NC@list=\toks28
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box54
+)
+\rotheadsize=\dimen159
+\c@nlinenum=\count281
+\TeXr@lab=\toks29
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.sty"
+Package: csquotes 2021-01-04 v5.2k context-sensitive quotations (JAW)
+ (D:\Programms\MikTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count282
+)
+\csq@reset=\count283
+\csq@gtype=\count284
+\csq@glevel=\count285
+\csq@qlevel=\count286
+\csq@maxlvl=\count287
+\csq@tshold=\count288
+\csq@ltx@everypar=\toks30
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.def"
+File: csquotes.def 2021-01-04 v5.2k csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.cfg"
+File: csquotes.cfg 
+))
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpages
+.sty"
+Package: pdfpages 2021/02/05 v0.5s Insert pages of external PDF documents (AM)
+ (D:\Programms\MikTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(D:\Programms\MikTeX\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count289
+\calc@Bcount=\count290
+\calc@Adimen=\dimen160
+\calc@Bdimen=\dimen161
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count291
+\calc@Cskip=\skip59
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.s
+ty"
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen162
+\ESO@tempdimb=\dimen163
+)
+\AM@pagewidth=\dimen164
+\AM@pageheight=\dimen165
+\AM@fboxrule=\dimen166
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\ppxetex.
+def"
+File: ppxetex.def 2021/02/05 v0.5s Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count292
+\AM@pagebox=\box55
+\AM@global@opts=\toks31
+\AM@pagecnt=\count293
+\AM@toc@title=\toks32
+\c@AM@survey=\count294
+\AM@templatesizebox=\box56
+) (D:\Programms\MikTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow
+.sty"
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count295
+\multirow@dima=\skip61
+\bigstrutjot=\dimen167
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ulem\ulem.sty"
+\UL@box=\box57
+\UL@hyphenbox=\box58
+\UL@skip=\skip62
+\UL@hook=\toks33
+\UL@height=\dimen168
+\UL@pe=\count296
+\UL@pixel=\dimen169
+\ULC@box=\box59
+Package: ulem 2019/11/18
+\ULdepth=\dimen170
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tocloft\tocloft.s
+ty"
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip63
+\cftbeforetoctitleskip=\skip64
+\cftaftertoctitleskip=\skip65
+\cftbeforepartskip=\skip66
+\cftpartnumwidth=\skip67
+\cftpartindent=\skip68
+\cftbeforesecskip=\skip69
+\cftsecindent=\skip70
+\cftsecnumwidth=\skip71
+\cftbeforesubsecskip=\skip72
+\cftsubsecindent=\skip73
+\cftsubsecnumwidth=\skip74
+\cftbeforesubsubsecskip=\skip75
+\cftsubsubsecindent=\skip76
+\cftsubsubsecnumwidth=\skip77
+\cftbeforeparaskip=\skip78
+\cftparaindent=\skip79
+\cftparanumwidth=\skip80
+\cftbeforesubparaskip=\skip81
+\cftsubparaindent=\skip82
+\cftsubparanumwidth=\skip83
+\cftbeforeloftitleskip=\skip84
+\cftafterloftitleskip=\skip85
+\cftbeforefigskip=\skip86
+\cftfigindent=\skip87
+\cftfignumwidth=\skip88
+\c@lofdepth=\count297
+\c@lotdepth=\count298
+\cftbeforelottitleskip=\skip89
+\cftafterlottitleskip=\skip90
+\cftbeforetabskip=\skip91
+\cfttabindent=\skip92
+\cfttabnumwidth=\skip93
+) (D:\Programms\MikTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(D:\Programms\MikTeX\tex/latex/pgf/basiclayer\pgf.sty
+(D:\Programms\MikTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen171
+\pgfutil@tempdimb=\dimen172
+
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex))
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box60
+)
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(D:\Programms\MikTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(D:\Programms\MikTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen173
+\pgf@y=\dimen174
+\pgf@xa=\dimen175
+\pgf@ya=\dimen176
+\pgf@xb=\dimen177
+\pgf@yb=\dimen178
+\pgf@xc=\dimen179
+\pgf@yc=\dimen180
+\pgf@xd=\dimen181
+\pgf@yd=\dimen182
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count303
+
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsys-xetex.def
+File: pgfsys-xetex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)
+\pgfsys@objnum=\count304
+)))
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count305
+\pgfsyssoftpath@bigbuffer@items=\count306
+)
+(D:\Programms\MikTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(D:\Programms\MikTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmath.code.tex
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen183
+\pgfmath@count=\count307
+\pgfmath@box=\box61
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.t
+ex) (D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.c
+ode.tex))) (D:\Programms\MikTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count308
+))
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfint.code.tex)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen184
+\pgf@picmaxx=\dimen185
+\pgf@picminy=\dimen186
+\pgf@picmaxy=\dimen187
+\pgf@pathminx=\dimen188
+\pgf@pathmaxx=\dimen189
+\pgf@pathminy=\dimen190
+\pgf@pathmaxy=\dimen191
+\pgf@xx=\dimen192
+\pgf@xy=\dimen193
+\pgf@yx=\dimen194
+\pgf@yy=\dimen195
+\pgf@zx=\dimen196
+\pgf@zy=\dimen197
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen198
+\pgf@path@lasty=\dimen199
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen256
+\pgf@shorten@start@additional=\dimen257
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count309
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen258
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen259
+\pgf@pt@y=\dimen260
+\pgf@pt@temp=\dimen261
+) (D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen262
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen263
+\pgf@sys@shading@range@num=\count310
+\pgf@shadingcount=\count311
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box65
+))
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(D:\Programms\MikTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box66
+)
+(D:\Programms\MikTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen264
+\pgf@nodesepend=\dimen265
+)
+(D:\Programms\MikTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/latex/pgf/utilities\pgffor.sty
+(D:\Programms\MikTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(D:\Programms\MikTeX\tex/latex/pgf/math\pgfmath.sty
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(D:\Programms\MikTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen266
+\pgffor@skip=\dimen267
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count312
+\pgfplotmarksize=\dimen268
+)
+\tikz@lastx=\dimen269
+\tikz@lasty=\dimen270
+\tikz@lastxsaved=\dimen271
+\tikz@lastysaved=\dimen272
+\tikz@lastmovetox=\dimen273
+\tikz@lastmovetoy=\dimen274
+\tikzleveldistance=\dimen275
+\tikzsiblingdistance=\dimen276
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count313
+\tikznumberofchildren=\count314
+\tikznumberofcurrentchild=\count315
+\tikz@fig@count=\count316
+(D:\Programms\MikTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count317
+\pgfmatrixcurrentcolumn=\count318
+\pgf@matrix@numberofcolumns=\count319
+)
+\tikz@expandcount=\count320
+
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryto
+paths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count321
+\float@exts=\toks46
+\float@box=\box71
+\@float@everytoks=\toks47
+\@floatcapt=\box72
+) (D:\Programms\MikTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2023/04/12 v2.0b lastpage: 2.09 or 2e? (HMM)
+
+(D:\Programms\MikTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2023/04/12 v2.0b Decide which 2e lastpage version to use (H
+MM)
+
+(D:\Programms\MikTeX\tex/latex/lastpage\lastpageclassic.sty
+Package: lastpageclassic 2023/04/12 v2.0b Refers to last page's name (HMM; JPG)
+
+) 
+)) (D:\Programms\MikTeX\tex/latex/totalcount\totalcount.sty
+Package: totalcount 2018/01/21 v1.0a Total values of counters (AR)
+\c@totalcount@figure=\count322
+\c@totalcount@table=\count323
+)
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarych
+ains.code.tex
+File: tikzlibrarychains.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypo
+sitioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipar
+t.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodepartlowerbox=\box73
+\pgfnodeparttwobox=\box74
+\pgfnodepartthreebox=\box75
+\pgfnodepartfourbox=\box76
+\pgfnodeparttwentybox=\box77
+\pgfnodepartnineteenbox=\box78
+\pgfnodeparteighteenbox=\box79
+\pgfnodepartseventeenbox=\box80
+\pgfnodepartsixteenbox=\box81
+\pgfnodepartfifteenbox=\box82
+\pgfnodepartfourteenbox=\box83
+\pgfnodepartthirteenbox=\box84
+\pgfnodeparttwelvebox=\box85
+\pgfnodepartelevenbox=\box86
+\pgfnodeparttenbox=\box87
+\pgfnodepartninebox=\box88
+\pgfnodeparteightbox=\box89
+\pgfnodepartsevenbox=\box90
+\pgfnodepartsixbox=\box91
+\pgfnodepartfivebox=\box92
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.code.tex
+File: tikzlibraryshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometri
+c.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.cod
+e.tex
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.
+code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.c
+ode.tex
+File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysh
+apes.callouts.code.tex
+(D:\Programms\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts
+.code.tex)))
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryca
+lc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryau
+tomata.code.tex
+File: tikzlibraryautomata.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (D:\Programms\MikTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(D:\Programms\MikTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count324
+\Gm@cntv=\count325
+\c@Gm@tempcnt=\count326
+\Gm@bindingoffset=\dimen277
+\Gm@wd@mp=\dimen278
+\Gm@odd@mp=\dimen279
+\Gm@even@mp=\dimen280
+\Gm@layoutwidth=\dimen281
+\Gm@layoutheight=\dimen282
+\Gm@layouthoffset=\dimen283
+\Gm@layoutvoffset=\dimen284
+\Gm@dimlist=\toks48
+
+(D:\Programms\MikTeX\tex/xelatex/xetexconfig\geometry.cfg))
+\c@theorem=\count327
+
+(D:\Programms\MikTeX\tex/latex/listings\listings.sty
+\lst@mode=\count328
+\lst@gtempboxa=\box93
+\lst@token=\toks49
+\lst@length=\count329
+\lst@currlwidth=\dimen285
+\lst@column=\count330
+\lst@pos=\count331
+\lst@lostspace=\dimen286
+\lst@width=\dimen287
+\lst@newlines=\count332
+\lst@lineno=\count333
+\lst@maxwidth=\dimen288
+
+(D:\Programms\MikTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count334
+\lst@skipnumbers=\count335
+\lst@framebox=\box94
+)
+(D:\Programms\MikTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.s
+ty"
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.
+sty"
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen289
+\captionmargin@=\dimen290
+\captionwidth=\dimen291
+\caption@tempdima=\dimen292
+\caption@indent=\dimen293
+\caption@parindent=\dimen294
+\caption@hangindent=\dimen295
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count336
+\c@continuedfloat=\count337
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaptio
+n.sty"
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count338
+\c@subtable=\count339
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec
+.sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box95
+\beforetitleunit=\skip94
+\aftertitleunit=\skip95
+\ttl@plus=\dimen296
+\ttl@minus=\dimen297
+\ttl@toksa=\toks50
+\titlewidth=\dimen298
+\titlewidthlast=\dimen299
+\titlewidthfirst=\dimen300
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2020/10/09 version 4.42 text color boxes
+
+(D:\Programms\MikTeX\tex/latex/latex-tools\verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read4
+)
+(D:\Programms\MikTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(D:\Programms\MikTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box96
+\tcb@upperbox=\box97
+\tcb@lowerbox=\box98
+\tcb@phantombox=\box99
+\c@tcbbreakpart=\count340
+\c@tcblayer=\count341
+\c@tcolorbox@number=\count342
+\tcb@temp=\box100
+\tcb@temp=\box101
+\tcb@temp=\box102
+\tcb@temp=\box103
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.42'
+\c@tcbrastercolumn=\count343
+\c@tcbrasterrow=\count344
+\c@tcbraster=\count345
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.42'
+\tcb@waterbox=\box104
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.42'
+)) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.42'
+(D:\Programms\MikTeX\tex/generic/oberdiek\pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds
+.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwa
+rerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box105
+\tcb@totalupperbox=\box106
+\tcb@totallowerbox=\box107
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.42'
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.42'
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.42'
+\tcbfitdim=\dimen301
+\tcb@lowerfitdim=\dimen302
+\tcb@upperfitdim=\dimen303
+\tcb@cur@hbadness=\count346
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.42'
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.42'
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.42'
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.42'
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.42'
+(D:\Programms\MikTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(D:\Programms\MikTeX\tex/latex/latex-tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count347
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+)
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.42'
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.42'
+) (D:\Programms\MikTeX\tex/latex/tcolorbox\tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.42'
+
+(D:\Programms\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfa
+dings.code.tex
+File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:\Programms\MikTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(D:\Programms\MikTeX\tex/latex/tcolorbox\tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.42'
+))
+\inwd=\skip96
+\c@ipythcntr=\count348
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'russian'.
+ (document.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `rqtestchar' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+ (D:\Programms\MikTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
+LaTeX Font Info:    Redeclaring math accent \check on input line 5.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 5
+.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 5.
+LaTeX Info: Redefining \th on input line 5.
+
+("C:\Users\Alexey\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflsca
+pe.sty"
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (D:\Programms\MikTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+
+(D:\Programms\MikTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+))
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=469.47049pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count349
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(chapters/title.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+
+ (D:\Programms\MikTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+
+
+(D:\Programms\MikTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+[1
+
+]) (chapters/abstract.tex
+Overfull \hbox (16.84288pt too wide) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/12 ВАНИЯ С ПОВТОРНЫМИ ВЫЗОВАМИ И ВЫЗЫВАЕМЫМИ ЗАЯВКАМИ,
+ МЕТОД АСИМП-
+ []
+
+[1
+
+]) (document.toc
+LaTeX Font Info:    Trying to load font information for OT1+TimesNewRoman(0) on
+ input line 1.
+LaTeX Font Info:    No file OT1TimesNewRoman(0).fd. on input line 1.
+
+
+LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ [][] []\TU/TimesNewRoman(0)/m/n/12 Реализация программы в качестве программног
+о пакета для  
+ []
+
+)
+\tf@toc=\write6
+\openout6 = `document.toc'.
+
+ [2
+
+] (chapters/intro.tex [3
+
+]
+Overfull \hbox (8.79344pt too wide) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/14 исследования систем, выражающейся в необходимости э
+кспериментального под-
+ []
+
+[4] [5] [6]) (chapters/1.tex [7
+
+] [8]
+Overfull \hbox (28.58769pt too wide) in paragraph at lines 22--23
+[]\TU/TimesNewRoman(0)/m/n/14 При моделировании систем массового обслуживания и
+спользуется дискретно-
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 26.
+File: ./figures//1_sim_example.png Graphic file (type bmp)
+<./figures//1_sim_example.png>
+[9]
+File: ./figures//sim_algo.png Graphic file (type bmp)
+<./figures//sim_algo.png>
+ [10] [11] [12]) (chapters/2.tex
+Overfull \hbox (2.73076pt too wide) in paragraph at lines 2--3
+[]\TU/TimesNewRoman(0)/m/n/14 В данном разделе описывается процесс проектирован
+ия и разработки ком-
+ []
+
+
+Overfull \hbox (10.42006pt too wide) in paragraph at lines 4--5
+[]\TU/TimesNewRoman(0)/m/n/14 Проектирование программы начинается с разработки 
+архитектуры по пред-
+ []
+
+
+Overfull \hbox (1.02682pt too wide) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/14 варительно составленным требованиям. В данном случа
+е, делается упор на уни-
+ []
+
+[13
+
+] [14]
+Overfull \hbox (0.76314pt too wide) in paragraph at lines 24--25
+[]\TU/TimesNewRoman(0)/m/n/14 Для разработки инструмента выбран объектно–ориент
+ированный подход.
+ []
+
+[15] [16]
+File: ./figures//d_producer.png Graphic file (type bmp)
+<./figures//d_producer.png>
+
+Overfull \hbox (11.97192pt too wide) in paragraph at lines 61--62
+ [][] 
+ []
+
+[17]
+File: ./figures//d_slot.png Graphic file (type bmp)
+<./figures//d_slot.png>
+ [18]
+File: ./figures//d_router.png Graphic file (type bmp)
+<./figures//d_router.png>
+ [19] [20]
+File: ./figures//d_d.png Graphic file (type bmp)
+<./figures//d_d.png>
+ [21]
+Overfull \hbox (12.18407pt too wide) in paragraph at lines 98--99
+\TU/TimesNewRoman(0)/m/n/14 бавляет маршрутизатор на выходящий слот элемента, A
+ddHangingOutputNoQueue
+ []
+
+File: ./figures//model_container.png Graphic file (type bmp)
+<./figures//model_container.png>
+
+Overfull \hbox (10.3816pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[22] [23]
+Overfull \hbox (15.5926pt too wide) in paragraph at lines 127--128
+[]\TU/TimesNewRoman(0)/m/n/14 Для орбиты имеется лишь одна реализация через нас
+ледованный от Producer
+ []
+
+[24] [25]
+Overfull \hbox (2.10614pt too wide) in paragraph at lines 158--159
+\TU/TimesNewRoman(0)/m/n/14 ности интерпретируемые, поскольку проверка типов, п
+редупреждение воз-
+ []
+
+[26] [27] (D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(D:\Programms\MikTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+) [28]
+File: ./figures//doc_example.png Graphic file (type bmp)
+<./figures//doc_example.png>
+ [29] [30]
+(D:\Programms\MikTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+\openout4 = `document.listing'.
+
+ (document.listing)
+[31]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (18.49536pt too wide) in paragraph at lines 312--313
+[]\TU/TimesNewRoman(0)/m/n/14 орбита с интенсивностью повторного обращения заяв
+ок $\OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 81$ \TU/TimesNewRo
+man(0)/m/n/14 и меткой «  orbit»; 
+ []
+
+[32]
+Overfull \hbox (2.37042pt too wide) in paragraph at lines 321--322
+[]\TU/TimesNewRoman(0)/m/n/14 заявки из источника вызываемых заявок «  call» по
+падают на прибор «  node»; 
+ []
+
+File: ./figures//2_sim_example.png Graphic file (type bmp)
+<./figures//2_sim_example.png>
+[33] [34]) (chapters/3.tex [35
+
+] [36] [37]
+File: ./figures//dft_figure1.png Graphic file (type bmp)
+<./figures//dft_figure1.png>
+ [38] [39]
+Overfull \hbox (5.783pt too wide) in paragraph at lines 77--78
+[]\TU/TimesNewRoman(0)/m/n/14 Для вычисления характеристической функции необход
+имо вычислять мат-
+ []
+
+File: ./figures//dft_figure2.png Graphic file (type bmp)
+<./figures//dft_figure2.png>
+[40] [41]) (chapters/4.tex
+File: ./figures//RQ.png Graphic file (type bmp)
+<./figures//RQ.png>
+\openout4 = `document.listing'.
+
+ (document.listing) [42
+
+]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (14.14911pt too wide) in paragraph at lines 19--25
+[]\TU/TimesNewRoman(0)/m/n/14 Создадим модель и установим время моделирования, 
+равное 1000000 услов-
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (6.4036pt too wide) in paragraph at lines 52--53
+[]\TU/TimesNewRoman(0)/m/n/14 обслуживающий прибор с экспоненциальным временем 
+обслуживания вхо-
+ []
+
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [43]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [44]
+Overfull \hbox (11.97714pt too wide) in paragraph at lines 107--108
+[]\TU/TimesNewRoman(0)/m/n/14 для аккумулирующего выходного маршрузитора (model
+.add_hanging_output)
+ []
+
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (5.01134pt too wide) in paragraph at lines 119--119
+[][][]\TU/lmtt/m/n/10 Out[10]:  
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+[45]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (5.01134pt too wide) in paragraph at lines 156--156
+[][][]\TU/lmtt/m/n/10 Out[11]:  
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [46]
+File: ./figures//model_2d_distr.png Graphic file (type bmp)
+<./figures//model_2d_distr.png>
+\openout4 = `document.listing'.
+
+ (document.listing) [47]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (5.01134pt too wide) in paragraph at lines 196--196
+[][][]\TU/lmtt/m/n/10 Out[13]:  
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [48]
+File: ./figures//asymp_calc_example.png Graphic file (type bmp)
+<./figures//asymp_calc_example.png>
+ [49]
+Overfull \hbox (2.05058pt too wide) in paragraph at lines 240--241
+[]\TU/TimesNewRoman(0)/m/n/14 Для точечного сравнения распределений воспользуем
+ся расстоянием Кол-
+ []
+
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (5.01134pt too wide) in paragraph at lines 248--248
+[][][]\TU/lmtt/m/n/10 Out[17]:  
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+[50]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [51]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+
+(document.listing) [52]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [53]
+\openout4 = `document.listing'.
+
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [54]
+File: ./figures//orbit_size_plot_all.png Graphic file (type bmp)
+<./figures//orbit_size_plot_all.png>
+ [55]
+File: ./figures//wait_time_plot_all.png Graphic file (type bmp)
+<./figures//wait_time_plot_all.png>
+ [56]
+File: ./figures//pairplot_all.png Graphic file (type bmp)
+<./figures//pairplot_all.png>
+ [57] [58]
+Overfull \hbox (11.72572pt too wide) in paragraph at lines 440--441
+[]\TU/TimesNewRoman(0)/m/n/14 Также в рамках проводимых экспериментов воспользу
+емся несколько иным
+ []
+
+
+Overfull \hbox (5.64894pt too wide) in paragraph at lines 440--441
+\TU/TimesNewRoman(0)/m/n/14 дельный скрипт, что позволить его запускать при пом
+ощи интерпретатора Python
+ []
+
+
+Overfull \hbox (1.04956pt too wide) in paragraph at lines 440--441
+\TU/TimesNewRoman(0)/m/n/14 щества: во–первых, Python снабжен механизмом под на
+званием Global Interpeter
+ []
+
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [59] [60]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+File: ./figures//pairplot_sigma.png Graphic file (type bmp)
+<./figures//pairplot_sigma.png>
+ [61]
+File: ./figures//pairplot_l.png Graphic file (type bmp)
+<./figures//pairplot_l.png>
+ [62]
+Overfull \hbox (2.80864pt too wide) in paragraph at lines 518--519
+\TU/TimesNewRoman(0)/m/n/14 но коррелируют; это можно заключить основываясь на 
+паре os_mean — wt_mean
+ []
+
+File: ./figures//corr_plot_sigma.png Graphic file (type bmp)
+<./figures//corr_plot_sigma.png>
+[63] [64]
+Overfull \hbox (3.79924pt too wide) in paragraph at lines 541--542
+\TU/TimesNewRoman(0)/m/n/14 оптимизации работы модели при нестандартных парамет
+рах. Действитель-
+ []
+
+[65]
+Overfull \hbox (0.92053pt too wide) in paragraph at lines 547--548
+[]\TU/TimesNewRoman(0)/m/n/14 mu2 — интенсивность обслуживания вызванных заявок
+ ($\OML/cmm/m/it/14.4 ^^V[]$\TU/TimesNewRoman(0)/m/n/14 ). Действитель-
+ []
+
+[66]
+File: ./figures//pairplot.png Graphic file (type bmp)
+<./figures//pairplot.png>
+ [67] [68]
+File: ./figures//pearson_heatmap.png Graphic file (type bmp)
+<./figures//pearson_heatmap.png>
+ [69
+
+]
+Overfull \hbox (2.89905pt too wide) in paragraph at lines 621--622
+[]\TU/TimesNewRoman(0)/m/n/14 CatBoost [[]] — оригинальная реализация алгоритма
+ градиентного бустин-
+ []
+
+
+Overfull \hbox (9.57664pt too wide) in paragraph at lines 621--622
+\TU/TimesNewRoman(0)/m/n/14 исковых результатов, ранжирования рекомендаций поль
+зователям и онлайн-
+ []
+
+\openout4 = `document.listing'.
+
+(document.listing) [70]
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (1.62608pt too wide) in paragraph at lines 664--665
+\TU/TimesNewRoman(0)/m/n/14 мые признаки. Это выполняется посредством предварит
+ельного обучения и ана-
+ []
+
+File: ./figures//feat_lr.png Graphic file (type bmp)
+<./figures//feat_lr.png>
+[71]
+File: ./figures//feat_rf.png Graphic file (type bmp)
+<./figures//feat_rf.png>
+ [72]
+File: ./figures//feat_gb.png Graphic file (type bmp)
+<./figures//feat_gb.png>
+File: ./figures//feat_cb.png Graphic file (type bmp)
+<./figures//feat_cb.png>
+ [73] [74]
+\openout4 = `document.listing'.
+
+ (document.listing)
+Overfull \hbox (0.86032pt too wide) in paragraph at lines 694--706
+\TU/TimesNewRoman(0)/m/n/14 подбором в 5 итераций при помощи алгоритма scikit-l
+earn RandomizedSearchCV.
+ []
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+(document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+\openout4 = `document.listing'.
+
+ (document.listing)
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+ [75]
+Overfull \hbox (2.10725pt too wide) in paragraph at lines 734--735
+[]\TU/TimesNewRoman(0)/m/n/14 min_samples_split — минимальное количество сэмпло
+в, требуемое для рас-
+ []
+
+
+Overfull \hbox (0.24788pt too wide) in paragraph at lines 735--736
+[]\TU/TimesNewRoman(0)/m/n/14 min_samples_leaf — минимальное количество сэмплов
+, требуемое для пре-
+ []
+
+
+Overfull \hbox (1.28304pt too wide) in paragraph at lines 737--739
+\TU/TimesNewRoman(0)/m/n/14 Далее производится подбор параметров алгоритма, даю
+щих максимальную точ-
+ []
+
+File: ./figures//model_accuracy.png Graphic file (type bmp)
+<./figures//model_accuracy.png>
+File: ./figures//pred_example.png Graphic file (type bmp)
+<./figures//pred_example.png>
+[76] [77] [78] [79]) (chapters/conclusion.tex [80
+
+]
+Overfull \hbox (1.15054pt too wide) in paragraph at lines 16--17
+[]\TU/TimesNewRoman(0)/m/n/14 В конечном итоге, разработанные инструменты позво
+лили провести апро-
+ []
+
+[81] [82]) (document.bbl [83
+
+]
+Underfull \hbox (badness 1590) in paragraph at lines 153--158
+[]\TU/TimesNewRoman(0)/m/n/14 Glynn Peter W, Iglehart Donald L. Simulation meth
+ods for queues: An
+ []
+
+[84]
+Underfull \hbox (badness 1189) in paragraph at lines 256--258
+[]\TU/TimesNewRoman(0)/m/n/14 Pilone Dan, Pitman Neil. UML 2.0 in a Nutshell. —
+  ”O’Reilly Media,
+ []
+
+[85]
+Underfull \hbox (badness 3557) in paragraph at lines 305--310
+[]\TU/TimesNewRoman(0)/m/n/14 Mersenne Twister Engine. —  $[][][][][] [] [] [] 
+[][] [] [][][][][][][][][][][][] [] [][][] [] [] [] [][][] []
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 346--351
+[]\TU/TimesNewRoman(0)/m/n/14 SciPy 1.0: fundamental algorithms for scientific 
+computing in Python /
+ []
+
+[86]
+Underfull \hbox (badness 4595) in paragraph at lines 366--369
+[]\TU/TimesNewRoman(0)/m/n/14 A built-package format for Python. —  $[][][][][]
+ [] [] [] [][][][] [] [][][] [] [][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
+[]\TU/TimesNewRoman(0)/m/n/14 GlobalInterpreterLock. —  $[][][][][] [] [] [] []
+[][][] [] [][][][][][] [] [][][] [] [][][][] []
+ []
+
+[87]
+Underfull \hbox (badness 2635) in paragraph at lines 470--476
+[]\TU/TimesNewRoman(0)/m/n/14 Soofi Aized Amin, Awan Arshad. Classification tec
+hniques in machine
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 496--502
+[]\TU/TimesNewRoman(0)/m/n/14 Balla Husamelddin AMN, Sheng Chen Guang, Weipeng 
+Jing. Reliability
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 527--532
+[]\TU/TimesNewRoman(0)/m/n/14 Hancock John T, Khoshgoftaar Taghi M. CatBoost fo
+r big data: an
+ []
+
+[88]) [89]
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf, page 1>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf, page 1>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf, page 1>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf, page 1>
+File: antiplagiat.pdf Graphic file (type pdf)
+<use antiplagiat.pdf, page 1>
+ [90
+
+] 
+AED: lastpage setting LastPage
+(document.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 30043 strings out of 412014
+ 647889 string characters out of 2850032
+ 1544586 words of memory out of 3000000
+ 49046 multiletter control sequences out of 15000+200000
+ 413989 words of font info for 95 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 93i,18n,104p,1962b,1579s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on document.pdf (91 pages).

@@ -30,28 +30,27 @@
 \BibEmph{Erlang~A.~K.} The theory of probabilities and telephone
   conversations~// \BibEmphi{Nyt. Tidsskr. Mat. Ser. B}. \BibDash
 \newblock 1909. \BibDash
-\newblock Vol.~20. \BibDash
-\newblock P.~33--39.
+\newblock Т.~20. \BibDash
+\newblock С.~33--39.
+
+\bibitem{phung2019retrial}
+\selectlanguageifdefined{english}
+\BibEmph{Phung-Duc~T.} Retrial queueing models: A survey on theory and
+  applications~// \BibEmphi{arXiv preprint arXiv:1906.09560}. \BibDash
+\newblock 2019.
 
 \bibitem{artalejo2010accessible}
 \selectlanguageifdefined{english}
 \BibEmph{Artalejo~Jesus~R}. Accessible bibliography on retrial queues: progress
   in 2000--2009~// \BibEmphi{Mathematical and computer modelling}. \BibDash
 \newblock 2010. \BibDash
-\newblock Vol.~51, no. 9-10. \BibDash
-\newblock P.~1071--1081.
+\newblock Т.~51, № 9-10. \BibDash
+\newblock С.~1071--1081.
 
-\bibitem{jesus2008retrial}
+\bibitem{bellovin2003icmp}
 \selectlanguageifdefined{english}
-\BibEmph{Artalejo~Jesus~R., Gomez-Corral~A.} Retrial Queueing Systems: A
-  Computational Approach. \BibDash
-\newblock Springer-Verlag Berlin Heidelberg, 2008.
-
-\bibitem{falin1997retrial}
-\selectlanguageifdefined{english}
-\BibEmph{Falin~G., Templeton~J.} Retrial queues. \BibDash
-\newblock CRC Press, 1997. \BibDash
-\newblock Vol.~75.
+\BibEmph{Bellovin~S.~M., Leech~M., Taylor~T.} ICMP traceback messages. \BibDash
+\newblock 2003.
 
 \bibitem{bjornstad2006traffic}
 \selectlanguageifdefined{english}
@@ -65,8 +64,8 @@
 \BibEmph{Kritzinger~P.} A performance model of the OSI communication
   architecture~// \BibEmphi{IEEE transactions on communications}. \BibDash
 \newblock 1986. \BibDash
-\newblock Vol.~34, no.~6. \BibDash
-\newblock P.~554--563.
+\newblock Т.~34, №~6. \BibDash
+\newblock С.~554--563.
 
 \bibitem{olypher2010computer}
 \selectlanguageifdefined{english}
@@ -75,30 +74,13 @@
   \BibDash
 \newblock Питер, 2010.
 
-\bibitem{falin1979model}
-\selectlanguageifdefined{english}
-\BibEmph{Falin~G.} Model of coupled switching in presence of recurrent calls~//
-  \BibEmphi{Engineering Cybernetics}. \BibDash
-\newblock 1979. \BibDash
-\newblock Vol.~17, no.~1. \BibDash
-\newblock P.~53--59.
-
-\bibitem{artalejo2010mean}
-\selectlanguageifdefined{english}
-\BibEmph{Artalejo~Jesus~R., Resing~JAC.} Mean value analysis of single server
-  retrial queues~// \BibEmphi{Asia-Pacific Journal of Operational Research}.
-  \BibDash
-\newblock 2010. \BibDash
-\newblock Vol.~27, no.~03. \BibDash
-\newblock P.~335--345.
-
 \bibitem{baiocchi1993steady}
 \selectlanguageifdefined{english}
 \BibEmph{Baiocchi~A., Blefari-Melazzi~N.} Steady-state analysis of the
   MMPP/G/1/K queue~// \BibEmphi{IEEE transactions on communications}. \BibDash
 \newblock 1993. \BibDash
-\newblock Vol.~41, no.~4. \BibDash
-\newblock P.~531--534.
+\newblock Т.~41, №~4. \BibDash
+\newblock С.~531--534.
 
 \bibitem{2019asymptotic}
 \selectlanguageifdefined{english}
@@ -107,229 +89,461 @@
   of Retrials Condition~// International Conference on Distributed Computer and
   Communication Networks~/ Springer. \BibDash
 \newblock 2019. \BibDash
-\newblock P.~315--324.
+\newblock С.~315--324.
 
-\bibitem{meier1987fitting}
+\bibitem{задорожный2011методы}
 \selectlanguageifdefined{english}
-\BibEmph{Meier-Hellstern~K.} A fitting algorithm for Markov-modulated Poisson
-  processes having two arrival rates~// \BibEmphi{European Journal of
-  Operational Research}. \BibDash
-\newblock 1987. \BibDash
-\newblock Vol.~29, no.~3. \BibDash
-\newblock P.~370--377.
-
-\bibitem{muscariello2004mmpp}
-\selectlanguageifdefined{english}
-An MMPP-based hierarchical model of Internet traffic~/ L.~Muscariello
-  [et~al.]~// 2004 IEEE International Conference on Communications (IEEE Cat.
-  No. 04CH37577)~/ IEEE. \BibDash
-\newblock Vol.~4. \BibDash
-\newblock 2004. \BibDash
-\newblock P.~2143--2147.
-
-\bibitem{christensen2010ieee}
-\selectlanguageifdefined{english}
-IEEE 802.3 az: the road to energy efficient ethernet~/ K.~Christensen
-  [et~al.]~// \BibEmphi{IEEE Communications Magazine}. \BibDash
-\newblock 2010. \BibDash
-\newblock Vol.~48, no.~11. \BibDash
-\newblock P.~50--56.
-
-\bibitem{nutt1982performance}
-\selectlanguageifdefined{english}
-\BibEmph{Nutt~G., Bayer~D.} Performance of CSMA/CD networks under combined
-  voice and data loads~// \BibEmphi{IEEE Transactions on Communications}.
+\BibEmph{Задорожный~Владимир~Николаевич}.
+  Методы аналитико-имитационного
+  моделирования систем с очередями и
+  стохастических сетей~: Ph.\,D. thesis~/
+  Владимир~Николаевич~Задорожный~; СПб., 2011.
   \BibDash
-\newblock 1982. \BibDash
-\newblock Vol.~30, no.~1. \BibDash
-\newblock P.~6--11.
+\newblock 2011.
 
-\bibitem{bellovin2003icmp}
+\bibitem{горбунов2007парадигмы}
 \selectlanguageifdefined{english}
-\BibEmph{Bellovin~S.~M., Leech~M., Taylor~T.} ICMP traceback messages. \BibDash
-\newblock 2003.
+\BibEmph{Горбунов~АР, Лычкина~НН}. Парадигмы
+  имитационного моделирования: новое в
+  решении задач стратегического управления
+  (объединенная логика имитационного
+  моделирования)~//
+  \BibEmphi{Бизнес-информатика}. \BibDash
+\newblock 2007. \BibDash
+\newblock №~2. \BibDash
+\newblock С.~60--66.
 
-\bibitem{nazarov2017asymptotic}
+\bibitem{илюхина2015дискретно}
 \selectlanguageifdefined{english}
-\BibEmph{Nazarov~A.~A., Paul~S., Gudkova~I.} Asymptotic analysis of Markovian
-  retrial queue with two-way communication under low rate of retrials
-  condition. \BibDash
-\newblock 2017.
+\BibEmph{Илюхина~НА, Комаревцева~ОО}.
+  Дискретно-событийное моделирование в
+  управлении экономической системы
+  муниципального образования~//
+  \BibEmphi{Современные наукоемкие технологии}.
+  \BibDash
+\newblock 2015. \BibDash
+\newblock №~7. \BibDash
+\newblock С.~77--80.
 
-\bibitem{phung2019retrial}
+\bibitem{григорьева2014дискретно}
 \selectlanguageifdefined{english}
-\BibEmph{Phung-Duc~T.} Retrial queueing models: A survey on theory and
-  applications~// \BibEmphi{arXiv preprint arXiv:1906.09560}. \BibDash
-\newblock 2019.
+\BibEmph{Григорьева~Татьяна~Евгеньевна}.
+  Дискретно-событийное моделирование в СМ
+  МАРС для курса {\guillemotleft}Системы массового
+  обслуживания{\guillemotright}~// \BibEmphi{Доклады
+  Томского государственного университета
+  систем управления и радиоэлектроники}.
+  \BibDash
+\newblock 2014. \BibDash
+\newblock № 1 (31). \BibDash
+\newblock С.~152--155.
 
-\bibitem{kulkarni1983queueing}
+\bibitem{лебедюк2017агентное}
 \selectlanguageifdefined{english}
-\BibEmph{Kulkarni~V.~G.} On queueing systems with retrials~// \BibEmphi{Journal
-  of Applied Probability}. \BibDash
-\newblock 1983. \BibDash
-\newblock P.~380--389.
+\BibEmph{Лебедюк~Эдуард~Андреевич}. Агентное
+  моделирование: состояние и перспективы~//
+  \BibEmphi{Вестник Российского экономического
+  университета им. ГВ Плеханова}. \BibDash
+\newblock 2017. \BibDash
+\newblock № 6 (96). \BibDash
+\newblock С.~155--162.
 
-\bibitem{paul2018retrial}
+\bibitem{glynn1988simulation}
 \selectlanguageifdefined{english}
-\BibEmph{Paul~S., Phung-Duc~T.} Retrial Queueing Model with Two-Way
-  Communication, Unreliable Server and Resume of Interrupted Call for Cognitive
-  Radio Networks~// Information Technologies and Mathematical Modelling.
-  Queueing Theory and Applications. \BibDash
-\newblock Springer, 2018. \BibDash
-\newblock P.~213--224.
+\BibEmph{Glynn~Peter~W, Iglehart~Donald~L}. Simulation methods for queues: An
+  overview~// \BibEmphi{Queueing systems}. \BibDash
+\newblock 1988. \BibDash
+\newblock Т.~3, №~3. \BibDash
+\newblock С.~221--255.
 
-\bibitem{daley1976queueing}
+\bibitem{назаров1991асимптотический}
 \selectlanguageifdefined{english}
-\BibEmph{Daley~D.~J.} Queueing output processes~// \BibEmphi{Advances in
-  Applied Probability}. \BibDash
-\newblock 1976. \BibDash
-\newblock Vol.~8, no.~2. \BibDash
-\newblock P.~395--415.
+\BibEmph{Назаров~Анатолий~Андреевич [и~др.]}.
+  Асимптотический анализ марковизируемых
+  систем. \BibDash
+\newblock 1991.
+
+\bibitem{назаров2021исследование}
+\selectlanguageifdefined{english}
+Исследование RQ-системы M| M| 1 с разнотипными
+  вызываемыми заявками и ненадежным
+  прибором методом
+  асимптотически-диффузионного анализа~/
+  Анатолий~Андреевич~Назаров [и~др.]~//
+  \BibEmphi{Вестник Томского государственного
+  университета. Управление, вычислительная
+  техника и информатика}. \BibDash
+\newblock 2021. \BibDash
+\newblock №~57. \BibDash
+\newblock С.~74--83.
+
+\bibitem{лобач2004имитационное}
+\selectlanguageifdefined{english}
+Имитационное и статистическое
+  моделирование~/ Виктор~Иванович~Лобач
+  [и~др.]~// \BibEmphi{Практикум для студентов
+  математических и экономических
+  специальностей. Минск: БГУ}. \BibDash
+\newblock 2004.
+
+\bibitem{моисеев2016исследование}
+\selectlanguageifdefined{english}
+\BibEmph{Моисеев~Александр~Николаевич [и~др.]}.
+  Исследование математических моделей
+  систем и сетей массового обслуживания с
+  высокоинтенсивными непуассоновскими
+  входящими потоками. \BibDash
+\newblock 2016.
+
+\bibitem{алиев2013погрешности}
+\selectlanguageifdefined{english}
+\BibEmph{Алиев~Тауфик~Измайлович}. Погрешности
+  моделирования высоконагруженных систем в
+  GPSS World~// \BibEmphi{Научно-технический вестник
+  информационных технологий, механики и
+  оптики}. \BibDash
+\newblock 2013. \BibDash
+\newblock № 1 (83). \BibDash
+\newblock С.~70--75.
+
+\bibitem{fasano1987multidimensional}
+\selectlanguageifdefined{english}
+\BibEmph{Fasano~Giovanni, Franceschini~Alberto}. A multidimensional version of
+  the Kolmogorov--Smirnov test~// \BibEmphi{Monthly Notices of the Royal
+  Astronomical Society}. \BibDash
+\newblock 1987. \BibDash
+\newblock Т. 225, №~1. \BibDash
+\newblock С.~155--170.
+
+\bibitem{blaginin2021approximation}
+\selectlanguageifdefined{english}
+\BibEmph{Blaginin~Alexey, Lapatin~Ivan}. Approximation of the Two-Dimensional
+  Output Process of a Retrial Queue with MMPP Input~// International Conference
+  on Distributed Computer and Communication Networks~/ Springer. \BibDash
+\newblock 2021. \BibDash
+\newblock С.~333--345.
+
+\bibitem{yakimov2017comparison}
+\selectlanguageifdefined{english}
+The comparison of structured modeling and simulation modeling of queueing
+  systems~/ Igor~Yakimov [и~др.]~// Information Technologies and Mathematical
+  Modelling. Queueing Theory and Applications: 16th International Conference,
+  ITMM 2017, Named After AF Terpugov, Kazan, Russia, September 29-October 3,
+  2017, Proceedings 16~/ Springer. \BibDash
+\newblock 2017. \BibDash
+\newblock С.~256--267.
+
+\bibitem{valentin2002simulation}
+\selectlanguageifdefined{english}
+Simulation using building blocks~/ Edwin~Valentin [и~др.]~// Proceedings
+  conference on AI, Simulation and Planning~/ Citeseer. \BibDash
+\newblock 2002. \BibDash
+\newblock С.~65--71.
+
+\bibitem{claes2009controlling}
+\selectlanguageifdefined{english}
+\BibEmph{Claes~Peter}. Controlling Fluid Simulations with Custom Fields in
+  Houdini Master Thesis. \BibDash
+\newblock 2009.
+
+\bibitem{fowler1997analysis}
+\selectlanguageifdefined{english}
+\BibEmph{Fowler~Martin}. Analysis patterns: reusable object models. \BibDash
+\newblock Addison-Wesley Professional, 1997.
+
+\bibitem{pilone2005uml}
+\selectlanguageifdefined{english}
+\BibEmph{Pilone~Dan, Pitman~Neil}. UML 2.0 in a Nutshell. \BibDash
+\newblock " O'Reilly Media, Inc.", 2005.
+
+\bibitem{herchi2012user}
+\selectlanguageifdefined{english}
+\BibEmph{Herchi~Hatem, Abdessalem~Wahiba~Ben}. From user requirements to UML
+  class diagram~// \BibEmphi{arXiv preprint arXiv:1211.0713}. \BibDash
+\newblock 2012.
+
+\bibitem{hallinan1993review}
+\selectlanguageifdefined{english}
+\BibEmph{Hallinan~Jr~Arthur~J}. A review of the Weibull distribution~//
+  \BibEmphi{Journal of Quality Technology}. \BibDash
+\newblock 1993. \BibDash
+\newblock Т.~25, №~2. \BibDash
+\newblock С.~85--93.
+
+\bibitem{schmid2012c++}
+\selectlanguageifdefined{english}
+\BibEmph{Schmid~Hubert}. C++ 11: pure virtual functions with override and
+  final. \BibDash
+\newblock 2012.
+
+\bibitem{gcc}
+\selectlanguageifdefined{english}
+GCC, the GNU Compiler Collection. \BibDash
+\newblock \url{https://gcc.gnu.org/}. \BibDash
+\newblock Дата обращения: 2023-04-29.
+
+\bibitem{branco2015impact}
+\selectlanguageifdefined{english}
+\BibEmph{Branco~David, Henriques~Pedro~Rangel}. Impact of GCC optimization
+  levels in energy consumption during C/C++ program execution~// 2015 IEEE 13th
+  International Scientific Conference on Informatics~/ IEEE. \BibDash
+\newblock 2015. \BibDash
+\newblock С.~52--56.
+
+\bibitem{matsumoto1998mersenne}
+\selectlanguageifdefined{english}
+\BibEmph{Matsumoto~Makoto, Nishimura~Takuji}. Mersenne twister: a
+  623-dimensionally equidistributed uniform pseudo-random number generator~//
+  \BibEmphi{ACM Transactions on Modeling and Computer Simulation (TOMACS)}.
+  \BibDash
+\newblock 1998. \BibDash
+\newblock Т.~8, №~1. \BibDash
+\newblock С.~3--30.
+
+\bibitem{mersenn}
+\selectlanguageifdefined{english}
+Mersenne Twister Engine. \BibDash
+\newblock
+  \url{https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine}.
+  \BibDash
+\newblock Дата обращения: 2023-05-02.
+
+\bibitem{numpy}
+\selectlanguageifdefined{english}
+The fundamental package for scientific computing with Python. \BibDash
+\newblock \url{https://github.com/numpy/numpy}. \BibDash
+\newblock Дата обращения: 2023-04-29.
+
+\bibitem{pybind}
+\selectlanguageifdefined{english}
+Seamless operability between C++11 and Python. \BibDash
+\newblock \url{https://github.com/pybind/pybind11}. \BibDash
+\newblock Дата обращения: 2023-04-29.
+
+\bibitem{mckinney2012python}
+\selectlanguageifdefined{english}
+\BibEmph{McKinney~Wes}. Python for data analysis: Data wrangling with Pandas,
+  NumPy, and IPython. \BibDash
+\newblock " O'Reilly Media, Inc.", 2012.
+
+\bibitem{mckinney2011pandas}
+\selectlanguageifdefined{english}
+\BibEmph{McKinney~Wes [и~др.]}. pandas: a foundational Python library for data
+  analysis and statistics~// \BibEmphi{Python for high performance and
+  scientific computing}. \BibDash
+\newblock 2011. \BibDash
+\newblock Т.~14, №~9. \BibDash
+\newblock С.~1--9.
+
+\bibitem{hackeling2017mastering}
+\selectlanguageifdefined{english}
+\BibEmph{Hackeling~Gavin}. Mastering Machine Learning with scikit-learn.
+  \BibDash
+\newblock Packt Publishing Ltd, 2017.
+
+\bibitem{virtanen2020scipy}
+\selectlanguageifdefined{english}
+SciPy 1.0: fundamental algorithms for scientific computing in Python~/
+  Pauli~Virtanen [и~др.]~// \BibEmphi{Nature methods}. \BibDash
+\newblock 2020. \BibDash
+\newblock Т.~17, №~3. \BibDash
+\newblock С.~261--272.
+
+\bibitem{pytorch}
+\selectlanguageifdefined{english}
+PyTorch. \BibDash
+\newblock \url{https://pytorch.org/}. \BibDash
+\newblock Дата обращения: 2023-04-29.
+
+\bibitem{pip}
+\selectlanguageifdefined{english}
+The PyPA recommended tool for installing Python packages. \BibDash
+\newblock \url{https://pypi.org/project/pip/}. \BibDash
+\newblock Дата обращения: 2023-05-18.
+
+\bibitem{wheel}
+\selectlanguageifdefined{english}
+A built-package format for Python. \BibDash
+\newblock \url{https://pypi.org/project/wheel/}. \BibDash
+\newblock Дата обращения: 2023-05-18.
+
+\bibitem{setuptools}
+\selectlanguageifdefined{english}
+Easily download, build, install, upgrade, and uninstall Python packages.
+  \BibDash
+\newblock \url{https://pypi.org/project/setuptools/}. \BibDash
+\newblock Дата обращения: 2023-05-18.
+
+\bibitem{ястребов2012дискретизация}
+\selectlanguageifdefined{russian}
+\BibEmph{Ястребов~И.П.} Дискретизация
+  непрерывных сигналов во времени. Теорема
+  Котельникова~// \BibEmphi{Нижний Новгород:
+  Нижегородский государственный
+  университет им. НИ Лобачевского}. \BibDash
+\newblock 2012.
+
+\bibitem{kuznecov2008}
+\selectlanguageifdefined{russian}
+\BibEmph{Кузнецов~Н.А., Козякин~В.С.} Теорема
+  Котельникова--основа цифрового
+  оценивания и моделирования непрерывных
+  процессов~// \BibEmphi{Радиотехника}. \BibDash
+\newblock 2008. \BibDash
+\newblock Т.~8.
+
+\bibitem{gnedenko2010}
+\selectlanguageifdefined{russian}
+\BibEmph{Гнеденко~Борис~Владимирович}. Курс
+  теории вероятностей. \BibDash
+\newblock URSS, 2010.
+
+\bibitem{kalinina2016}
+\selectlanguageifdefined{russian}
+\BibEmph{Калинина~Е.С., Кудрявцева~М.В.} О
+  применении аппарата производящих функций
+  в теории вероятностей~// \BibEmphi{Современные
+  тенденции развития науки и технологий}.
+  \BibDash
+\newblock 2016. \BibDash
+\newblock №~3-1. \BibDash
+\newblock С.~18--22.
+
+\bibitem{долгополов2011ряды}
+\selectlanguageifdefined{russian}
+Ряды Фурье~/ В.П.~Долгополов [и~др.]. \BibDash
+\newblock 2011.
+
+\bibitem{тимошенко2014дискретное}
+\selectlanguageifdefined{russian}
+\BibEmph{Тимошенко~Л.И.} Дискретное
+  преобразование Фурье и его быстрые
+  алгоритмы~// \BibEmphi{Современные наукоемкие
+  технологии}. \BibDash
+\newblock 2014. \BibDash
+\newblock №~12-2. \BibDash
+\newblock С.~188--193.
 
 \bibitem{bronson1991matrix}
 \selectlanguageifdefined{english}
 \BibEmph{Bronson~R.} Matrix methods: An introduction. \BibDash
 \newblock Gulf Professional Publishing, 1991.
 
-\bibitem{egorov2006prog}
+\bibitem{multiproc}
 \selectlanguageifdefined{english}
-\BibEmph{Егоров~И.~М.} Программирование: Учебное
-  методическое пособие. \BibDash
-\newblock Томск: Томский межвузовский центр
-  дистанционного образования, 2006. \BibDash
-\newblock P.~79.
-
-\bibitem{fischer1993markov}
-\selectlanguageifdefined{english}
-\BibEmph{Fischer~W., Meier-Hellstern~K.} The Markov-modulated Poisson process
-  (MMPP) cookbook~// \BibEmphi{Performance evaluation}. \BibDash
-\newblock 1993. \BibDash
-\newblock Vol.~18, no.~2. \BibDash
-\newblock P.~149--171.
-
-\bibitem{wieland2003queueing}
-\selectlanguageifdefined{english}
-\BibEmph{Wieland~J.~R., Pasupathy~R., Schmeiser~B.~W.} Queueing network
-  simulation analysis: queueing-network stability: simulation-based checking~//
-  Proceedings of the 35th conference on Winter simulation: driving innovation.
+multiprocessing — Process-based parallelism. \BibDash
+\newblock \url{https://docs.python.org/3/library/multiprocessing.html}.
   \BibDash
-\newblock 2003. \BibDash
-\newblock P.~520--527.
+\newblock Дата обращения: 2023-05-02.
 
-\bibitem{QtDoc}
+\bibitem{gil}
 \selectlanguageifdefined{english}
-QT Documentation. \BibDash
-\newblock \url{https://doc.qt.io/}. \BibDash
-\newblock Accessed: 2021-05-29.
+GlobalInterpreterLock. \BibDash
+\newblock \url{https://wiki.python.org/moin/GlobalInterpreterLock}. \BibDash
+\newblock Дата обращения: 2023-05-14.
 
-\bibitem{deering1991icmp}
+\bibitem{psutil}
 \selectlanguageifdefined{english}
-ICMP router discovery messages~: Rep.~/ RFC 1256, September~; Executor:
-  S.~Deering~: 1991.
+Cross-platform lib for process and system monitoring in Python. \BibDash
+\newblock \url{https://pypi.org/project/psutil/}. \BibDash
+\newblock Дата обращения: 2023-05-14.
 
-\bibitem{itmm_2021}
+\bibitem{libbrecht2015machine}
 \selectlanguageifdefined{english}
-\BibEmph{Благинин~А., Лапатин~И., Назаров~А.}
-  Исследование двумерного выходящего
-  потока марковской модели узла обработки
-  запросов с повторными обращениями и
-  вызываемыми заявками~// Информационные
-  технологии и математическое
-  моделирование (ИТММ-2020) : материалы XIX
-  Международной конференции имени А. Ф.
-  Терпугова. \BibDash
-\newblock Томск: Изд-во НТЛ, 2021.
-
-\bibitem{icsm}
-\selectlanguageifdefined{english}
-\BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.} Asymptotic Analysis of
-  the Output Process in Retrial Queue with Two-Way Communication and MAP
-  Input~// Пятая Международная конференция по
-  стохастическим методам (МКСМ-5) : материалы
-  Международной научной конференции. \BibDash
-\newblock Изд-во РУДН, 2020.
-
-\bibitem{mpmo}
-\selectlanguageifdefined{english}
-\BibEmph{Лапатин~И.~Л., Назаров~А.~А.,
-  Благинин~А.~Л.} Исследование выходящего
-  потока марковской модели узла обработки
-  запросов с повторными обращениями и
-  вызываемыми заявками~// Математика, ее
-  приложения и математическое образование
-  (МПМО’20) : материалы VII Международной
-  конференции. \BibDash
-\newblock Улан-Удэ: Изд-во ВСГУТУ, 2020.
-
-\bibitem{blaginin2020two}
-\selectlanguageifdefined{english}
-\BibEmph{Blaginin~A.~L., Lapatin~I.~L.} The Two-Dimensional Output Process of
-  Retrial Queue with Two-Way Communication~// Information Technologies and
-  Mathematical Modelling. Queueing Theory and Applications: 19th International
-  Conference, ITMM 2020, Named after AF Terpugov, Tomsk, Russia, December 2--5,
-  2020, Revised Selected Papers~/ Springer Nature. \BibDash
-\newblock P.~279--290.
-
-\bibitem{evm}
-\selectlanguageifdefined{english}
-ПрЭВМ №2020664030. \BibDash
-\newblock
-  \url{https://new.fips.ru/registers-doc-view/fips_servlet?DB=EVM&DocNumber=2020664929&TypeFile=html}.
+\BibEmph{Libbrecht~Maxwell~W, Noble~William~Stafford}. Machine learning
+  applications in genetics and genomics~// \BibEmphi{Nature Reviews Genetics}.
   \BibDash
-\newblock Accessed: 2021-06-02.
+\newblock 2015. \BibDash
+\newblock Т.~16, №~6. \BibDash
+\newblock С.~321--332.
 
-\bibitem{meier1986statistical}
+\bibitem{shinde2018review}
 \selectlanguageifdefined{english}
-\BibEmph{Meiert~K.~S.} A Statistical procedure for fitting Markov-modulated
-  Poisson process (applied probability). \BibDash
-\newblock 1986.
+\BibEmph{Shinde~Pramila~P, Shah~Seema}. A review of machine learning and deep
+  learning applications~// 2018 Fourth international conference on computing
+  communication control and automation (ICCUBEA)~/ IEEE. \BibDash
+\newblock 2018. \BibDash
+\newblock С.~1--6.
 
-\bibitem{lapatin2020asymptotic}
+\bibitem{soofi2017classification}
 \selectlanguageifdefined{english}
-\BibEmph{Lapatin~I.~L., Nazarov~A.~A., Blaginin~A.~L.} Asymptotic analysis of
-  the output process in retrial queue with two-way communication and MAP input.
+\BibEmph{Soofi~Aized~Amin, Awan~Arshad}. Classification techniques in machine
+  learning: applications and issues~// \BibEmphi{Journal of Basic and Applied
+  Sciences}. \BibDash
+\newblock 2017. \BibDash
+\newblock Т.~13. \BibDash
+\newblock С.~459--465.
+
+\bibitem{ojeda2021learning}
+\selectlanguageifdefined{english}
+Learning Deep Generative Models for Queuing Systems~/ Cesar~Ojeda [и~др.]~//
+  Proceedings of the AAAI Conference on Artificial Intelligence. \BibDash
+\newblock Т.~35. \BibDash
+\newblock 2021. \BibDash
+\newblock С.~9214--9222.
+
+\bibitem{xue2016scheduling}
+\selectlanguageifdefined{english}
+Scheduling data analytics work with performance guarantees: queuing and machine
+  learning models in synergy~/ Ji~Xue [и~др.]~// \BibEmphi{Cluster Computing}.
   \BibDash
-\newblock 2020.
+\newblock 2016. \BibDash
+\newblock Т.~19, №~2. \BibDash
+\newblock С.~849--864.
 
-\bibitem{kendall1953stochastic}
+\bibitem{balla2018reliability}
 \selectlanguageifdefined{english}
-\BibEmph{Kendall~D.~G.} Stochastic processes occurring in the theory of queues
-  and their analysis by the method of the imbedded Markov chain~//
-  \BibEmphi{The Annals of Mathematical Statistics}. \BibDash
-\newblock 1953. \BibDash
-\newblock P.~338--354.
+\BibEmph{Balla~Husamelddin~AMN, Sheng~Chen~Guang, Weipeng~Jing}. Reliability
+  enhancement in cloud computing via optimized job scheduling implementing
+  reinforcement learning algorithm and queuing theory~// 2018 1st international
+  conference on data intelligence and security (ICDIS)~/ IEEE. \BibDash
+\newblock 2018. \BibDash
+\newblock С.~127--130.
 
-\bibitem{gharbi2011algorithmic}
+\bibitem{cox2007pairplot}
 \selectlanguageifdefined{english}
-\BibEmph{Gharbi~N., Dutheillet~C.} An algorithmic approach for analysis of
-  finite-source retrial systems with unreliable servers~// \BibEmphi{Computers
-  \& Mathematics with Applications}. \BibDash
+\BibEmph{Cox~Nicholas}. PAIRPLOT: Stata module for plots of paired
+  observations. \BibDash
+\newblock 2007.
+
+\bibitem{rigatti2017random}
+\selectlanguageifdefined{english}
+\BibEmph{Rigatti~Steven~J}. Random forest~// \BibEmphi{Journal of Insurance
+  Medicine}. \BibDash
+\newblock 2017. \BibDash
+\newblock Т.~47, №~1. \BibDash
+\newblock С.~31--39.
+
+\bibitem{natekin2013gradient}
+\selectlanguageifdefined{english}
+\BibEmph{Natekin~Alexey, Knoll~Alois}. Gradient boosting machines, a
+  tutorial~// \BibEmphi{Frontiers in neurorobotics}. \BibDash
+\newblock 2013. \BibDash
+\newblock Т.~7. \BibDash
+\newblock С.~21.
+
+\bibitem{hancock2020catboost}
+\selectlanguageifdefined{english}
+\BibEmph{Hancock~John~T, Khoshgoftaar~Taghi~M}. CatBoost for big data: an
+  interdisciplinary review~// \BibEmphi{Journal of big data}. \BibDash
+\newblock 2020. \BibDash
+\newblock Т.~7, №~1. \BibDash
+\newblock С.~1--45.
+
+\bibitem{feurer2019hyperparameter}
+\selectlanguageifdefined{english}
+\BibEmph{Feurer~Matthias, Hutter~Frank}. Hyperparameter optimization~//
+  Automated machine learning. \BibDash
+\newblock Springer, Cham, 2019. \BibDash
+\newblock С.~3--33.
+
+\bibitem{gomar2011validation}
+\selectlanguageifdefined{english}
+Validation of the Word Accentuation Test (TAP) as a means of estimating
+  premorbid IQ in Spanish speakers~/ Jes{\'u}s~J~Gomar [и~др.]~//
+  \BibEmphi{Schizophrenia Research}. \BibDash
 \newblock 2011. \BibDash
-\newblock Vol.~62, no.~6. \BibDash
-\newblock P.~2535--2546.
-
-\bibitem{burke1968output}
-\selectlanguageifdefined{english}
-\BibEmph{Burke~P.~J.} The output process of a stationary M/M/s queueing
-  system~// \BibEmphi{The Annals of Mathematical Statistics}. \BibDash
-\newblock 1968. \BibDash
-\newblock Vol.~39, no.~4. \BibDash
-\newblock P.~1144--1152.
-
-\bibitem{mirasol1963letter}
-\selectlanguageifdefined{english}
-\BibEmph{Mirasol~N.~M.} The output of an M/G/$\infty$ queuing system is
-  poisson~// \BibEmphi{Operations Research}. \BibDash
-\newblock 1963. \BibDash
-\newblock Vol.~11, no.~2. \BibDash
-\newblock P.~282--284.
-
-\bibitem{lee2003icmp}
-\selectlanguageifdefined{english}
-ICMP traceback with cumulative path, an efficient solution for IP traceback~/
-  H.~Lee [et~al.]~// International Conference on Information and Communications
-  Security~/ Springer. \BibDash
-\newblock 2003. \BibDash
-\newblock P.~124--135.
+\newblock Т. 128, № 1-3. \BibDash
+\newblock С.~175--176.
 
 \end{thebibliography}

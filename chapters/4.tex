@@ -2,7 +2,7 @@
 В данном разделе изложены подходы к работе с реализованным пакетом программ, показывающие течение процесса исследования при помощи имитационного моделирования и дополнительных утилит для расчета характеристик. В частности будет описан процесс моделирования с целью нахождения характеристик работы узла с двумя типами заявок и сравнения результатов с асимптотическими при помощи метода, предложенного в прошлой главе. Также представлен метод параллельного запуска множества моделей с разной конфигурацией для создания большой выборки.
 \subsection{Вычисление характеристик выходящих процессов модели RQ--системы с повторными вызовами и обратной связью}
 
-В главе \ref{rq_3} описаны асимптотические результаты, в частности приближение характеристической функции числа обслуженных заявок разного типа за время $t$. Последующей задачей ставится определение области применимости полученного приближения. 
+В главе \ref{rq_3} описаны асимптотические результаты, в частности приближение характеристической функции числа обслуженных заявок разного типа за время $t$. Последующей задачей ставится определение области применимости полученного приближения для рассматриваемой системы (рисунок \ref{rq_system}). 
 
 \begin{figure}[H]
 	\centering
@@ -12,23 +12,24 @@
 
 Поскольку решение было получено при асимптотическом условии бесконечной задержки заявок в источнике повторных вызовов, требуется определить, при каких параметрах модели асимптотические результаты становятся недостоверными путем сравнения распределений вероятностей. Для это цели как раз отлично подходит имитационное моделирование.
 
-Для начала импортируем модуль q\_analysis, который и является разработанным программным комплексом. Он, в свою очередь, содержит модуль simulation для имитационного моделирования.
-\begin{pyin}
-	import q_analysis.simulation as q
-\end{pyin}
-Создадим модель и установим время моделирования, равное 1000000 условных единиц.
-\begin{pyin} 
+Для начала импортируем модуль q\_analysis, который и является разработанным программным комплексом. Он, в свою очередь, содержит модуль simulation для имитационного моделирования. Далее создадим модель и установим время моделирования, равное 1000000 условных единиц. (листинг \ref{q_analysis_import}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Начало работы с программным пакетом},
+	label={q_analysis_import}
+}
+\begin{lstlisting}
+import q_analysis.simulation as q
+
 model = rq.Model()
 model.set_time(0) 
 model.set_end(100000)
 model
-\end{pyin}
+\end{lstlisting}
 
-\begin{pyout}
-	Model{ time: 0, end : 1000000, event_queue_len : 0, num_components : 0, num_connections : 0 }
-\end{pyout}
-
-Далее добавим элементы модели (метод add\_producer). 
+Далее добавим элементы модели (листинг \ref{q_analysis_add_elements}). 
 
 В модель добавятся следующие элементы: 
 \begin{itemize}
@@ -54,7 +55,14 @@ model
 Чтобы обращаться к элементам модели, им даются ярлыки - input, call, orbit, node.
 
 
-\begin{pyin}
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Добавление элементов в модель},
+	label={q_analysis_add_elements}
+}
+\begin{lstlisting}
 model.add_producer(rq.MMPPInput(
 [1,1.12,0.45],
 [[ -0.4, 0.3, 0.1],
@@ -64,33 +72,49 @@ model.add_producer(rq.SimpleInput(rq.ExponentialDelay(1),1,0),"call")
 model.add_producer(rq.Orbit(rq.ExponentialDelay(1)),"orbit")
 model.add_producer(rq.RqtNode(rq.ExponentialDelay(1.15),rq.ExponentialDelay(1.15)),"node")
 print("Components:",model.components())
-\end{pyin}
+\end{lstlisting}
 
-\begin{pyout}
-	Components: {'node': RQTNode, 'orbit': Orbit, 'input': MMPP, 'call': SimpleInput}
-\end{pyout}
 
 Далее требуется соединить элементы модели при помощи маршрутизаторов. Для этого используется метод add\_connection. В параметрах указывается ранее заданный ярлык элемента модели, потом его вход или выход, функция возвращает ярлык нового соединения.
 
-\begin{pyin}
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Пример соединения элементов модели},
+	label={q_analysis_add_conn_ex}
+}
+\begin{lstlisting}
 	model.add_connection("input","out_slot","node","in_slot")
-\end{pyin}
-В данном случае мы указали входящий поток input и его выход out\_slot как источник заявок и прибор node и его вход in\_slot как вход для приходящих заявок. Получим следующий ключ, описывающий соединение:
-\begin{pyout}
-'input:out_slot:node:in_slot'
-\end{pyout}
+\end{lstlisting}
+В данном случае (листинг \ref{q_analysis_add_conn_ex}) мы указали входящий поток input и его выход out\_slot как источник заявок и прибор node и его вход in\_slot как вход для приходящих заявок. Получим следующий ключ, описывающий соединение: $input:out\_slot:node:in\_slot$.
+
 С помощью полученной строки впоследствии можно обращаться к соответствующими маршрутизатору при помощи метода reader\_at.
 
-Далее добавляются остальные соединения. Для обслуживающего прибора маршрутизатор не будет сохранять в памяти обслуженные заявки. Это достигается использованием метода add\_hanging\_output\_noqueue:
-\begin{pyin}
+Далее добавляются остальные соединения. Для обслуживающего прибора маршрутизатор не будет сохранять в памяти обслуженные заявки. Это достигается использованием метода add\_hanging\_output\_noqueue (листинг \ref{q_analysis_add_conn}):
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Cоединение элементов модели},
+	label={q_analysis_add_conn}
+}
+\begin{lstlisting}
 model.add_connection("call","out_slot","node","call_slot")
 model.add_connection("node","orbit_append_slot","orbit","in_slot")
 orb = model.add_connection("orbit","out_slot","node","orbit_slot")
 output = model.add_hanging_output_noqueue("node","out_slot")
 print("Connections",model.routers())
-\end{pyin}
-
-\begin{pyout}
+\end{lstlisting}
+В результате получим набор соединений (листинг \ref{q_analysis_conns}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Словарь маршрутизаторов модели},
+	label={q_analysis_conns}
+}
+\begin{lstlisting}
 Connections {
 'onq:node:out_slot': Router{ queue_len: 0 },
 'orbit:out_slot:node:orbit_slot': Router{ queue_len: 0 },
@@ -98,7 +122,7 @@ Connections {
 'input:out_slot:node:in_slot': Router{ queue_len: 0 },
 'call:out_slot:node:call_slot': Router{ queue_len: 0 }
 }
-\end{pyout}
+\end{lstlisting}
 
 Ярлыки маршрутизаторов называются по следующей схеме:
 \begin{itemize}
@@ -108,15 +132,19 @@ Connections {
 	\item для выходного маршрузитора (model.add\_hanging\_output\_noqeuue) --- \textit{onq :  ярлык выходного элемента : имя выхода}.
 \end{itemize}
 
-Добавим сбор статистики с интервалом в 20 условных единиц, что будет означать, что мы измеряем, сколько заявок было обслужено в системе за интервал времени, равный $20$:
+Добавим сбор статистики с интервалом в 20 условных единиц, что будет означать, что мы измеряем, сколько заявок было обслужено в системе за интервал времени, равный $20$ (листинг \ref{q_analysis_stats}).
 
-\begin{pyin}
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Добавление сборщика статистики в маршрутизатор},
+	label={q_analysis_stats}
+}
+\begin{lstlisting}
 model.router_at(output).add_reader(rq.IntervalRouterReader(20),"stat")
 model.router_at(output).readers()
-\end{pyin}
-\begin{pyout}
-'stat': IntervalRouterReader
-\end{pyout}
+\end{lstlisting}
 
 Теперь когда модель создана, нам требуется описать, как именно будет проходить ее запуск. Маршрутизация определяет топологию передачи заявок по системе, однако порядок взаимодействия элементов модели указывается в качестве отдельного алгоритма, так как, в зависимости от специфики задачи, он может варьироваться.
 Процесс моделирования сводится к итеративному вызову метода produce у элементов модели с указанием в качестве параметра текущего времени моделирования. Результат работы produce (список моментов наступления предстоящих событий) передается в функцию модели aggregate для того, чтобы далее смещать время на нужные моменты. Именно порядок вызовов produce составляет алгоритм моделирования. В данном случае он будет следующим:
@@ -128,8 +156,15 @@ model.router_at(output).readers()
 	\item сбор заявок, не сумевших захватить прибор.
 \end{enumerate}
 
-Построим цикл
-\begin{pyin}
+Построим цикл (листинг \ref{q_analysis_loop}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Цикл моделирования},
+	label={q_analysis_loop}
+}
+\begin{lstlisting}
 from tqdm import tqdm
 e = model.end()
 with tqdm(total=int(e)) as pbar:     
@@ -148,15 +183,30 @@ while True:
         break
 print("Time: ",model.time())
 print("Iters: ",c)
-\end{pyin}
+\end{lstlisting}
 
-\begin{pyout}
+По окончании моделирования мы получим информацию о времени и количество пройденных итераций (листинг \ref{q_analysis_res}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Сводная информация о процессе моделирования},
+	label={q_analysis_res}
+}
+\begin{lstlisting}
 Time:  1000000.0437646629
 Iters:  21710021
-\end{pyout}
+\end{lstlisting}
 
-По окончании моделировании мы можем проверить, какое распределение вероятностей числа обслуженных заявок за интервал $20$ получилось. Для этого обратимся к сборщику статистики маршрутизатора с ярлыком output и вызовем метод get\_distribution\_2d. Этот метод построит распределение вероятности числа обслуженных заявок двух типов --- входящих и вызванных.
-\begin{pyin}
+По окончании моделировании мы можем проверить, какое распределение вероятностей числа обслуженных заявок за интервал $20$ получилось. Для этого обратимся к сборщику статистики маршрутизатора с ярлыком output и вызовем метод get\_distribution\_2d. Этот метод построит распределение вероятности числа обслуженных заявок двух типов --- входящих и вызванных (листинг \ref{q_analysis_vis}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Получение и визуализация данных о моделировании},
+	label={q_analysis_vis}
+}
+\begin{lstlisting}
 distr = model.router_at(output).reader_at('stat').get_distribution_2d()
 import plotly.graph_objects as go
 fig = go.Figure(data=[go.Surface(z=distr) ])
@@ -169,8 +219,9 @@ width=1000, height=1000,
 margin=dict(l=65, r=50, b=65, t=90))
 
 fig.show()
-\end{pyin}
+\end{lstlisting}
 
+Получим визуализацию распределения вероятностей (рисунок \ref{model_2d_distr}).
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4,width=\textwidth]{model_2d_distr.png}
@@ -178,39 +229,66 @@ fig.show()
 	\label{model_2d_distr}
 \end{figure}
 
-Далее получим характеристики выходящих процессов:
-
-\begin{pyin} [rqtestchar]
+Далее получим характеристики выходящих процессов (листинг \ref{rqtestchar}):
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Получение характеристик выходящих процессов},
+	label={rqtestchar}
+}
+\begin{lstlisting}
 print("Mean  called: {0},\nMean input: {1},\nVariation called: {2},\nVariation input: {3}".format(
 model.router_at(output).reader_at('stat').get_mean_called(),
 model.router_at(output).reader_at('stat').get_mean_input(),
 model.router_at(output).reader_at('stat').get_variation_called(),
 model.router_at(output).reader_at('stat').get_variation_input()))
-\end{pyin}
+...
 
-\begin{pyout} 
 Mean  called: 1.476929538590772,
 Mean input: 19.793515870317407,
 Variation called: 0.9226633215974042,
 Variation input: 0.9463029320729057
-\end{pyout}
+\end{lstlisting}
 
-В ячейке \ref{rqtestchar} представлены значения среднего числа обслуженных вызванных и входящих заявок, вариации числа обслуженных вызванных и входящих заявок соответственно.
+В листинге \ref{rqtestchar} представлены значения среднего числа обслуженных вызванных и входящих заявок, вариации числа обслуженных вызванных и входящих заявок соответственно.
 
-Также мы можем экспортировать результаты в файл для работы в другой среде при помощи NumPy:
-\begin{pyin} [rqtestchar]
+Также мы можем экспортировать результаты в файл для работы в другой среде при помощи NumPy (листинг \ref{rqtestexport})
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Экспорт данных моделирования в файл},
+	label={rqtestexport}
+}
+\begin{lstlisting}
 np.array(distr).tofile('example_distr.txt')
-\end{pyin}
-Таким образом, мы смогли получить характеристики выходящих процессов рассматриваемой модели системы и визуализировать полученный результат, используя ту же среду выполнения. Далее нам потребуется вычислить ранее полученные асимптотические результаты для этой модели системы и провести сравнение. Для указанной системы в программном пакете уже имеется алгоритм вычисления значений характеристической функции числа обслуженных заявок. Для начала импортируем его и модуль с утилитами, в котором содержится функция для подсчета расстояния Колмогорова
+\end{lstlisting}
 
-\begin{pyin} 
+Таким образом, мы смогли получить характеристики выходящих процессов рассматриваемой модели системы и визуализировать полученный результат, используя ту же среду выполнения. Далее нам потребуется вычислить ранее полученные асимптотические результаты для этой модели системы и провести сравнение. Для указанной системы в программном пакете уже имеется алгоритм вычисления значений характеристической функции числа обслуженных заявок. Для начала импортируем его и модуль с утилитами, в котором содержится функция для подсчета расстояния Колмогорова (листинг \ref{qutilimport}).
+
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Загрузка модуля с утилитами},
+	label={qutilimport}
+}
+\begin{lstlisting}
 from q_analysis import rq_system as rq
 from q_analysis import utils as u
-\end{pyin}
+\end{lstlisting}
 
-Далее зададим такие же параметры системы как при моделировании и рассчитаем распределение:
 
-\begin{pyin} 
+Далее зададим такие же параметры системы как при моделировании и рассчитаем распределение (листинг \ref{qasympparam}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Задание параметров для асимптотических вычислений},
+	label={qasympparam}
+}
+\begin{lstlisting}
 Lambda = np.mat([[1, 0,   0],
 [0,1.12, 0],
 [0, 0,0.45]])
@@ -226,7 +304,8 @@ s = rq.RQSystem(mu1, mu2, Lambda, Q, alpha)
 n = 43
 m = 13
 distr_asymp =    s.icfft2(n,m,20)
-\end{pyin}
+\end{lstlisting}
+
 
 При визуализации полученного распределения на рисунке \ref{asymp_calc_example} видно, что оно практически полностью совпадает с распределением, полученным в результате имитационного моделирования (рисунок \ref{model_2d_distr}).
 
@@ -237,15 +316,22 @@ distr_asymp =    s.icfft2(n,m,20)
 	\label{asymp_calc_example}
 \end{figure}
 
-Для точечного сравнения распределений воспользуемся расстоянием Колмогорова:
+Для точечного сравнения распределений воспользуемся расстоянием Колмогорова (листинг \ref{qasympkdist}).
 
-\begin{pyin} 
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Вычисление расстояния Колмогорова},
+	label={qasympkdist}
+}
+\begin{lstlisting}
 u.k_distance2(distr,distr_asymp)
-\end{pyin}
+...
 
-\begin{pyout} 
 0.004355157840943953
-\end{pyout}
+\end{lstlisting}
+
 
 Исходя из значения расстояния Колмогорова можно заключить, что при выбранных параметрах системы асимптотические результаты применимы, так как оно не превышает условного порога в $5\cdot 10^{-3}$.
 
@@ -263,15 +349,16 @@ u.k_distance2(distr,distr_asymp)
 
 Для конфигурации моделей интенсивность обслуживания будет зафиксирована, а интенсивность входящего потока и частота возвращения заявок с орбиты будет варьироваться.
 
-Для хранения данных о моделировании и собираемых характеристиках работы моделей будем использовать словарь:
-\begin{pyin} 
-models = []
-models_desc = []
-\end{pyin}
+Для хранения данных о моделировании и собираемых характеристиках работы моделей будем использовать словарь. Поскольку запусков будет много, будем запускать их в разных потоках для максимальной эффективности. Для этого объявим функции для генерации модели и запуска алгоритма. Это позволит нам использовать одну и ту же логику при параллельном запуске. Для упрощения задачи моделирования будет использоваться простейший входящий поток заявок, также зафиксируем интенсивность вызова заявок на значении 1. Для подсчета времени ожидания нам достаточно обновлять для каждой прошедшей заявки момент времени, в который он уходила с орбиты. В свою очередь для подсчета количества заявок на орбите нам потребуется учитывать, сколько заявок пришло на орбиту и сколько ушло. Для этой цели прикрепим к маршрутизаторам, по которым заявки проходят через орбиту, счетчики TimeCounter (листинг \ref{otwt_dec}). 
 
-Поскольку запусков будет много, будем запускать их в разных потоках для максимальной эффективности. Для этого объявим функции для генерации модели и запуска алгоритма. Это позволит нам использовать одну и ту же логику при параллельном запуске. Для упрощения задачи моделирования будет использоваться простейший входящий поток заявок, также зафиксируем интенсивность вызова заявок на значении 1. Для подсчета времени ожидания нам достаточно обновлять для каждой прошедшей заявки момент времени, в который он уходила с орбиты. В свою очередь для подсчета количества заявок на орбите нам потребуется учитывать, сколько заявок пришло на орбиту и сколько ушло. Для этой цели прикрепим к маршрутизаторам, по которым заявки проходят через орбиту, счетчики TimeCounter.
-
-\begin{pyin} 
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Объявление функций},
+	label={otwt_dec}
+}
+\begin{lstlisting}
 def sim_task(i):
    t = c = 0
    while True:
@@ -286,34 +373,39 @@ def sim_task(i):
          print('#',end='')
          models[i].flush()
          break
-\end{pyin}         
 
-\begin{pyin}
 def create_model(inp_i,orb_i,node_i):
-model = rq.Model()
-model.set_time(0) 
-model.set_end(100000)
+	model = rq.Model()
+	model.set_time(0) 
+	model.set_end(100000)
+	
+	model.add_producer(rq.SimpleInput(rq.ExponentialDelay(inp_i),1,0),"input")
+	model.add_producer(rq.SimpleInput(rq.ExponentialDelay(1),1,0),"call")
+	model.add_producer(rq.Orbit(rq.ExponentialDelay(orb_i)),"orbit")
+	model.add_producer(rq.RqtNode(rq.ExponentialDelay(node_i),rq.ExponentialDelay(1.15)),"node")
+	
+	model.add_connection("input","out_slot","node","in_slot")
+	model.add_connection("call","out_slot","node","call_slot")
+	orb_i = model.add_connection("node","orbit_append_slot","orbit","in_slot")
+	orb_o = model.add_connection("orbit","out_slot","node","orbit_slot")
+	output = model.add_hanging_output_noqueue("node","out_slot")
+	
+	model.router_at(orb_i).add_reader(rq.AttemptCounter(),"attempt_count")
+	model.router_at(orb_i).add_reader(rq.TimeCounter(),"count")
+	model.router_at(orb_o).add_reader(rq.TimeCounter(),"count")
+	return model
+\end{lstlisting}
 
-model.add_producer(rq.SimpleInput(rq.ExponentialDelay(inp_i),1,0),"input")
-model.add_producer(rq.SimpleInput(rq.ExponentialDelay(1),1,0),"call")
-model.add_producer(rq.Orbit(rq.ExponentialDelay(orb_i)),"orbit")
-model.add_producer(rq.RqtNode(rq.ExponentialDelay(node_i),rq.ExponentialDelay(1.15)),"node")
 
-model.add_connection("input","out_slot","node","in_slot")
-model.add_connection("call","out_slot","node","call_slot")
-orb_i = model.add_connection("node","orbit_append_slot","orbit","in_slot")
-orb_o = model.add_connection("orbit","out_slot","node","orbit_slot")
-output = model.add_hanging_output_noqueue("node","out_slot")
-
-model.router_at(orb_i).add_reader(rq.AttemptCounter(),"attempt_count")
-model.router_at(orb_i).add_reader(rq.TimeCounter(),"count")
-model.router_at(orb_o).add_reader(rq.TimeCounter(),"count")
-return model
-\end{pyin}
-
-
-Далее сгенерируем модели. Интенсивность входящего потока будет находится в границах $[0.1,1]$ c шагом $0.1$, орбита --- $[0.05,3]$ c шагом $0.1$, а интенсивность обслуживания в интервале $[1.6,2]$ с шагом $0.1$. Нижняя граница последнего интервала больше интенсивности входящего потока, так как для достижения стационарного режима в рассматриваемой системе интенсивность входящего потока не должна превышать интенсивность обслуживания. Время моделирования установим в 200000 условных единиц, чего хватит для получения достоверных значений исследуемых характеристик. Для генерации моделей применим тройной вложенный цикл, итерации которого используют ранее установленные диапазоны:
-\begin{pyin} 
+Далее сгенерируем модели. Интенсивность входящего потока будет находится в границах $[0.1,1]$ c шагом $0.1$, орбита --- $[0.05,3]$ c шагом $0.1$, а интенсивность обслуживания в интервале $[1.6,2]$ с шагом $0.1$. Нижняя граница последнего интервала больше интенсивности входящего потока, так как для достижения стационарного режима в рассматриваемой системе интенсивность входящего потока не должна превышать интенсивность обслуживания. Время моделирования установим в 200000 условных единиц, чего хватит для получения достоверных значений исследуемых характеристик. Для генерации моделей применим тройной вложенный цикл, итерации которого используют ранее установленные диапазоны. Для каждого запуска будем хранить заданные параметры в словаре, который впоследствии также наполнится другими данными о моделировании, что позволит нам создать полноценную выборку для анализа (листинг \ref{otwt_gen}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Генерация моделей},
+	label={otwt_gen}
+}
+\begin{lstlisting}
 input_intensity_range = np.arange(0.1, 1.0001, 0.1)
 orbit_intensity_range = np.arange(0.05, 3.0001, 0.1)
 node_intensity_range = np.arange(1.6001, 2.0001, 0.1)
@@ -330,31 +422,23 @@ for inp in list(input_intensity_range):
          m['node_intensity'] = nod
          models_desc.append(m)
          models.append(create_model(inp,orb,nod))
-\end{pyin}
+\end{lstlisting}
 
-Для каждого запуска будем хранить заданные параметры в словаре, который впоследствии также наполнится другими данными о моделировании, что позволит нам создать полноценную выборку для анализа:
-
-\begin{pyin}
-for m in models_desc:
-   print(m)
-\end{pyin}
-
-\begin{pyprint}
-{'model_index': 0, 'input_intensity': 0.8, 'orbit_intensity': 0.8, 'node_intensity': 1.55}
-{'model_index': 1, 'input_intensity': 0.8, 'orbit_intensity': 0.8, 'node_intensity': 1.65}
-{'model_index': 2, 'input_intensity': 0.8, 'orbit_intensity': 0.8, 'node_intensity': 1.75}
-{'model_index': 3, 'input_intensity': 0.8, 'orbit_intensity': 0.8, 'node_intensity': 1.85}
-...
-\end{pyprint}
-
-Итак, получилось 1500 моделей с различными параметрами. Запустим их в 12-ти процессах при помощи объекта ThreadPool из встроенной библиотеки Python multiprocessing \cite{multiproc}, предназначенной для конкурентной работы:
-\begin{pyin}
+Итак, получилось 1500 моделей с различными параметрами. Запустим их в 12-ти процессах при помощи объекта ThreadPool из встроенной библиотеки Python multiprocessing \cite{multiproc}, предназначенной для конкурентной работы (листинг \ref{otwt_run}).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Запуск моделей},
+	label={otwt_run}
+}
+\begin{lstlisting}
 print('#'*(len(models)-1))
 from multiprocessing.pool import ThreadPool
 r = list(range(0,len(models)-1))
 with  ThreadPool(processes=12) as p:
    p.map(sim_task, r )
-\end{pyin}
+\end{lstlisting}
 
 Для последующего анализа рассчитаем ряд показателей:
 \begin{itemize}
@@ -366,7 +450,7 @@ with  ThreadPool(processes=12) as p:
 	\item коэффициент вариации времени ожидания заявок.
 \end{itemize}
 
-Пример полученной таблицы с характеристиками:
+Пример полученной выборки представлен в таблице \ref{sim_result_1}.
 
 \begin{table}[H] 
 	\centering
@@ -409,25 +493,25 @@ $\lambda$ & $\mu$   &  $\sigma$ &  os\_mean &   wt\_mean &      os\_std &     wt
 \end{tabular}
 \end{table}
 
-После того, как выборка создана, рассмотрим распределение каждой из характеристик. На рисунке \ref{orbit_size_plot_all} представлены распределения вероятностей числа заявок на орбите во время моделирования. Как видно, для некоторых наборов параметров наблюдаются скопления похожих распределений. Также видно, что с изменением параметров математическое ожидание заметно смещается:
+После того, как выборка создана, рассмотрим распределение каждой из характеристик. На рисунке \ref{orbit_size_plot_all} представлены распределения вероятностей числа заявок на орбите во время моделирования. Как видно, для некоторых наборов параметров наблюдаются скопления похожих распределений. Также видно, что с изменением параметров математическое ожидание заметно смещается.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4,width=\textwidth]{orbit_size_plot_all.png}
+	\includegraphics[scale=0.3]{orbit_size_plot_all.png}
 	\caption{Распределения числа заявок на орбите} 
 	\label{orbit_size_plot_all}
 \end{figure}
 
-На рисунке \ref{wait_time_plot_all} представлены распределения времени до обслуживания заявки:
+На рисунке \ref{wait_time_plot_all} представлены распределения времени до обслуживания заявки.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4,width=\textwidth]{wait_time_plot_all.png}
-	\caption{Распределения числа заявок на орбите} 
+	\includegraphics[scale=0.3]{wait_time_plot_all.png}
+	\caption{Распределения времени ожидания заявок} 
 	\label{wait_time_plot_all}
 \end{figure}
 
-Для того, чтобы выявить зависимости между показателями, воспользуемся графиками рассеяния, где каждому наблюдению будет соответствовать точка на декартовой плоскости. По каждой из осей отложены рассматриваемые показатели, и в случае, если между ними имеется корреляционная зависимость, на диаграмме это будет представлено в виде определенной закономерности, согласно которой расположены точки. В случае положительной корреляции оба значения будут расти и наоборот:
+Для того, чтобы выявить зависимости между показателями, воспользуемся графиками рассеяния, где каждому наблюдению будет соответствовать точка на декартовой плоскости. По каждой из осей отложены рассматриваемые показатели, и в случае, если между ними имеется корреляционная зависимость, на диаграмме это будет представлено в виде определенной закономерности, согласно которой расположены точки. В случае положительной корреляции оба значения будут расти и наоборот (рисунок \ref{os_wt_pairplot_all})
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4,width=\textwidth]{pairplot_all.png}
@@ -437,11 +521,16 @@ $\lambda$ & $\mu$   &  $\sigma$ &  os\_mean &   wt\_mean &      os\_std &     wt
 
 Для всех метрик, касающихся размера орбиты, установлен префикс os\_, для метрик времени ожидания заявкой обслуживания --- wt\_. Как видно из графика рассеяния (например пара os\_var --- wt\_mean), зависимость между характеристиками есть. Это также можно видеть на паре os\_mean --- wt\_std или os\_mean -- wt\_mean, где очевиден ее линейный характер. Также на графике видны некие разрывы в наблюдений. Причиной тому может быть способ задания параметров моделей, при котором не были учтены некоторые интервалы значений, в результате не попавшие в наблюдения. Чтобы более ясно увидеть зависимость между двумя исследуемыми характеристиками проведем еще два численных эксперимента: в первом случае будем варьировать только интенсивность обращения с орбиты, во втором --- интенсивность входящего потока. При таком подборе параметров получаемые наблюдения будут более гладкими и пригодными к анализу.
 
-Также в рамках проводимых экспериментов воспользуемся несколько иным методом проведения параллельных вычислений. Он заключается в выделении кода, отвечающего за непосредственный запуск имитационной модели, в отдельный скрипт, что позволить его запускать при помощи интерпретатора Python в качестве отдельного процесса. Данный подход имеет два основных преимущества: во--первых, Python снабжен механизмом под названием Global Interpeter Lock или GIL \cite{gil}, который предотвращает использование интерпретатора за раз больше, чем в одном процессе. При использовании вложенных процессов же будет запущен отдельный интерпретатор на каждый процесс. Данное ограничение может являться проблемой при параллельном запуске, так как фактически программа будет работать в однопоточном режиме. Во--вторых, при данном подходе появляется возможность удобно контролировать объем потребляемых программой вычислительных ресурсов (оперативная память и время процессора). Это является важным аспектом при проведении моделирования, например, на домашнем компьютере, не обладающим достаточным количеством ресурсов для запуска большого количество процессов за раз.
+Также в рамках проводимых экспериментов воспользуемся несколько иным методом проведения параллельных вычислений. Он заключается в выделении кода, отвечающего за непосредственный запуск имитационной модели, в отдельный скрипт, что позволить его запускать при помощи интерпретатора Python в качестве отдельного процесса. Данный подход имеет два основных преимущества: во--первых, Python снабжен механизмом под названием Global Interpeter Lock или GIL \cite{gil}, который предотвращает использование интерпретатора за раз больше, чем в одном процессе. При использовании вложенных процессов же будет запущен отдельный интерпретатор на каждый процесс. Данное ограничение может являться проблемой при параллельном запуске, так как фактически программа будет работать в однопоточном режиме. Во--вторых, при данном подходе появляется возможность удобно контролировать объем потребляемых программой вычислительных ресурсов (оперативная память и время процессора). Это является важным аспектом при проведении моделирования, например, на домашнем компьютере, не обладающим достаточным количеством ресурсов для запуска большого количество процессов за раз. Реализация данного подхода представлена в листинге \ref{subprocess_example}.
 
-Реализация данного подхода представлена ниже:
-
-\begin{pyin} [subprocess_example]
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Запуск моделирования в отдельных процессах},
+	label={subprocess_example}
+}
+\begin{lstlisting}
 import subprocess
 import json
 import numpy as np
@@ -465,21 +554,27 @@ for inp in list(input_intensity_range):
             completed_count+=1
             print(f'Completed: {completed_count}',end="\r",flush=True)
 
-
 for p in procs:
    p.wait()
    completed_count+=1
    print(f'Completed: {completed_count}',end="\r",flush=True)
-\end{pyin}
+\end{lstlisting}
 
-В ячейке \ref{subprocess_example} в тройном вложенном цикле в качестве вложенного процесса запускается скрипт run.py для каждого набора параметров. В нем содержится вся логика моделирования, а также код для сохранения результатов в требуемый формат (в данном случае используется JSON). Переменная m\_index позволяет нам учитывать количество запущенных процессов. При каждом запуске мы инкрементируем ее, при каждом завершении процесса --- декрементируем. Для ограничения количества запущенных процессов мы можем сравнивать значение m\_index на каждой итерации с заданным максимальным числом запущенных процессов (в данном случае 100). В случае, если число запущенных процессов достигло порога, мы вызываем метод wait у объекта процесса, тем самым дожидаясь пока один из процессов завершится, чтобы мы могли запустить новый. Таким образом, всегда будет запущено лишь максимально допустимое число процессов. Определение нужного значения порога определяется эмпирически, например, посредством запуска одной модели и замером потребляемой памяти при помощи встроенного пакета psutil \cite{psutil}.
+В листинге \ref{subprocess_example} в тройном вложенном цикле в качестве вложенного процесса запускается скрипт run.py для каждого набора параметров. В нем содержится вся логика моделирования, а также код для сохранения результатов в требуемый формат (в данном случае используется JSON). Переменная m\_index позволяет нам учитывать количество запущенных процессов. При каждом запуске мы инкрементируем ее, при каждом завершении процесса --- декрементируем. Для ограничения количества запущенных процессов мы можем сравнивать значение m\_index на каждой итерации с заданным максимальным числом запущенных процессов (в данном случае 100). В случае, если число запущенных процессов достигло порога, мы вызываем метод wait у объекта процесса, тем самым дожидаясь пока один из процессов завершится, чтобы мы могли запустить новый. Таким образом, всегда будет запущено лишь максимально допустимое число процессов. Определение нужного значения порога определяется эмпирически, например, посредством запуска одной модели и замером потребляемой памяти при помощи встроенного пакета psutil \cite{psutil}.
 
+По окончании моделирования мы можем прочитать все файлы в директории с результатами и на их основе, например, создать объект DataFrame, позволяющий работать с данными в табличном виде (листинг \ref{res_example}).
 
-\begin{pyin}  [res_example]
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Преобразование данных моделирования в объект DataFrame},
+	label={res_example}
+}
+\begin{lstlisting}
 from os import listdir
 from os.path import isfile, join
 import pandas as pd
-
 res = []
 
 for f in [f for f in listdir('results/') if isfile(join('results/', f))]:
@@ -487,9 +582,7 @@ for f in [f for f in listdir('results/') if isfile(join('results/', f))]:
    res.append(json.load(ff))
 
 df = pd.DataFrame(res)
-\end{pyin}
-
-По окончании моделирования мы можем прочитать все файлы в директории с результатами (ячейка \ref{res_example}) и на их основе, например, создать объект DataFrame, позволяющий работать с данными в табличном виде.
+\end{lstlisting}
 
 Описанным методом были получены результаты для двух дополнительных экспериментов:
 \begin{itemize}
@@ -497,20 +590,20 @@ df = pd.DataFrame(res)
 	\item $\lambda$ варьируется в интервале $[0.1,1.7]$ с шагом $0.01$. $\sigma$ и $\mu$ зафиксированы на значениях $1$ и $1.8$ соответственно. Проведено 160 запусков.
 \end{itemize}
 
-Для иллюстрации влияния параллельного моделирования на производительность были проведены 100 запусков для первого набора параметров с использованием алгоритма, изложенного в ячейке \ref{subprocess_example}: в первом случае, когда модели запускались последовательно, общее время моделирования составило 16 минут 4 секунды, во втором, когда было запущено до 10 моделей параллельно --- 4 минуты 29 секунд. 
+Для иллюстрации влияния параллельного моделирования на производительность были проведены 100 запусков для первого набора параметров с использованием алгоритма, изложенного в листинге \ref{subprocess_example}: в первом случае, когда модели запускались последовательно, общее время моделирования составило 16 минут 4 секунды, во втором, когда было запущено до 10 моделей параллельно --- 4 минуты 29 секунд. 
 
 В итоге были получены более пригодные к анализу выборки, на основе которых построены графики рассеяния \ref{os_wt_pairplot_sigma} и \ref{os_wt_pairplot_l}:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4,width=\textwidth]{pairplot_sigma.png}
+	\includegraphics[scale=0.4]{pairplot_sigma.png}
 	\caption{График рассеяния при фиксированном $\sigma$} 
 	\label{os_wt_pairplot_sigma}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4,width=\textwidth]{pairplot_l.png}
+	\includegraphics[scale=0.4]{pairplot_l.png}
 	\caption{График рассеяния при фиксированном $\lambda$} 
 	\label{os_wt_pairplot_l}
 \end{figure}
@@ -519,7 +612,7 @@ df = pd.DataFrame(res)
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4,width=\textwidth]{corr_plot_sigma.png}
+	\includegraphics[scale=0.5]{corr_plot_sigma.png}
 	\caption{Корреляционная карта числа метрик числа заявок на орбите и времени их ожидания до обслуживания} 
 	\label{os_wt_corr_map}
 \end{figure}
@@ -549,7 +642,7 @@ df = pd.DataFrame(res)
 	\item var\_input --- коэффициент вариации выходящего процесса. Действительное число. Является целевой переменной для предсказаний.
 \end{enumerate}
 
-Все признаки имеют 270420 (часть экспериментов выбыли из-за превышения временного лимита на выполнение) ненулевых значений и распределены следующим образом	
+Все признаки имеют 270420 (часть экспериментов выбыли из-за превышения временного лимита на выполнение) ненулевых значений и распределены следующим образом (таблица \ref{table_feature_distr})	
 \begin{table}[H]
 	\centering
 	\caption{Распределение признаков}
@@ -602,10 +695,10 @@ df = pd.DataFrame(res)
 	\label{pairplot}
 \end{figure}
 \clearpage
-На графике рассеяния \ref{pairplot} видно, что явную связь имеют коэффициент вариации входящего потока (var) и коэффициент вариации выходящего процесса (var\_input). Для более точного определения зависимостей построим для признаков тепловую карту коэффициента корреляции Пирсона
+На графике рассеяния \ref{pairplot} видно, что явную связь имеют коэффициент вариации входящего потока (var) и коэффициент вариации выходящего процесса (var\_input). Для более точного определения зависимостей построим для признаков тепловую карту коэффициента корреляции Пирсона (рисунок \ref{pearson_heatmap}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8,width=\textwidth]{pearson_heatmap.png}
+	\includegraphics[scale=0.4]{pearson_heatmap.png}
 	\caption{Тепловая карта корреляции признаков}
 	\label{pearson_heatmap}
 \end{figure}
@@ -621,8 +714,16 @@ df = pd.DataFrame(res)
 	\item CatBoost \cite{hancock2020catboost} --- оригинальная реализация алгоритма градиентного бустинга компанией Яндекс. Самой компанией используется для улучшения поисковых результатов,  ранжирования рекомендаций пользователям и онлайн-аналитики. В общем случае является более точной, чем градиентный бустинг.
 \end{itemize}
 
-Первым шагом в обучении изложенных алгоритмов будет разбиение выборки на тестовую и обучающую, также выделение целевой переменной в отдельный вектор $y$. Обучающая выборка составила $70\%$ от общей. Далее листинги кода будут предложены в формате Python Notebook
-\begin{pyin}
+Первым шагом в обучении изложенных алгоритмов будет разбиение выборки на тестовую и обучающую, также выделение целевой переменной в отдельный вектор $y$. Обучающая выборка составила $70\%$ от общей. Разбиение представлено в листинге \ref{split_ex}.
+
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Разбиение выборки на обучающую и тестовую},
+	label={split_ex}
+}
+\begin{lstlisting}
 from sklearn.model_selection import train_test_split
 x = df.drop(['var_input'], axis = 1)
 y = df['var_input']
@@ -633,46 +734,48 @@ x_train = x_train.reset_index(drop = True)
 y_train = y_train.reset_index(drop = True)
 x_test = x_test.reset_index(drop = True)
 y_test = y_test.reset_index(drop = True)
-\end{pyin}
 
-\begin{pyin}[xtrainsize]
 x_train.shape, y_train.shape
-\end{pyin}
+...
 
-\begin{pyprint}
 ((189168, 6), (189168,))
-\end{pyprint}
-\begin{pyin}[xtestsize]
-x_test.shape, y_test.shape
-\end{pyin}
 
-\begin{pyprint}
-	((81072, 6), (81072,))
-\end{pyprint}
-Так, размер обучающей выборки составил 189168 строк (ячейка \ref{xtrainsize}), размер тестовой выборки --- 81072 строк (ячейка \ref{xtestsize}).
+x_test.shape, y_test.shape
+...
+
+((81072, 6), (81072,))
+\end{lstlisting}
+Так, размер обучающей выборки составил 189168 строк , размер тестовой выборки --- 81072 строк (листинг \ref{split_ex}).
 
 Поскольку общая выборка не имеет пропущенных значений, этап заполнения пропусков был пропущен.
 
-Поскольку большинство алгоритмов ожидают на вход нормализованные данные, то для корректного их обучения выполним Z--преобразование (ячейка \ref{standardscale}) при помощи объекта scikit-learn StandardScaler. Идея преобразования заключается в нормализации распределения каждого признака таким образом, что математическое ожидание будет равно нулю, а дисперсия --- единице. Нормализация производится для каждого признака индивидуально.
-\begin{pyin}[standardscale]
+Поскольку большинство алгоритмов ожидают на вход нормализованные данные, то для корректного их обучения выполним Z--преобразование (листинг \ref{standardscale}) при помощи объекта scikit-learn StandardScaler. Идея преобразования заключается в нормализации распределения каждого признака таким образом, что математическое ожидание будет равно нулю, а дисперсия --- единице. Нормализация производится для каждого признака индивидуально.
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Разбиение выборки на обучающую и тестовую},
+	label={standardscale}
+}
+\begin{lstlisting}
 from sklearn.preprocessing import StandardScaler
 scal = StandardScaler()
 scal.fit(x_train)
 x_train_z = pd.DataFrame(scal.transform(x_train), columns = x_train.columns)
 x_test_z = pd.DataFrame(scal.transform(x_test), columns = x_test.columns)
-\end{pyin}
-После преобразования необходимо выделить для каждой модели значимые признаки. Это выполняется посредством предварительного обучения и анализа коэффициентов значимости \cite{hackeling2017mastering}
+\end{lstlisting}
+После преобразования необходимо выделить для каждой модели значимые признаки. Это выполняется посредством предварительного обучения и анализа коэффициентов значимости \cite{hackeling2017mastering}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{feat_lr.png}
+	\includegraphics[scale=0.3]{feat_lr.png}
 	\caption{Значимость признаков для LinearRegression}
 	\label{feat_lr}
 \end{figure}
 На рисунке \ref{feat_lr} видно, что для алгоритма LinearRegression значимыми признаками являются задержка заявок на орбите и коэффициент вариации входящего потока. В меньшей степени является значимой интенсивность обслуживания входящих заявок, и отрицательно сказывается на результате работы наличие признака lg.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{feat_rf.png}
+	\includegraphics[scale=0.3]{feat_rf.png}
 	\caption{Значимость признаков для RandomForest}
 	\label{feat_rf}
 \end{figure}
@@ -689,10 +792,29 @@ x_test_z = pd.DataFrame(scal.transform(x_test), columns = x_test.columns)
 	\caption{Значимость признаков для CatBoost}
 	\label{feat_cb}
 \end{figure}
-Для алгоритмов GradientBoost и CatBoost значимыми признаками также выступают sigma и var. Основываясь на полученных данных, оставим в обучающей выборке для каждой модели только значимые признаки.
+Для алгоритмов GradientBoost и CatBoost значимыми признаками также выступают sigma и var (рисунки \ref{feat_gb} и \ref{feat_cb}). Основываясь на полученных данных, оставим в обучающей выборке для каждой модели только значимые признаки.
 
 Задание гиперпараметров алгоритмов \cite{feurer2019hyperparameter} будем производить случайным подбором в 5 итераций при помощи алгоритма scikit-learn RandomizedSearchCV. Важно заметить, что из тестовой выборки не выделялась валидационная, так как RandomizedSearchCV содержит встроенную кросс-валидацию. Он позволяет, начиная с указанных начальных значений, итеративно подобрать оптимальные гиперпараметры для модели. Для метода наименьших квадратов эта процедура не производится, поскольку метод не допускает задания каких-либо параметров.
-\begin{pyin}[rand_forest_param]
+
+В листинге \ref{rand_forest_param} производится задание начальных значений гиперпараметров для алгоритма случайных деревьев. Среди параметров:
+\begin{itemize}
+	\item n\_estimators --- количество деревьев решений;
+	\item criterion --- методы оценки ошибки в процессе обучения. По умолчанию выбрано среднеквадратическое отклонение;
+	\item max\_depth --- максимальная глубина дерева;
+	\item min\_samples\_split --- минимальное количество сэмплов, требуемое для расщепления вершины дерева;
+	\item min\_samples\_leaf --- минимальное количество сэмплов, требуемое для превращения вершины в лист.
+\end{itemize}
+
+Далее производится подбор параметров алгоритма, дающих максимальную точность, измеряемую коэффициентом детерминации. Коэффициент детерминации является основной метрикой качества для решений задач регрессии \cite{gomar2011validation}. В данном случае, он составил 0.769.
+
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Задание начальных гиперпараметров RandomForest},
+	label={rand_forest_param}
+}
+\begin{lstlisting}
 rf = RandomForestRegressor(n_jobs=-1)
 parameters_rf = {'n_estimators': range (100,150, 10),
     'criterion':  ['squared_error'],
@@ -703,15 +825,25 @@ parameters_rf = {'n_estimators': range (100,150, 10),
 search_rf = RandomizedSearchCV(rf, parameters_rf,n_jobs=-1, n_iter = 5)
 search_rf.fit(x_train_rf, y_train)
 search_rf.best_params_, search_rf.best_score_
-\end{pyin}
-\begin{pyprint}
+...
+
 ({'n_estimators': 110,
     'min_samples_split': 2,
     'min_samples_leaf': 26,
     'max_depth': 7,
     'criterion': 'squared_error'},
 0.7699992121816944)
-\end{pyprint}
+\end{lstlisting}
+
+В листинге \ref{random_forest_learn} производится обучение модели с лучшими гиперпараметрами и оценка точности, которая проводится при помощи следующих метрик:  средняя абсолютная ошибка (MAE), среднеквадратическое отклонение (RMSE) и коэффициент детерминации (R2\_score).
+\lstset{language=Python,
+	basicstyle=\linespread{0.8}\ttfamily\small,
+	backgroundcolor=\color{black!6},
+	rulecolor=\color{gray!2},
+	caption={Обучение алгоритма RandomForest},
+	label={random_forest_learn}
+}
+\begin{lstlisting}
 \begin{pyin}[random_forest_learn]
 best_model_rf = search_rf.best_estimator_
 best_model_rf.fit(x_train_rf, y_train)
@@ -720,35 +852,37 @@ y_pred_test_rf = best_model_rf.predict(x_test_rf)
 print('MAE:', mean_absolute_error(y_test, y_pred_test_rf))
 print('RMSE:', mean_squared_error(y_test, y_pred_test_rf, squared=False))
 print('R2_score:', r2_score(y_test, y_pred_test_rf))
-\end{pyin}
-\begin{pyprint}
+...
+
 MAE: 0.06538199710376982
 RMSE: 0.09781859274247506
 R2_score: 0.7695224558769049
-\end{pyprint}
-В ячейке \ref{rand_forest_param} производится задание начальных значений гиперпараметров для алгоритма случайных деревьев. Среди параметров:
-\begin{itemize}
-	\item n\_estimators --- количество деревьев решений;
-	\item criterion --- методы оценки ошибки в процессе обучения. По умолчанию выбрано среднеквадратическое отклонение;
-	\item max\_depth --- максимальная глубина дерева;
-	\item min\_samples\_split --- минимальное количество сэмплов, требуемое для расщепления вершины дерева;
-	\item min\_samples\_leaf --- минимальное количество сэмплов, требуемое для превращения вершины в лист.
-\end{itemize}
-Далее производится подбор параметров алгоритма, дающих максимальную точность, измеряемую коэффициентом детерминации. Коэффициент детерминации является основной метрикой качества для решений задач регрессии \cite{gomar2011validation}. В данном случае, он составил 0.769.
-В ячейке \ref{random_forest_learn} производится обучение модели с лучшими гиперпараметрами и оценка точности, которая проводится при помощи следующих метрик:  средняя абсолютная ошибка (MAE), среднеквадратическое отклонение (RMSE) и коэффициент детерминации (R2\_score).
+\end{lstlisting}
 
-Для остальных моделей использовалась та же последовательность операций. В итоге, были получены следующие результаты
+Для остальных моделей использовалась та же последовательность операций. В итоге, были получены следующие результаты (рисунки \ref{model_accuracy_mean},\ref{model_accuracy_root} и \ref{model_accuracy_r2})
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1,width=\textwidth]{model_accuracy.png}
-	\caption{Оценка точности моделей}
-	\label{model_accuracy}
+	\includegraphics[scale=0.35]{model_accuracy_mean.png}
+	\caption{Оценка точности моделей по Mean Absolute Error}
+	\label{model_accuracy_mean}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1,width=\textwidth]{pred_example.png}
+	\includegraphics[scale=0.35]{model_accuracy_root.png}
+	\caption{Оценка точности моделей по Root Mean Square Error}
+	\label{model_accuracy_root}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{model_accuracy_r2.png}
+	\caption{Оценка точности моделей по $R^2 score$}
+	\label{model_accuracy_r2}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{pred_example.png}
 	\caption{Сравнение предсказаний моделей}
 	\label{pred_example}
 \end{figure}
-Как видно на рисунке \ref{model_accuracy}, CatBoost оказался самым точным среди выбранных алгоритмов --- результаты его предсказаний имеют наименьшие среднюю абсолютную и квадратические ошибки и наибольшее значение коэффициента детерминации, равное 0.774. Рассмотрение результатов предсказаний в целом показывает, что общая точность моделей находится в районе 80\%. Для апробирования подхода данный результат является в достаточной степени приемлемым. Также, можно предложить, почему точность моделей не оказалась выше: на рисунке \ref{pred_example} представлен отрезок тестового вектора значения коэффициента вариации выходящего процесса с наложением на него предсказаний. Можно заметить, что для значений, которые наиболее приближены к среднему по выборке, предсказания точны, однако, для менее частых модели не смогли дать верный ответ. Это обусловлено слабой дисперсией в распределении значимых признаков в выборке (таблица \ref{table_feature_distr}), что приводит к переобучению моделей на определенном диапазоне значений признаков, делая предсказания для остальных случаев искаженными. Для улучшения качества предсказаний требуется изменить метод генерации параметров таким образом, чтобы признаки были распределены более равномерно и охватывали как можно больше возможных значений.
+Как видно на рисунках \ref{model_accuracy_mean},\ref{model_accuracy_root} и \ref{model_accuracy_r2}, CatBoost оказался самым точным среди выбранных алгоритмов --- результаты его предсказаний имеют наименьшие среднюю абсолютную и квадратические ошибки и наибольшее значение коэффициента детерминации, равное 0.774. Рассмотрение результатов предсказаний в целом показывает, что общая точность моделей находится в районе 80\%. Для апробирования подхода данный результат является в достаточной степени приемлемым. Также, можно предложить, почему точность моделей не оказалась выше: на рисунке \ref{pred_example} представлен отрезок тестового вектора значения коэффициента вариации выходящего процесса с наложением на него предсказаний. Можно заметить, что для значений, которые наиболее приближены к среднему по выборке, предсказания точны, однако, для менее частых модели не смогли дать верный ответ. Это обусловлено слабой дисперсией в распределении значимых признаков в выборке (таблица \ref{table_feature_distr}), что приводит к переобучению моделей на определенном диапазоне значений признаков, делая предсказания для остальных случаев искаженными. Для улучшения качества предсказаний требуется изменить метод генерации параметров таким образом, чтобы признаки были распределены более равномерно и охватывали как можно больше возможных значений.
 \clearpage

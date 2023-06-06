@@ -87,6 +87,7 @@ literate={0}{{\textcolor{darkpastelgreen}{0}}}{1}%
 \captionsetup{labelsep=gost}
 \captionsetup[figure]{labelformat=gostfigure}
 \captionsetup[table]{labelformat=gosttable}
+\captionsetup[lstlisting]{labelformat=gostfigure}
 \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 \setlength{\parindent}{1.25cm}
 
@@ -247,5 +248,10 @@ literate={0}{{\textcolor{darkpastelgreen}{0}}}{1}%
 
 
 \makeatletter
+\AtBeginDocument{%
+	\let\c@figure\c@lstlisting
+	\let\thefigure\thelstlisting
+	\let\ftype@lstlisting\ftype@figure % give the floats the same precedence
+}
 \makeatother
 

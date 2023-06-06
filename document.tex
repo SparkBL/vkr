@@ -5,6 +5,7 @@
 \begin{document}	
 \input{chapters/title} % Титульный лист
 \includepdf[pages=-]{Задание Благинин 932128}
+\thispagestyle{empty}\addtocounter{page}{-2}
 \input{chapters/abstract}
 
 \begin{center}
@@ -31,5 +32,7 @@
 \addcontentsline{toc}{section}{Список использованной литературы}
 \bibliography{refs.bib}%\nocite{*}
 \clearpage
-\includepdf[pagetemplate=1,scale=0.83,offset=0.75cm 0]{antiplagiat}
+\includepdf[pagetemplate=1,scale=0.83,offset=0.75cm 0]{Report_Благинин}
+\thispagestyle{empty}\addtocounter{page}{-1}
+
 \end{document}
